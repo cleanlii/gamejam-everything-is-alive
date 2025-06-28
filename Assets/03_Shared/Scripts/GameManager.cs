@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour
     {
         // 订阅关卡完成事件
         OnLevelCompleted += HandleLevelCompleted;
+
+        AudioManager.PlaySound("BGM_MainMenu", AudioType.BGM, true);
     }
 
     private void OnDestroy()
@@ -223,7 +225,7 @@ public class GameManager : MonoBehaviour
         SceneController.Instance.ExecuteCoroutines(
             AudioManager.Current.FadeOutAllSounds(0.5f),
             SceneController.Instance.FadeOutAndLoadScene("LevelSelect"),
-            AudioManager.Current.FadeInAndPlaySound("登录界面_BGM_MainTitle", AudioType.BGM, true, 0.1f)
+            AudioManager.Current.FadeInAndPlaySound("BGM_LevelSelect", AudioType.BGM, true, 0.1f)
         );
         Instance.gameState = GameState.Select;
     }
@@ -236,10 +238,12 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        AudioManager.PlaySound("BGS_EnterLevel1", AudioType.BGS, false);
+
         SceneController.Instance.ExecuteCoroutines(
-            AudioManager.Current.FadeOutAllSounds(0.5f),
+            WaitForSecondsCoroutine(1f),
             SceneController.Instance.FadeOutAndLoadScene("Level1"),
-            AudioManager.Current.FadeInAndPlaySound("登录界面_BGM_MainTitle", AudioType.BGM, true, 0.1f)
+            AudioManager.Current.FadeInAndPlaySound("BGM_Level1", AudioType.BGM, true, 2f)
         );
         Instance.gameState = GameState.Level;
     }
@@ -252,10 +256,12 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        AudioManager.PlaySound("BGS_EnterLevel2", AudioType.BGS, false);
+
         SceneController.Instance.ExecuteCoroutines(
-            AudioManager.Current.FadeOutAllSounds(0.5f),
+            WaitForSecondsCoroutine(1f),
             SceneController.Instance.FadeOutAndLoadScene("Level2"),
-            AudioManager.Current.FadeInAndPlaySound("登录界面_BGM_MainTitle", AudioType.BGM, true, 0.1f)
+            AudioManager.Current.FadeInAndPlaySound("BGM_Level2", AudioType.BGM, true, 2f)
         );
         Instance.gameState = GameState.Level;
     }
@@ -268,10 +274,12 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        AudioManager.PlaySound("BGS_EnterLevel3", AudioType.BGS, false);
+
         SceneController.Instance.ExecuteCoroutines(
-            AudioManager.Current.FadeOutAllSounds(0.5f),
+            WaitForSecondsCoroutine(1f),
             SceneController.Instance.FadeOutAndLoadScene("Level3"),
-            AudioManager.Current.FadeInAndPlaySound("登录界面_BGM_MainTitle", AudioType.BGM, true, 0.1f)
+            AudioManager.Current.FadeInAndPlaySound("BGM_Level3", AudioType.BGM, true, 2f)
         );
         Instance.gameState = GameState.Level;
     }
@@ -281,9 +289,14 @@ public class GameManager : MonoBehaviour
         SceneController.Instance.ExecuteCoroutines(
             AudioManager.Current.FadeOutAllSounds(0.5f),
             SceneController.Instance.FadeOutAndLoadScene("MainMenu"),
-            AudioManager.Current.FadeInAndPlaySound("登录界面_BGM_MainTitle", AudioType.BGM, true, 0.1f)
+            AudioManager.Current.FadeInAndPlaySound("BGM_MainMenu", AudioType.BGM, true, 0.1f)
         );
         Instance.gameState = GameState.MainMenu;
+    }
+
+    private IEnumerator WaitForSecondsCoroutine(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 
     #endregion
