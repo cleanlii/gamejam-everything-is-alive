@@ -98,6 +98,7 @@ public class InventoryInitializer : MonoBehaviour
         // 背景层
         var backgroundLayer = CreateLayer("BackgroundLayer", parentPanel);
         var bgImage = backgroundLayer.AddComponent<Image>();
+        bgImage.raycastTarget = false;
         bgImage.sprite = inventoryInfo.bgSprite;
         if (type is InventoryType.Pool) bgImage.color = new Color(1f, 1f, 1f, 0);
         bgImage.type = Image.Type.Sliced;

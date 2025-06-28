@@ -920,6 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12afeaa8576a8f40b5d5bfe291ea5fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InventoryName: L1
   inventoryLibrary: {fileID: 11400000, guid: e9edc7a5440664d1493644ece76fd6e0, type: 2}
   itemManager: {fileID: 747755274}
   pickingBp: {fileID: 0}

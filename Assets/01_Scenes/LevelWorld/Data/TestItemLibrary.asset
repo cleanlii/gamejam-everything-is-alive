@@ -2586,7 +2586,7 @@ MonoBehaviour:
     itemTags: 01000000
   - itemName: "\u7EA2\u82F9\u679C"
     itemSprite: {fileID: 21300000, guid: b096120b9385e4a959cdc7b592e267e5, type: 3}
-    itemSource: 19
+    itemSource: 0
     gridType: 0
     shape:
     - {x: 0, y: 0}
@@ -2604,7 +2604,7 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 05000000
+    itemTags: 
   - itemName: "\u871C\u68A8"
     itemSprite: {fileID: 21300000, guid: f98b0f1d9ce6743c6ad98c5a7da2d7b6, type: 3}
     itemSource: 19

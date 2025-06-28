@@ -7,6 +7,10 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
+    [Header("写死的背包名字")]
+    [SerializeField] string InventoryName = "Inventory";
+  
+    [Space(10)]
     public static Action<ObjectInformation> OnDraggingBpInfo;
 
     public InventoryLibrary inventoryLibrary;
@@ -220,7 +224,7 @@ public class InventoryManager : MonoBehaviour
     public void CreateMyInventory()
     {
         CreateInventory("默认提货点", leftPanel);
-        CreateInventory("默认车辆", rightPanel);
+        CreateInventory(InventoryName, rightPanel);
 
         BondInventory();
     }

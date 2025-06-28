@@ -32,26 +32,6 @@ MonoBehaviour:
     defaultBpName: "\u9ED8\u8BA4\u7F51\u683C"
     defaultBpNames: []
     defaultBpPos: []
-  - inventoryName: "\u9ED8\u8BA4\u8F66\u8F86"
-    inventoryType: 2
-    bgSprite: {fileID: 1620482430, guid: 9120bbddc04404d3d94650c40ef89491, type: 3}
-    gridSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
-    highlightSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
-    gridColor:
-      serializedVersion: 2
-      rgba: 3693619240
-    highlightGreen:
-      serializedVersion: 2
-      rgba: 3363103363
-    highlightRed:
-      serializedVersion: 2
-      rgba: 3359988991
-    size: {x: 9, y: 9}
-    defaultBpName: "3x3_\u4E0D\u9508\u94A2\u8D27\u7BB1"
-    defaultBpNames:
-    - "3x3_\u4E0D\u9508\u94A2\u8D27\u7BB1"
-    defaultBpPos:
-    - {x: 2, y: 2}
   - inventoryName: "\u9ED8\u8BA4\u6682\u5B58\u533A"
     inventoryType: 0
     bgSprite: {fileID: 21300000, guid: 15cc363ea3e6baf46a10f9c9bec0ecd9, type: 3}
@@ -70,6 +50,66 @@ MonoBehaviour:
     defaultBpName: "\u9ED8\u8BA4\u7F51\u683C"
     defaultBpNames: []
     defaultBpPos: []
+  - inventoryName: L1
+    inventoryType: 2
+    bgSprite: {fileID: 1620482430, guid: 9120bbddc04404d3d94650c40ef89491, type: 3}
+    gridSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    highlightSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    gridColor:
+      serializedVersion: 2
+      rgba: 3693619240
+    highlightGreen:
+      serializedVersion: 2
+      rgba: 3363103363
+    highlightRed:
+      serializedVersion: 2
+      rgba: 3359988991
+    size: {x: 9, y: 9}
+    defaultBpName: "4x4_\u7AE5\u5E74\u4E66\u5305"
+    defaultBpNames:
+    - "4x4_\u7AE5\u5E74\u4E66\u5305"
+    defaultBpPos:
+    - {x: 2, y: 2}
+  - inventoryName: L2
+    inventoryType: 2
+    bgSprite: {fileID: 1620482430, guid: 9120bbddc04404d3d94650c40ef89491, type: 3}
+    gridSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    highlightSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    gridColor:
+      serializedVersion: 2
+      rgba: 3693619240
+    highlightGreen:
+      serializedVersion: 2
+      rgba: 3363103363
+    highlightRed:
+      serializedVersion: 2
+      rgba: 3359988991
+    size: {x: 9, y: 9}
+    defaultBpName: "5x5_\u9752\u6625\u80CC\u5305"
+    defaultBpNames:
+    - "5x5_\u9752\u6625\u80CC\u5305"
+    defaultBpPos:
+    - {x: 2, y: 2}
+  - inventoryName: L3
+    inventoryType: 2
+    bgSprite: {fileID: 1620482430, guid: 9120bbddc04404d3d94650c40ef89491, type: 3}
+    gridSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    highlightSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    gridColor:
+      serializedVersion: 2
+      rgba: 3693619240
+    highlightGreen:
+      serializedVersion: 2
+      rgba: 3363103363
+    highlightRed:
+      serializedVersion: 2
+      rgba: 3359988991
+    size: {x: 9, y: 9}
+    defaultBpName: "8x6_\u6210\u5E74\u884C\u674E\u7BB1"
+    defaultBpNames:
+    - "8x6_\u6210\u5E74\u884C\u674E\u7BB1"
+    defaultBpPos:
+    - {x: 2, y: 2}
   backpacks:
   - bpName: "\u9ED8\u8BA4\u7F51\u683C"
     bgSprite: {fileID: 0}
@@ -182,7 +222,7 @@ MonoBehaviour:
     - {x: 2, y: 4}
     - {x: 3, y: 4}
     - {x: 4, y: 4}
-    size: {x: 4, y: 4}
+    size: {x: 5, y: 5}
     bpValue: 1
     bpPrice: 3
     bpLocalizedName:

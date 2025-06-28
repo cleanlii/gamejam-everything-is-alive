@@ -550,115 +550,14 @@ public class ItemInteraction : ObjectInteraction
     }
 
     #endregion
-
-    #region 放置处理方法
-
-    /// <summary>
-    ///     处理从暂存区拖放到规划区
-    /// </summary>
-    private void HandleCabinetPanelDropInPlanning()
-    {
-        // 暂存区 => 车厢区
-        // 1. 有空位，放置成功
-        // 2. 无空位，刷新掉落
-        if (RectUtils.IsRectangleInside(_rightPanelRect, rectTransform))
-        {
-            var nearestSlot = FindNearestSlot();
-            if (nearestSlot != null && CanPlaceItem(nearestSlot))
-            {
-                // 放入
-                SetRigidbody(false);
-                ObjUtils.SetParentAndLayer(gameObject, _rightPanelItemLayer, InventoryType.Truck);
-
-                _lastGridPosition = nearestSlot.gridPosition;
-                // 将物品放置在相应位置
-                rectTransform.anchoredPosition = nearestSlot.worldPosition;
-                itemData.position = nearestSlot.gridPosition;
-                UpdateCells(nearestSlot.gridPosition, currentShape, true);
-            }
-            else
-            {
-                // 无法放入
-                // 来自暂存区，刷新掉落
-                SetRigidbody(true);
-                ObjUtils.SetParentAndLayer(gameObject, _cabinetPanelItemLayer, InventoryType.Cabinet);
-                rectTransform.anchoredPosition = _middlePosition;
-            }
-        }
-        // 暂存区 => 暂存区
-        // 暂存区 => 其他任何非法位置
-        else
-        {
-            SetRigidbody(true);
-            ObjUtils.SetParentAndLayer(gameObject, _cabinetPanelItemLayer, InventoryType.Cabinet);
-            if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform)) rectTransform.anchoredPosition = _middlePosition;
-        }
-    }
-
-    /// <summary>
-    ///     处理从规划区拖放到规划区
-    /// </summary>
-    private void HandleRightPanelDropInPlanning()
-    {
-        // 车厢区 => 车厢区
-        // 1. 有空位，放置成功
-        // 2. 无空位，回到原位
-        if (RectUtils.IsRectangleInside(_rightPanelRect, rectTransform))
-        {
-            var nearestSlot = FindNearestSlot();
-            if (nearestSlot != null && CanPlaceItem(nearestSlot))
-            {
-                SetRigidbody(false);
-                ObjUtils.SetParentAndLayer(gameObject, _rightPanelItemLayer, InventoryType.Truck);
-
-                _lastGridPosition = nearestSlot.gridPosition;
-                // 将物品放置在相应位置
-                rectTransform.anchoredPosition = nearestSlot.worldPosition;
-                itemData.position = nearestSlot.gridPosition;
-                UpdateCells(nearestSlot.gridPosition, currentShape, true);
-            }
-            else
-            {
-                // 如果没有找到合适的槽，则恢复位置
-                // 1. 重置旋转状态
-                if (rotateCount != originalRotateCount)
-                {
-                    while (rotateCount != originalRotateCount)
-                    {
-                        rotateCount += 1;
-                        RotateObject();
-                    }
-                }
-
-                // 来自右面板，回到原位即可
-                ObjUtils.SetParentAndLayer(gameObject, _rightPanelItemLayer, InventoryType.Truck);
-                rectTransform.anchoredPosition = originalPosition;
-                UpdateCells(_lastGridPosition, currentShape, true);
-            }
-        }
-        // 车厢区 => 其他任何非法位置
-        // 车厢区 => 暂存区
-        // 直接从指尖掉落
-        // 直接刷新掉落
-        else
-        {
-            ObjUtils.SetParentAndLayer(gameObject, _cabinetPanelItemLayer, InventoryType.Cabinet);
-            if (!RectUtils.IsRectangleInside(_cabinetPanelRect, rectTransform)) rectTransform.anchoredPosition = _middlePosition;
-
-            SetRigidbody(true);
-            UpdateCells(_lastGridPosition, currentShape, false);
-        }
-    }
-
-    #endregion
-
+    
     #region 任务点内交互逻辑
 
     private void HandleLeftPanelDropInTask()
     {
         // 左 => 右
         // 1. 有空位，放置成功
-        // 2. 无空位，刷新掉落
+        // 2. 无空位，刷新掉落 -> 返回原位
         if (RectUtils.IsRectangleInside(_rightPanelRect, rectTransform))
         {
             var nearestSlot = FindNearestSlot();
@@ -679,23 +578,23 @@ public class ItemInteraction : ObjectInteraction
             else
             {
                 // 无法放入
-                // 来自左面板，刷新掉落
+                // 来自左面板，刷新掉落 -> 返回原位
                 SetColliderAndRigidbody(true);
                 ObjUtils.SetParentAndLayer(gameObject, leftPanelItemLayer, InventoryType.Pool);
-                rectTransform.anchoredPosition = _middlePosition;
+                rectTransform.anchoredPosition = originalPosition;
             }
         }
 
         // 左 => 左
-        // 左 => 其他任何非法位置
+        // 左 => 其他任何非法位置 -> 返回原位
         else
         {
             SetColliderAndRigidbody(true);
             ObjUtils.SetParentAndLayer(gameObject, leftPanelItemLayer, InventoryType.Pool);
             if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
             {
-                // rectTransform.anchoredPosition = originalPosition;
-                rectTransform.anchoredPosition = _middlePosition;
+                rectTransform.anchoredPosition = originalPosition;
+                // rectTransform.anchoredPosition = _middlePosition;
             }
         }
     }
@@ -737,8 +636,8 @@ public class ItemInteraction : ObjectInteraction
             ObjUtils.SetParentAndLayer(gameObject, leftPanelItemLayer, InventoryType.Pool);
             if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
             {
-                // rectTransform.anchoredPosition = originalPosition;
-                rectTransform.anchoredPosition = _middlePosition;
+                rectTransform.anchoredPosition = originalPosition;
+                // rectTransform.anchoredPosition = _middlePosition;
             }
 
             SetColliderAndRigidbody(true);
@@ -767,61 +666,6 @@ public class ItemInteraction : ObjectInteraction
         rectTransform.anchoredPosition = originalPosition;
         gameObject.SetActive(true);
         UpdateCells(_lastGridPosition, currentShape, true);
-    }
-
-    #endregion
-
-    #region 商店内交互逻辑
-
-    private void HandleRightPanelDropInStore()
-    {
-        // 判断当前所在区域
-        if (RectUtils.IsRectangleInside(_storeBannedArea, rectTransform))
-        {
-            // 货物无法售卖，刷新掉落
-            // ResetPositionAtCabinet();
-            ResetPositionAtInventory();
-        }
-        else if (RectUtils.IsRectangleInside(_rightPanelRect, rectTransform))
-        {
-            // 右->右，放入
-            PlacePositionInGrid();
-        }
-        else
-        {
-            // 中->中间或者任何非法位置，刷新掉落
-            // ResetPositionAtCabinet();
-            ResetPositionAtInventory();
-        }
-    }
-
-    /// <summary>
-    ///     放入网格新位置
-    /// </summary>
-    private void PlacePositionInGrid()
-    {
-        var nearestSlot = FindNearestSlot();
-        if (nearestSlot != null && CanPlaceItem(nearestSlot))
-        {
-            SetColliderAndRigidbody(false);
-            // rectTransform.SetParent(_rightPanelItemLayer);
-            ObjUtils.SetParentAndLayer(gameObject, _rightPanelItemLayer, InventoryType.Truck);
-            // 更新新位置的cells状态
-            _lastGridPosition = nearestSlot.gridPosition;
-
-            // 将物品放置在相应位置
-            rectTransform.anchoredPosition = nearestSlot.worldPosition;
-            // rectTransform.SetParent(_rightPanelItemLayer);
-            ObjUtils.SetParentAndLayer(gameObject, _rightPanelItemLayer, InventoryType.Truck);
-            itemData.position = nearestSlot.gridPosition;
-            UpdateCells(nearestSlot.gridPosition, currentShape, true);
-        }
-        else
-        {
-            // 如果没有找到合适的槽，则刷新掉落
-            // ResetPositionAtCabinet();
-            ResetPositionAtInventory();
-        }
     }
 
     #endregion
