@@ -1140,6 +1140,54 @@ public class ItemManager : MonoBehaviour
     }
 
     /// <summary>
+    ///     重置所有未放置物品的位置关系效果
+    /// </summary>
+    public void ResetAllUnplacedItemsEffects()
+    {
+        foreach (var item in items)
+        {
+            if (!item.isPlaced) ResetItemRelationshipEffects(item);
+        }
+
+        Debug.Log("已重置所有未放置物品的位置关系效果");
+    }
+
+    /// <summary>
+    ///     重置指定物品及其相关物品的位置关系效果
+    /// </summary>
+    public void ResetRelatedItemsEffects(ItemData removedItem)
+    {
+        if (removedItem == null) return;
+
+        // 重置被移除物品的效果
+        ResetItemRelationshipEffects(removedItem);
+
+        // 查找所有与被移除物品有关系的物品，重新检测它们的状态
+        foreach (var item in items)
+        {
+            if (!item.isPlaced || item == removedItem) continue;
+
+            // 检查是否有喜欢或讨厌关系指向被移除的物品
+            var needsRecheck = false;
+
+            if (!string.IsNullOrEmpty(item.likeItemName) && item.likeItemName == removedItem.name) needsRecheck = true;
+
+            if (!string.IsNullOrEmpty(item.hateItemName) && item.hateItemName == removedItem.name) needsRecheck = true;
+
+            if (needsRecheck)
+            {
+                // 先重置效果，然后重新检测
+                ResetItemRelationshipEffects(item);
+                CheckLikeItemRelationship(item);
+                CheckHateItemRelationship(item);
+                CheckCornerRequirement(item);
+            }
+        }
+
+        Debug.Log($"已重置与物品 {removedItem.name} 相关的所有物品效果");
+    }
+
+    /// <summary>
     ///     检查喜欢物品的位置关系 - 必须相邻
     /// </summary>
     private void CheckLikeItemRelationship(ItemData itemData)
@@ -1154,30 +1202,37 @@ public class ItemManager : MonoBehaviour
         var likedItem = items.FirstOrDefault(item =>
             item.name == itemData.likeItemName && item.isPlaced);
 
-        if (likedItem == null)
+        var shouldSatisfy = false;
+
+        if (likedItem != null)
         {
-            // 喜欢的物品不存在或未放置，这违反了"必须相邻"的规则
-            Debug.Log($"违反喜欢规则：物品 {itemData.name} 需要的喜欢物品 {itemData.likeItemName} 未放置或不存在！");
-            TriggerLikeRelationshipViolationEffect(itemData);
+            // 获取喜欢物品占据的所有网格位置
+            var likedItemCells = GetItemOccupiedCells(likedItem);
+
+            // 检查是否相邻（任意一个网格相邻即可）
+            shouldSatisfy = IsItemsOrthogonallyAdjacent(currentItemCells, likedItemCells);
+        }
+
+        // 检查当前状态是否已经正确
+        var currentlyInCorrectState = IsItemInCorrectLikeState(itemData, shouldSatisfy);
+
+        if (currentlyInCorrectState)
+        {
+            // 状态没有变化，不需要重新播放动画
             return;
         }
 
-        // 获取喜欢物品占据的所有网格位置
-        var likedItemCells = GetItemOccupiedCells(likedItem);
-
-        // 检查是否相邻（任意一个网格相邻即可）
-        var isAdjacent = IsItemsOrthogonallyAdjacent(currentItemCells, likedItemCells);
-
-        if (!isAdjacent)
+        if (!shouldSatisfy)
         {
-            Debug.Log($"违反喜欢规则：物品 {itemData.name} 必须与 {itemData.likeItemName} 相邻放置！");
-            // 触发喜欢关系违反的动画效果
+            if (likedItem == null)
+                Debug.Log($"违反喜欢规则：物品 {itemData.name} 需要的喜欢物品 {itemData.likeItemName} 未放置或不存在！");
+            else
+                Debug.Log($"违反喜欢规则：物品 {itemData.name} 必须与 {itemData.likeItemName} 相邻放置！");
             TriggerLikeRelationshipViolationEffect(itemData);
         }
         else
         {
             Debug.Log($"满足喜欢规则：物品 {itemData.name} 与 {itemData.likeItemName} 正确相邻放置！");
-            // 触发喜欢关系满足的动画效果
             TriggerLikeRelationshipSatisfiedEffect(itemData);
         }
     }
@@ -1197,28 +1252,35 @@ public class ItemManager : MonoBehaviour
         var hatedItem = items.FirstOrDefault(item =>
             item.name == itemData.hateItemName && item.isPlaced);
 
-        if (hatedItem == null)
+        var shouldSatisfy = true; // 默认应该满足（没有讨厌物品或讨厌物品不相邻）
+
+        if (hatedItem != null)
         {
-            // 讨厌的物品不存在或未放置，不违反规则
+            // 获取讨厌物品占据的所有网格位置
+            var hatedItemCells = GetItemOccupiedCells(hatedItem);
+
+            // 检查是否相邻（任意一个网格相邻都违反规则）
+            var isAdjacent = IsItemsOrthogonallyAdjacent(currentItemCells, hatedItemCells);
+            shouldSatisfy = !isAdjacent; // 不相邻才满足规则
+        }
+
+        // 检查当前状态是否已经正确
+        var currentlyInCorrectState = IsItemInCorrectHateState(itemData, shouldSatisfy);
+
+        if (currentlyInCorrectState)
+        {
+            // 状态没有变化，不需要重新播放动画
             return;
         }
 
-        // 获取讨厌物品占据的所有网格位置
-        var hatedItemCells = GetItemOccupiedCells(hatedItem);
-
-        // 检查是否相邻（任意一个网格相邻都违反规则）
-        var isAdjacent = IsItemsOrthogonallyAdjacent(currentItemCells, hatedItemCells);
-
-        if (isAdjacent)
+        if (!shouldSatisfy)
         {
             Debug.Log($"违反讨厌规则：物品 {itemData.name} 不能与 {itemData.hateItemName} 相邻放置！");
-            // 触发讨厌关系违反的动画效果
             TriggerHateRelationshipViolationEffect(itemData);
         }
         else
         {
             Debug.Log($"满足讨厌规则：物品 {itemData.name} 与 {itemData.hateItemName} 保持安全距离！");
-            // 触发讨厌关系满足的动画效果
             TriggerHateRelationshipSatisfiedEffect(itemData);
         }
     }
@@ -1240,6 +1302,27 @@ public class ItemManager : MonoBehaviour
         }
 
         return occupiedCells;
+    }
+
+    /// <summary>
+    ///     检查两个物品是否相邻（包括对角相邻）
+    /// </summary>
+    private bool IsItemsAdjacent(List<Vector2Int> cells1, List<Vector2Int> cells2)
+    {
+        foreach (var cell1 in cells1)
+        {
+            foreach (var cell2 in cells2)
+            {
+                // 计算两个网格之间的距离
+                var deltaX = Mathf.Abs(cell1.x - cell2.x);
+                var deltaY = Mathf.Abs(cell1.y - cell2.y);
+
+                // 相邻条件：横向或纵向距离为1，且另一个距离为0或1（包括对角相邻）
+                if (deltaX <= 1 && deltaY <= 1 && deltaX + deltaY > 0) return true;
+            }
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -1280,17 +1363,24 @@ public class ItemManager : MonoBehaviour
             }
         }
 
+        // 检查当前状态是否已经正确
+        var currentlyInCorrectState = IsItemInCorrectCornerState(itemData, occupiesCorner);
+
+        if (currentlyInCorrectState)
+        {
+            // 状态没有变化，不需要重新播放动画
+            return;
+        }
+
         if (!occupiesCorner)
         {
             Debug.Log($"违反角落规则：物品 {itemData.name} 需要放置在角落位置！当前位置不满足要求。");
-            // 触发角落关系违反的动画效果
             TriggerCornerRelationshipViolationEffect(itemData);
         }
         else
         {
             var cornerName = GetCornerName(occupiedCorner, gridWidth, gridHeight);
             Debug.Log($"满足角落规则：物品 {itemData.name} 正确占据了{cornerName}！");
-            // 触发角落关系满足的动画效果
             TriggerCornerRelationshipSatisfiedEffect(itemData);
         }
     }
@@ -1451,6 +1541,57 @@ public class ItemManager : MonoBehaviour
             itemImage.material = baseMaterial;
             yield return new WaitForSeconds(flashInterval);
         }
+    }
+
+    /// <summary>
+    ///     检查物品是否处于正确的喜欢关系状态
+    /// </summary>
+    private bool IsItemInCorrectLikeState(ItemData itemData, bool shouldSatisfy)
+    {
+        if (itemData?.itemImage?.material == null) return false;
+
+        if (shouldSatisfy)
+        {
+            // 应该满足条件，检查是否已经是满足状态的材质
+            return itemData.itemImage.material == itemLikeAfter;
+        }
+
+        // 应该违反条件，检查是否已经是违反状态的材质
+        return itemData.itemImage.material == itemLikeBefore;
+    }
+
+    /// <summary>
+    ///     检查物品是否处于正确的讨厌关系状态
+    /// </summary>
+    private bool IsItemInCorrectHateState(ItemData itemData, bool shouldSatisfy)
+    {
+        if (itemData?.itemImage?.material == null) return false;
+
+        if (shouldSatisfy)
+        {
+            // 应该满足条件，检查是否已经是满足状态的材质
+            return itemData.itemImage.material == itemHateAfter;
+        }
+
+        // 应该违反条件，检查是否已经是违反状态的材质
+        return itemData.itemImage.material == itemHateBefore;
+    }
+
+    /// <summary>
+    ///     检查物品是否处于正确的角落关系状态
+    /// </summary>
+    private bool IsItemInCorrectCornerState(ItemData itemData, bool shouldSatisfy)
+    {
+        if (itemData?.itemImage?.material == null) return false;
+
+        if (shouldSatisfy)
+        {
+            // 应该满足条件，检查是否已经是满足状态的材质
+            return itemData.itemImage.material == itemCornerAfter;
+        }
+
+        // 应该违反条件，检查是否已经是违反状态的材质
+        return itemData.itemImage.material == itemCornerBefore;
     }
 
     /// <summary>
