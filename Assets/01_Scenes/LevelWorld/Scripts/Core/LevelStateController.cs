@@ -1,11 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using cfg.level;
-using PackageGame.Global;
-using PackageGame.Level.Gameplay;
-using PackageGame.Level.UI;
 using UnityEngine;
 
 // using UnityEngine.iOS;
@@ -56,7 +52,7 @@ public class LevelStateController : MonoBehaviour
     ///     中止各种动画
     /// </summary>
     public static event Action InteruptionEvent;
-    
+
     // UI交替事件
     public static event Action OnFadeIconTrigger;
     public static event Action OnFadeBlockTrigger;
@@ -64,7 +60,7 @@ public class LevelStateController : MonoBehaviour
     // 状态切换事件
     public static event Action OnObjDragging;
     public static event Action OnObjUndragged;
-    
+
     private RectTransform _originalInventoryPos;
     private Vector2Int _originalVehiclePos;
 
@@ -128,10 +124,9 @@ public class LevelStateController : MonoBehaviour
         inventoryManager.Initialize();
         propManager.Initialize();
     }
-    
+
     private void InitializeUI()
     {
-
     }
 
     private void InitializeGameplay()
@@ -152,18 +147,6 @@ public class LevelStateController : MonoBehaviour
 
     #endregion
 
-    #region 通关状态
-
-    public void CompleteLevel()
-    {
-        // TODO: 计算完成度星级
-        // TODO: 一局游戏结束，跳转回大世界（更效率方法）
-        // TriggerFadeIcon();
-        GameManager.Instance.LoadMainWorld();
-    }
-
-    #endregion
-
     #region 动画状态控制
 
     public void StartResultAnimation()
@@ -171,7 +154,7 @@ public class LevelStateController : MonoBehaviour
         StartAnyAnimating();
         // StartCoroutine(StartResultRoutine());
     }
-    
+
 
     public void TriggerFadeIcon()
     {
@@ -220,7 +203,7 @@ public class LevelStateController : MonoBehaviour
     }
 
     #endregion
-    
+
     #region 关卡状态控制
 
     // public enum LevelState
@@ -276,7 +259,6 @@ public class LevelStateController : MonoBehaviour
     // {
     //     return currentState == LevelState.Opening;
     // }
-    
 
     #endregion
 

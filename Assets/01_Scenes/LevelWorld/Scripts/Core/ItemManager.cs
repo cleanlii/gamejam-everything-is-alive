@@ -1115,6 +1115,122 @@ public class ItemManager : MonoBehaviour
             CheckHateItemRelationship(item);
             CheckCornerRequirement(item);
         }
+
+        // 检查是否所有物品都满足条件，如果是则进入下一关
+        CheckLevelComplete();
+    }
+
+    /// <summary>
+    ///     检查关卡是否完成 - 所有物品都放置且满足条件
+    /// </summary>
+    private void CheckLevelComplete()
+    {
+        // 检查是否所有物品都已放置
+        var allItemsPlaced = items.All(item => item.isPlaced);
+
+        if (!allItemsPlaced)
+        {
+            Debug.Log("还有物品未放置，关卡未完成");
+            return;
+        }
+
+        // 检查是否所有物品都满足条件
+        var allItemsSatisfied = true;
+        var unsatisfiedItems = new List<string>();
+
+        foreach (var item in items)
+        {
+            if (!item.isPlaced) continue;
+
+            var itemSatisfied = true;
+
+            // 检查喜欢关系
+            if (!string.IsNullOrEmpty(item.likeItemName))
+            {
+                var likedItem = items.FirstOrDefault(i => i.name == item.likeItemName && i.isPlaced);
+                if (likedItem == null)
+                    itemSatisfied = false;
+                else
+                {
+                    var currentCells = GetItemOccupiedCells(item);
+                    var likedCells = GetItemOccupiedCells(likedItem);
+                    if (!IsItemsAdjacent(currentCells, likedCells)) itemSatisfied = false;
+                }
+            }
+
+            // 检查讨厌关系
+            if (!string.IsNullOrEmpty(item.hateItemName))
+            {
+                var hatedItem = items.FirstOrDefault(i => i.name == item.hateItemName && i.isPlaced);
+                if (hatedItem != null)
+                {
+                    var currentCells = GetItemOccupiedCells(item);
+                    var hatedCells = GetItemOccupiedCells(hatedItem);
+                    if (IsItemsAdjacent(currentCells, hatedCells)) itemSatisfied = false;
+                }
+            }
+
+            // 检查角落需求
+            if (item.needCorner)
+            {
+                var gridWidth = backpackHolder.cells.GetLength(0);
+                var gridHeight = backpackHolder.cells.GetLength(1);
+
+                var corners = new List<Vector2Int>
+                {
+                    new(0, 0),
+                    new(gridWidth - 1, 0),
+                    new(0, gridHeight - 1),
+                    new(gridWidth - 1, gridHeight - 1)
+                };
+
+                var occupiedCells = GetItemOccupiedCells(item);
+                var occupiesCorner = corners.Any(corner => occupiedCells.Contains(corner));
+
+                if (!occupiesCorner) itemSatisfied = false;
+            }
+
+            if (!itemSatisfied)
+            {
+                allItemsSatisfied = false;
+                unsatisfiedItems.Add(item.name);
+            }
+        }
+
+        if (allItemsSatisfied)
+        {
+            Debug.Log("🎉 恭喜！所有物品都已正确放置，关卡完成！");
+            OnLevelComplete();
+        }
+        else
+            Debug.Log($"关卡未完成，以下物品不满足条件：{string.Join(", ", unsatisfiedItems)}");
+    }
+
+    /// <summary>
+    ///     关卡完成时的处理
+    /// </summary>
+    private void OnLevelComplete()
+    {
+        // 可以在这里添加完成动画、音效等
+        Debug.Log("准备进入下一关...");
+
+        // 延迟一小段时间再切换关卡，让玩家看到完成效果
+        StartCoroutine(LoadNextLevelCoroutine());
+    }
+
+    /// <summary>
+    ///     延迟加载下一关的协程
+    /// </summary>
+    private IEnumerator LoadNextLevelCoroutine()
+    {
+        // 等待1秒让玩家看到完成效果
+        yield return new WaitForSeconds(1f);
+
+        // 调用GameManager加载下一关
+        if (GameManager.Instance != null)
+            GameManager.Instance.LoadLevelSelect();
+        else
+            Debug.LogError("GameManager.Instance 为空，无法加载下一关！");
     }
 
     /// <summary>

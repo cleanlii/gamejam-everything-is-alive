@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/01_Scenes/StartMenu.unity
-    guid: 1cb98307d33864bae8e2d2307f6cb9b5
+    path: Assets/01_Scenes/MainMenu.unity
+    guid: 8b5cc7e953f9e7843a407b341e0ea99e
   - enabled: 1
-    path: Assets/01_Scenes/MainWorld/TestMainWorld.unity
-    guid: 4dbe5729c5e3e44fe8be9c3d5d2172d4
+    path: Assets/01_Scenes/LevelSelect.unity
+    guid: 1704e94573387cb469bcd6395f6f6316
   - enabled: 1
-    path: Assets/01_Scenes/LevelWorld/TestLevelWorld.unity
-    guid: 7ea439c0d04608941aa898a75b666c90
+    path: Assets/01_Scenes/Level1.unity
+    guid: 4915718c60604c74581baa50242da0e0
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2c93e605df7bd4a249327fe4f5d8a9de,
       type: 2}
