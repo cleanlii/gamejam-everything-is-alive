@@ -544,6 +544,7 @@ public class ItemInteraction : ObjectInteraction
                     itemData.isPlaced = false;
                     if (cell.innerBp.holdingItems != null && cell.innerBp.holdingItems.Contains(itemData)) cell.innerBp.holdingItems.Remove(itemData);
                     Debug.Log("已取消放置货物：" + itemData.name);
+                    _itemManager.ResetItemRelationshipEffects(itemData);
                 }
             }
         }

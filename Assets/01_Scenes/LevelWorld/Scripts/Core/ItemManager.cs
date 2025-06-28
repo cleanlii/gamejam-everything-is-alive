@@ -467,6 +467,12 @@ public class ItemManager : MonoBehaviour
         return itemLibrary.items.Find(item => item.itemName == itemName).gridType;
     }
 
+    public ItemData GetItemDataByName(string itemName)
+    {
+        // 通过items列表查找
+        return items.FirstOrDefault(item => item.name == itemName);
+    }
+
     /// <summary>
     ///     检查每个Item是否被放入
     /// </summary>
@@ -1109,6 +1115,28 @@ public class ItemManager : MonoBehaviour
             CheckHateItemRelationship(item);
             CheckCornerRequirement(item);
         }
+    }
+
+    /// <summary>
+    ///     重置物品的位置关系效果，用于物品移出背包时
+    /// </summary>
+    public void ResetItemRelationshipEffects(ItemData itemData)
+    {
+        if (itemData?.itemImage == null) return;
+
+        // 停止所有正在进行的动画
+        itemData.itemImage.transform.DOKill();
+
+        // 重置为正常材质
+        itemData.itemImage.material = itemNormal;
+
+        // 重置缩放（防止抖动动画导致的缩放残留）
+        itemData.itemImage.transform.localScale = Vector3.one;
+
+        // 停止所有可能正在运行的闪烁协程（通过停止所有协程实现）
+        StopAllCoroutines();
+
+        Debug.Log($"已重置物品 {itemData.name} 的位置关系效果");
     }
 
     /// <summary>

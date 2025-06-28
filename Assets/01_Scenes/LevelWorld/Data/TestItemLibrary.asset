@@ -143,9 +143,9 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 01000000
-    likeItemName: "1\u884C3\u5217_L1_\u6587\u5177\u76D2"
+    likeItemName: 
     hateItemName: 
-    needCorner: 0
+    needCorner: 1
   - itemName: "\u9ED1\u91D1\u706B\u817F"
     itemSprite: {fileID: 21300000, guid: cf8da2363beb9486da96aca4401ca9f6, type: 3}
     itemSource: 1
