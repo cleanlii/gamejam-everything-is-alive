@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "prop_name": "Prop_1x1_冷冻",
+    "shape": 0,
+    "prop_size": 1,
+    "prop_value": 4,
+    "prop_price": 4,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x1冷冻_Name",
+      "localizedDes": "Level_Text_Prop_1x1冷冻_Description"
+    }
+  },
+  {
+    "id": 2,
+    "prop_name": "Prop_1x1_减震",
+    "shape": 0,
+    "prop_size": 1,
+    "prop_value": 4,
+    "prop_price": 4,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x1减震_Name",
+      "localizedDes": "Level_Text_Prop_1x1减震_Description"
+    }
+  },
+  {
+    "id": 3,
+    "prop_name": "Prop_1x2_冷冻",
+    "shape": 15,
+    "prop_size": 2,
+    "prop_value": 3,
+    "prop_price": 3,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x2冷冻_Name",
+      "localizedDes": "Level_Text_Prop_1x2冷冻_Description"
+    }
+  },
+  {
+    "id": 4,
+    "prop_name": "Prop_1x2_减震",
+    "shape": 15,
+    "prop_size": 2,
+    "prop_value": 3,
+    "prop_price": 3,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x2减震_Name",
+      "localizedDes": "Level_Text_Prop_1x2减震_Description"
+    }
+  },
+  {
+    "id": 5,
+    "prop_name": "Prop_1x3_冷冻",
+    "shape": 21,
+    "prop_size": 3,
+    "prop_value": 2,
+    "prop_price": 2,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x3冷冻_Name",
+      "localizedDes": "Level_Text_Prop_1x3冷冻_Description"
+    }
+  },
+  {
+    "id": 6,
+    "prop_name": "Prop_1x3_减震",
+    "shape": 21,
+    "prop_size": 3,
+    "prop_value": 2,
+    "prop_price": 2,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x3减震_Name",
+      "localizedDes": "Level_Text_Prop_1x3减震_Description"
+    }
+  },
+  {
+    "id": 7,
+    "prop_name": "Prop_3格L字_冷冻",
+    "shape": 11,
+    "prop_size": 3,
+    "prop_value": 2,
+    "prop_price": 2,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_3格L字冷冻_Name",
+      "localizedDes": "Level_Text_Prop_3格L字冷冻_Description"
+    }
+  },
+  {
+    "id": 8,
+    "prop_name": "Prop_3格L字_减震",
+    "shape": 11,
+    "prop_size": 3,
+    "prop_value": 2,
+    "prop_price": 2,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_3格L字减震_Name",
+      "localizedDes": "Level_Text_Prop_3格L字减震_Description"
+    }
+  },
+  {
+    "id": 9,
+    "prop_name": "Prop_1x2_双冷冻",
+    "shape": 20,
+    "prop_size": 2,
+    "prop_value": 8,
+    "prop_price": 8,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x2双冷冻_Name",
+      "localizedDes": "Level_Text_Prop_1x2双冷冻_Description"
+    }
+  },
+  {
+    "id": 10,
+    "prop_name": "Prop_1x2_双减震",
+    "shape": 20,
+    "prop_size": 2,
+    "prop_value": 8,
+    "prop_price": 8,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_1x2双减震_Name",
+      "localizedDes": "Level_Text_Prop_1x2双减震_Description"
+    }
+  },
+  {
+    "id": 11,
+    "prop_name": "Prop_2x2_双冷冻",
+    "shape": 1,
+    "prop_size": 4,
+    "prop_value": 6,
+    "prop_price": 6,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_2x2双冷冻_Name",
+      "localizedDes": "Level_Text_Prop_2x2双冷冻_Description"
+    }
+  },
+  {
+    "id": 12,
+    "prop_name": "Prop_2x2_双减震",
+    "shape": 1,
+    "prop_size": 4,
+    "prop_value": 6,
+    "prop_price": 6,
+    "prop_localization": {
+      "localizedName": "Level_Text_Prop_2x2双减震_Name",
+      "localizedDes": "Level_Text_Prop_2x2双减震_Description"
+    }
+  }
+]

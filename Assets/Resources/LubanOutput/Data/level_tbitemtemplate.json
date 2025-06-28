@@ -1,0 +1,2251 @@
+[
+  {
+    "id": 1,
+    "item_name": "黑金火腿",
+    "item_source": 1,
+    "item_tags": 2,
+    "shape": 20,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_黑金火腿_Name",
+      "localizedDes": "Level_Text_Item_黑金火腿_Description"
+    }
+  },
+  {
+    "id": 2,
+    "item_name": "香酥白玉鸡",
+    "item_source": 1,
+    "item_tags": 2,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 7,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_香酥白玉鸡_Name",
+      "localizedDes": "Level_Text_Item_香酥白玉鸡_Description"
+    }
+  },
+  {
+    "id": 3,
+    "item_name": "香辛爆汁肠",
+    "item_source": 1,
+    "item_tags": 2,
+    "shape": 21,
+    "item_size": 3,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_香辛爆汁肠_Name",
+      "localizedDes": "Level_Text_Item_香辛爆汁肠_Description"
+    }
+  },
+  {
+    "id": 4,
+    "item_name": "云朵羊肋排",
+    "item_source": 1,
+    "item_tags": 2,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_云朵羊肋排_Name",
+      "localizedDes": "Level_Text_Item_云朵羊肋排_Description"
+    }
+  },
+  {
+    "id": 5,
+    "item_name": "脆嫩玉鸡腿",
+    "item_source": 1,
+    "item_tags": 3,
+    "shape": 7,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_脆嫩玉鸡腿_Name",
+      "localizedDes": "Level_Text_Item_脆嫩玉鸡腿_Description"
+    }
+  },
+  {
+    "id": 6,
+    "item_name": "酿香牛腩",
+    "item_source": 1,
+    "item_tags": 3,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 9,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_酿香牛腩_Name",
+      "localizedDes": "Level_Text_Item_酿香牛腩_Description"
+    }
+  },
+  {
+    "id": 7,
+    "item_name": "脆骨大排",
+    "item_source": 1,
+    "item_tags": 3,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_脆骨大排_Name",
+      "localizedDes": "Level_Text_Item_脆骨大排_Description"
+    }
+  },
+  {
+    "id": 8,
+    "item_name": "霜降星空牛",
+    "item_source": 1,
+    "item_tags": 4,
+    "shape": 13,
+    "item_size": 10,
+    "item_value": 18,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_霜降星空牛_Name",
+      "localizedDes": "Level_Text_Item_霜降星空牛_Description"
+    }
+  },
+  {
+    "id": 9,
+    "item_name": "夏多布里昂牛排",
+    "item_source": 1,
+    "item_tags": 4,
+    "shape": 4,
+    "item_size": 3,
+    "item_value": 13,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_夏多布里昂牛排_Name",
+      "localizedDes": "Level_Text_Item_夏多布里昂牛排_Description"
+    }
+  },
+  {
+    "id": 10,
+    "item_name": "ID终端",
+    "item_source": 4,
+    "item_tags": 8,
+    "shape": 20,
+    "item_size": 2,
+    "item_value": 7,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_ID终端_Name",
+      "localizedDes": "Level_Text_Item_ID终端_Description"
+    }
+  },
+  {
+    "id": 11,
+    "item_name": "4D存储设备",
+    "item_source": 4,
+    "item_tags": 8,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_4D存储设备_Name",
+      "localizedDes": "Level_Text_Item_4D存储设备_Description"
+    }
+  },
+  {
+    "id": 12,
+    "item_name": "天籁耳机",
+    "item_source": 4,
+    "item_tags": 8,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_天籁耳机_Name",
+      "localizedDes": "Level_Text_Item_天籁耳机_Description"
+    }
+  },
+  {
+    "id": 13,
+    "item_name": "航海日志腕表",
+    "item_source": 4,
+    "item_tags": 8,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_航海日志腕表_Name",
+      "localizedDes": "Level_Text_Item_航海日志腕表_Description"
+    }
+  },
+  {
+    "id": 14,
+    "item_name": "光学电源",
+    "item_source": 4,
+    "item_tags": 9,
+    "shape": 20,
+    "item_size": 2,
+    "item_value": 9,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_光学电源_Name",
+      "localizedDes": "Level_Text_Item_光学电源_Description"
+    }
+  },
+  {
+    "id": 15,
+    "item_name": "万能遥控器",
+    "item_source": 4,
+    "item_tags": 9,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 9,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_万能遥控器_Name",
+      "localizedDes": "Level_Text_Item_万能遥控器_Description"
+    }
+  },
+  {
+    "id": 16,
+    "item_name": "文明读取器",
+    "item_source": 4,
+    "item_tags": 9,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 9,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_文明读取器_Name",
+      "localizedDes": "Level_Text_Item_文明读取器_Description"
+    }
+  },
+  {
+    "id": 17,
+    "item_name": "游戏天机",
+    "item_source": 4,
+    "item_tags": 10,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_游戏天机_Name",
+      "localizedDes": "Level_Text_Item_游戏天机_Description"
+    }
+  },
+  {
+    "id": 18,
+    "item_name": "万象茶盘",
+    "item_source": 3,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_万象茶盘_Name",
+      "localizedDes": "Level_Text_Item_万象茶盘_Description"
+    }
+  },
+  {
+    "id": 19,
+    "item_name": "时光储物柜",
+    "item_source": 3,
+    "item_tags": 1,
+    "shape": 21,
+    "item_size": 3,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_时光储物柜_Name",
+      "localizedDes": "Level_Text_Item_时光储物柜_Description"
+    }
+  },
+  {
+    "id": 20,
+    "item_name": "梦幻度假椅",
+    "item_source": 3,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_梦幻度假椅_Name",
+      "localizedDes": "Level_Text_Item_梦幻度假椅_Description"
+    }
+  },
+  {
+    "id": 21,
+    "item_name": "太空坐骑",
+    "item_source": 3,
+    "item_tags": 8,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 9,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_太空坐骑_Name",
+      "localizedDes": "Level_Text_Item_太空坐骑_Description"
+    }
+  },
+  {
+    "id": 22,
+    "item_name": "风尚衣柜",
+    "item_source": 3,
+    "item_tags": 8,
+    "shape": 23,
+    "item_size": 6,
+    "item_value": 9,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_风尚衣柜_Name",
+      "localizedDes": "Level_Text_Item_风尚衣柜_Description"
+    }
+  },
+  {
+    "id": 23,
+    "item_name": "知心书架",
+    "item_source": 3,
+    "item_tags": 8,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_知心书架_Name",
+      "localizedDes": "Level_Text_Item_知心书架_Description"
+    }
+  },
+  {
+    "id": 24,
+    "item_name": "仙木餐桌",
+    "item_source": 3,
+    "item_tags": 9,
+    "shape": 12,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_仙木餐桌_Name",
+      "localizedDes": "Level_Text_Item_仙木餐桌_Description"
+    }
+  },
+  {
+    "id": 25,
+    "item_name": "全自动台球桌",
+    "item_source": 3,
+    "item_tags": 9,
+    "shape": 19,
+    "item_size": 8,
+    "item_value": 13,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_全自动台球桌_Name",
+      "localizedDes": "Level_Text_Item_全自动台球桌_Description"
+    }
+  },
+  {
+    "id": 26,
+    "item_name": "花香厨房纸",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_花香厨房纸_Name",
+      "localizedDes": "Level_Text_Item_花香厨房纸_Description"
+    }
+  },
+  {
+    "id": 27,
+    "item_name": "太阳洗衣液",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_太阳洗衣液_Name",
+      "localizedDes": "Level_Text_Item_太阳洗衣液_Description"
+    }
+  },
+  {
+    "id": 28,
+    "item_name": "演奏牙刷",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 1,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_演奏牙刷_Name",
+      "localizedDes": "Level_Text_Item_演奏牙刷_Description"
+    }
+  },
+  {
+    "id": 29,
+    "item_name": "绚丽香波",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_绚丽香波_Name",
+      "localizedDes": "Level_Text_Item_绚丽香波_Description"
+    }
+  },
+  {
+    "id": 30,
+    "item_name": "荧光香皂",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 1,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_荧光香皂_Name",
+      "localizedDes": "Level_Text_Item_荧光香皂_Description"
+    }
+  },
+  {
+    "id": 31,
+    "item_name": "薯片盲盒",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_薯片盲盒_Name",
+      "localizedDes": "Level_Text_Item_薯片盲盒_Description"
+    }
+  },
+  {
+    "id": 32,
+    "item_name": "坚果大礼包",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 1,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_坚果大礼包_Name",
+      "localizedDes": "Level_Text_Item_坚果大礼包_Description"
+    }
+  },
+  {
+    "id": 33,
+    "item_name": "冰雪甘泉",
+    "item_source": 2,
+    "item_tags": 1,
+    "shape": 20,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰雪甘泉_Name",
+      "localizedDes": "Level_Text_Item_冰雪甘泉_Description"
+    }
+  },
+  {
+    "id": 34,
+    "item_name": "悦动鲜牛奶",
+    "item_source": 5,
+    "item_tags": 2,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_悦动鲜牛奶_Name",
+      "localizedDes": "Level_Text_Item_悦动鲜牛奶_Description"
+    }
+  },
+  {
+    "id": 35,
+    "item_name": "熟成干酪轮",
+    "item_source": 5,
+    "item_tags": 2,
+    "shape": 11,
+    "item_size": 3,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_熟成干酪轮_Name",
+      "localizedDes": "Level_Text_Item_熟成干酪轮_Description"
+    }
+  },
+  {
+    "id": 36,
+    "item_name": "发酵生酪乳",
+    "item_source": 5,
+    "item_tags": 2,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_发酵生酪乳_Name",
+      "localizedDes": "Level_Text_Item_发酵生酪乳_Description"
+    }
+  },
+  {
+    "id": 37,
+    "item_name": "极品炼乳",
+    "item_source": 5,
+    "item_tags": 2,
+    "shape": 21,
+    "item_size": 3,
+    "item_value": 7,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_极品炼乳_Name",
+      "localizedDes": "Level_Text_Item_极品炼乳_Description"
+    }
+  },
+  {
+    "id": 38,
+    "item_name": "鲜虾",
+    "item_source": 8,
+    "item_tags": 2,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_鲜虾_Name",
+      "localizedDes": "Level_Text_Item_鲜虾_Description"
+    }
+  },
+  {
+    "id": 39,
+    "item_name": "三文鱼片",
+    "item_source": 8,
+    "item_tags": 3,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_三文鱼片_Name",
+      "localizedDes": "Level_Text_Item_三文鱼片_Description"
+    }
+  },
+  {
+    "id": 40,
+    "item_name": "贝类拼盘",
+    "item_source": 8,
+    "item_tags": 2,
+    "shape": 9,
+    "item_size": 3,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_贝类拼盘_Name",
+      "localizedDes": "Level_Text_Item_贝类拼盘_Description"
+    }
+  },
+  {
+    "id": 41,
+    "item_name": "螃蟹",
+    "item_source": 8,
+    "item_tags": 4,
+    "shape": 12,
+    "item_size": 8,
+    "item_value": 17,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_螃蟹_Name",
+      "localizedDes": "Level_Text_Item_螃蟹_Description"
+    }
+  },
+  {
+    "id": 42,
+    "item_name": "章鱼",
+    "item_source": 8,
+    "item_tags": 3,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_章鱼_Name",
+      "localizedDes": "Level_Text_Item_章鱼_Description"
+    }
+  },
+  {
+    "id": 43,
+    "item_name": "干海带",
+    "item_source": 8,
+    "item_tags": 3,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_干海带_Name",
+      "localizedDes": "Level_Text_Item_干海带_Description"
+    }
+  },
+  {
+    "id": 44,
+    "item_name": "龙虾",
+    "item_source": 8,
+    "item_tags": 3,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 12,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_龙虾_Name",
+      "localizedDes": "Level_Text_Item_龙虾_Description"
+    }
+  },
+  {
+    "id": 45,
+    "item_name": "海鲜大礼包",
+    "item_source": 8,
+    "item_tags": 4,
+    "shape": 2,
+    "item_size": 9,
+    "item_value": 18,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_海鲜大礼包_Name",
+      "localizedDes": "Level_Text_Item_海鲜大礼包_Description"
+    }
+  },
+  {
+    "id": 46,
+    "item_name": "香薰蜡烛套装",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_香薰蜡烛套装_Name",
+      "localizedDes": "Level_Text_Item_香薰蜡烛套装_Description"
+    }
+  },
+  {
+    "id": 47,
+    "item_name": "手工绣花抱枕",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 1,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_手工绣花抱枕_Name",
+      "localizedDes": "Level_Text_Item_手工绣花抱枕_Description"
+    }
+  },
+  {
+    "id": 48,
+    "item_name": "水晶摆件",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_水晶摆件_Name",
+      "localizedDes": "Level_Text_Item_水晶摆件_Description"
+    }
+  },
+  {
+    "id": 49,
+    "item_name": "纪念品钥匙链",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 11,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_纪念品钥匙链_Name",
+      "localizedDes": "Level_Text_Item_纪念品钥匙链_Description"
+    }
+  },
+  {
+    "id": 50,
+    "item_name": "旅行便携杯",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_旅行便携杯_Name",
+      "localizedDes": "Level_Text_Item_旅行便携杯_Description"
+    }
+  },
+  {
+    "id": 51,
+    "item_name": "香水礼盒",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 12,
+    "item_size": 5,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_香水礼盒_Name",
+      "localizedDes": "Level_Text_Item_香水礼盒_Description"
+    }
+  },
+  {
+    "id": 52,
+    "item_name": "书签套装",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 26,
+    "item_size": 4,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_书签套装_Name",
+      "localizedDes": "Level_Text_Item_书签套装_Description"
+    }
+  },
+  {
+    "id": 53,
+    "item_name": "创意挂钟",
+    "item_source": 9,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_创意挂钟_Name",
+      "localizedDes": "Level_Text_Item_创意挂钟_Description"
+    }
+  },
+  {
+    "id": 54,
+    "item_name": "能量电池块",
+    "item_source": 10,
+    "item_tags": 9,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_能量电池块_Name",
+      "localizedDes": "Level_Text_Item_能量电池块_Description"
+    }
+  },
+  {
+    "id": 55,
+    "item_name": "液态金属饮品",
+    "item_source": 10,
+    "item_tags": 9,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_液态金属饮品_Name",
+      "localizedDes": "Level_Text_Item_液态金属饮品_Description"
+    }
+  },
+  {
+    "id": 56,
+    "item_name": "碳基零件拼盘",
+    "item_source": 10,
+    "item_tags": 9,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_碳基零件拼盘_Name",
+      "localizedDes": "Level_Text_Item_碳基零件拼盘_Description"
+    }
+  },
+  {
+    "id": 57,
+    "item_name": "合金强化饼",
+    "item_source": 10,
+    "item_tags": 8,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_合金强化饼_Name",
+      "localizedDes": "Level_Text_Item_合金强化饼_Description"
+    }
+  },
+  {
+    "id": 58,
+    "item_name": "液态冷却剂果冻",
+    "item_source": 10,
+    "item_tags": 9,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 12,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_液态冷却剂果冻_Name",
+      "localizedDes": "Level_Text_Item_液态冷却剂果冻_Description"
+    }
+  },
+  {
+    "id": 59,
+    "item_name": "智能营养光纤条",
+    "item_source": 10,
+    "item_tags": 9,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_智能营养光纤条_Name",
+      "localizedDes": "Level_Text_Item_智能营养光纤条_Description"
+    }
+  },
+  {
+    "id": 60,
+    "item_name": "矿物质能量沙拉",
+    "item_source": 10,
+    "item_tags": 9,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_矿物质能量沙拉_Name",
+      "localizedDes": "Level_Text_Item_矿物质能量沙拉_Description"
+    }
+  },
+  {
+    "id": 61,
+    "item_name": "液态铱金奶昔",
+    "item_source": 10,
+    "item_tags": 8,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_液态铱金奶昔_Name",
+      "localizedDes": "Level_Text_Item_液态铱金奶昔_Description"
+    }
+  },
+  {
+    "id": 62,
+    "item_name": "梵高星空甜点",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_梵高星空甜点_Name",
+      "localizedDes": "Level_Text_Item_梵高星空甜点_Description"
+    }
+  },
+  {
+    "id": 63,
+    "item_name": "达利钟形饼干",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_达利钟形饼干_Name",
+      "localizedDes": "Level_Text_Item_达利钟形饼干_Description"
+    }
+  },
+  {
+    "id": 64,
+    "item_name": "立体派水果沙拉",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_立体派水果沙拉_Name",
+      "localizedDes": "Level_Text_Item_立体派水果沙拉_Description"
+    }
+  },
+  {
+    "id": 65,
+    "item_name": "蒙德里安蛋糕",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_蒙德里安蛋糕_Name",
+      "localizedDes": "Level_Text_Item_蒙德里安蛋糕_Description"
+    }
+  },
+  {
+    "id": 66,
+    "item_name": "彩色拼贴咖啡",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_彩色拼贴咖啡_Name",
+      "localizedDes": "Level_Text_Item_彩色拼贴咖啡_Description"
+    }
+  },
+  {
+    "id": 67,
+    "item_name": "罗丹雕塑巧克力",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 12,
+    "item_size": 8,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_罗丹雕塑巧克力_Name",
+      "localizedDes": "Level_Text_Item_罗丹雕塑巧克力_Description"
+    }
+  },
+  {
+    "id": 68,
+    "item_name": "波普风糖果套装",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 6,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_波普风糖果套装_Name",
+      "localizedDes": "Level_Text_Item_波普风糖果套装_Description"
+    }
+  },
+  {
+    "id": 69,
+    "item_name": "雕刻调味棒",
+    "item_source": 11,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雕刻调味棒_Name",
+      "localizedDes": "Level_Text_Item_雕刻调味棒_Description"
+    }
+  },
+  {
+    "id": 70,
+    "item_name": "烤虾串",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤虾串_Name",
+      "localizedDes": "Level_Text_Item_烤虾串_Description"
+    }
+  },
+  {
+    "id": 71,
+    "item_name": "烤玉米",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤玉米_Name",
+      "localizedDes": "Level_Text_Item_烤玉米_Description"
+    }
+  },
+  {
+    "id": 72,
+    "item_name": "烤肉串",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤肉串_Name",
+      "localizedDes": "Level_Text_Item_烤肉串_Description"
+    }
+  },
+  {
+    "id": 73,
+    "item_name": "热带海鲜烧烤",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_热带海鲜烧烤_Name",
+      "localizedDes": "Level_Text_Item_热带海鲜烧烤_Description"
+    }
+  },
+  {
+    "id": 74,
+    "item_name": "烤菠萝片",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤菠萝片_Name",
+      "localizedDes": "Level_Text_Item_烤菠萝片_Description"
+    }
+  },
+  {
+    "id": 75,
+    "item_name": "炭烤龙虾",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 12,
+    "item_size": 8,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_炭烤龙虾_Name",
+      "localizedDes": "Level_Text_Item_炭烤龙虾_Description"
+    }
+  },
+  {
+    "id": 76,
+    "item_name": "烤热带水果串",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤热带水果串_Name",
+      "localizedDes": "Level_Text_Item_烤热带水果串_Description"
+    }
+  },
+  {
+    "id": 77,
+    "item_name": "椰香炭烤鸡翅",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_椰香炭烤鸡翅_Name",
+      "localizedDes": "Level_Text_Item_椰香炭烤鸡翅_Description"
+    }
+  },
+  {
+    "id": 78,
+    "item_name": "烤虾串",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤虾串_Name",
+      "localizedDes": "Level_Text_Item_烤虾串_Description"
+    }
+  },
+  {
+    "id": 79,
+    "item_name": "烤玉米",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤玉米_Name",
+      "localizedDes": "Level_Text_Item_烤玉米_Description"
+    }
+  },
+  {
+    "id": 80,
+    "item_name": "烤肉串",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤肉串_Name",
+      "localizedDes": "Level_Text_Item_烤肉串_Description"
+    }
+  },
+  {
+    "id": 81,
+    "item_name": "热带海鲜烧烤",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_热带海鲜烧烤_Name",
+      "localizedDes": "Level_Text_Item_热带海鲜烧烤_Description"
+    }
+  },
+  {
+    "id": 82,
+    "item_name": "烤菠萝片",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤菠萝片_Name",
+      "localizedDes": "Level_Text_Item_烤菠萝片_Description"
+    }
+  },
+  {
+    "id": 83,
+    "item_name": "炭烤龙虾",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 12,
+    "item_size": 8,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_炭烤龙虾_Name",
+      "localizedDes": "Level_Text_Item_炭烤龙虾_Description"
+    }
+  },
+  {
+    "id": 84,
+    "item_name": "烤热带水果串",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤热带水果串_Name",
+      "localizedDes": "Level_Text_Item_烤热带水果串_Description"
+    }
+  },
+  {
+    "id": 85,
+    "item_name": "椰香炭烤鸡翅",
+    "item_source": 12,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_椰香炭烤鸡翅_Name",
+      "localizedDes": "Level_Text_Item_椰香炭烤鸡翅_Description"
+    }
+  },
+  {
+    "id": 86,
+    "item_name": "火山爆裂披萨",
+    "item_source": 13,
+    "item_tags": 7,
+    "shape": 2,
+    "item_size": 9,
+    "item_value": 18,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_火山爆裂披萨_Name",
+      "localizedDes": "Level_Text_Item_火山爆裂披萨_Description"
+    }
+  },
+  {
+    "id": 87,
+    "item_name": "熔岩烤鸡腿",
+    "item_source": 13,
+    "item_tags": 6,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_熔岩烤鸡腿_Name",
+      "localizedDes": "Level_Text_Item_熔岩烤鸡腿_Description"
+    }
+  },
+  {
+    "id": 88,
+    "item_name": "岩浆熔蛋",
+    "item_source": 13,
+    "item_tags": 5,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_岩浆熔蛋_Name",
+      "localizedDes": "Level_Text_Item_岩浆熔蛋_Description"
+    }
+  },
+  {
+    "id": 89,
+    "item_name": "岩浆牛排",
+    "item_source": 13,
+    "item_tags": 6,
+    "shape": 25,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_岩浆牛排_Name",
+      "localizedDes": "Level_Text_Item_岩浆牛排_Description"
+    }
+  },
+  {
+    "id": 90,
+    "item_name": "火焰蒜蓉面",
+    "item_source": 13,
+    "item_tags": 6,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_火焰蒜蓉面_Name",
+      "localizedDes": "Level_Text_Item_火焰蒜蓉面_Description"
+    }
+  },
+  {
+    "id": 91,
+    "item_name": "辣椒熔岩炸弹",
+    "item_source": 13,
+    "item_tags": 6,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_辣椒熔岩炸弹_Name",
+      "localizedDes": "Level_Text_Item_辣椒熔岩炸弹_Description"
+    }
+  },
+  {
+    "id": 92,
+    "item_name": "岩石糖果",
+    "item_source": 13,
+    "item_tags": 6,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_岩石糖果_Name",
+      "localizedDes": "Level_Text_Item_岩石糖果_Description"
+    }
+  },
+  {
+    "id": 93,
+    "item_name": "火山融化冰激凌",
+    "item_source": 13,
+    "item_tags": 5,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_火山融化冰激凌_Name",
+      "localizedDes": "Level_Text_Item_火山融化冰激凌_Description"
+    }
+  },
+  {
+    "id": 94,
+    "item_name": "巨型藤蔓沙拉",
+    "item_source": 14,
+    "item_tags": 6,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_巨型藤蔓沙拉_Name",
+      "localizedDes": "Level_Text_Item_巨型藤蔓沙拉_Description"
+    }
+  },
+  {
+    "id": 95,
+    "item_name": "荆棘果实蜜露",
+    "item_source": 14,
+    "item_tags": 5,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_荆棘果实蜜露_Name",
+      "localizedDes": "Level_Text_Item_荆棘果实蜜露_Description"
+    }
+  },
+  {
+    "id": 96,
+    "item_name": "捕蝇草炸肉片",
+    "item_source": 14,
+    "item_tags": 6,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_捕蝇草炸肉片_Name",
+      "localizedDes": "Level_Text_Item_捕蝇草炸肉片_Description"
+    }
+  },
+  {
+    "id": 97,
+    "item_name": "森林蘑菇炖汤",
+    "item_source": 14,
+    "item_tags": 6,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_森林蘑菇炖汤_Name",
+      "localizedDes": "Level_Text_Item_森林蘑菇炖汤_Description"
+    }
+  },
+  {
+    "id": 98,
+    "item_name": "棘刺水果沙冰",
+    "item_source": 14,
+    "item_tags": 6,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_棘刺水果沙冰_Name",
+      "localizedDes": "Level_Text_Item_棘刺水果沙冰_Description"
+    }
+  },
+  {
+    "id": 99,
+    "item_name": "巨型花瓣卷饼",
+    "item_source": 14,
+    "item_tags": 5,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_巨型花瓣卷饼_Name",
+      "localizedDes": "Level_Text_Item_巨型花瓣卷饼_Description"
+    }
+  },
+  {
+    "id": 100,
+    "item_name": "幻光蔬菜拼盘",
+    "item_source": 14,
+    "item_tags": 7,
+    "shape": 2,
+    "item_size": 9,
+    "item_value": 18,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_幻光蔬菜拼盘_Name",
+      "localizedDes": "Level_Text_Item_幻光蔬菜拼盘_Description"
+    }
+  },
+  {
+    "id": 101,
+    "item_name": "垂悬树果串",
+    "item_source": 14,
+    "item_tags": 6,
+    "shape": 17,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_垂悬树果串_Name",
+      "localizedDes": "Level_Text_Item_垂悬树果串_Description"
+    }
+  },
+  {
+    "id": 102,
+    "item_name": "椰子特调酒",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_椰子特调酒_Name",
+      "localizedDes": "Level_Text_Item_椰子特调酒_Description"
+    }
+  },
+  {
+    "id": 103,
+    "item_name": "热带水果鸡尾酒",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_热带水果鸡尾酒_Name",
+      "localizedDes": "Level_Text_Item_热带水果鸡尾酒_Description"
+    }
+  },
+  {
+    "id": 104,
+    "item_name": "椰香烤香蕉",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_椰香烤香蕉_Name",
+      "localizedDes": "Level_Text_Item_椰香烤香蕉_Description"
+    }
+  },
+  {
+    "id": 105,
+    "item_name": "咖啡朗姆酒",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_咖啡朗姆酒_Name",
+      "localizedDes": "Level_Text_Item_咖啡朗姆酒_Description"
+    }
+  },
+  {
+    "id": 106,
+    "item_name": "咖喱海鲜拼盘",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_咖喱海鲜拼盘_Name",
+      "localizedDes": "Level_Text_Item_咖喱海鲜拼盘_Description"
+    }
+  },
+  {
+    "id": 107,
+    "item_name": "香草椰奶布丁",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_香草椰奶布丁_Name",
+      "localizedDes": "Level_Text_Item_香草椰奶布丁_Description"
+    }
+  },
+  {
+    "id": 108,
+    "item_name": "菠萝风味朗姆酒",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_菠萝风味朗姆酒_Name",
+      "localizedDes": "Level_Text_Item_菠萝风味朗姆酒_Description"
+    }
+  },
+  {
+    "id": 109,
+    "item_name": "椰蓉热带蛋糕",
+    "item_source": 15,
+    "item_tags": 1,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 1,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_椰蓉热带蛋糕_Name",
+      "localizedDes": "Level_Text_Item_椰蓉热带蛋糕_Description"
+    }
+  },
+  {
+    "id": 110,
+    "item_name": "南瓜派",
+    "item_source": 18,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_南瓜派_Name",
+      "localizedDes": "Level_Text_Item_南瓜派_Description"
+    }
+  },
+  {
+    "id": 111,
+    "item_name": "蜂蜜核桃面包",
+    "item_source": 18,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_蜂蜜核桃面包_Name",
+      "localizedDes": "Level_Text_Item_蜂蜜核桃面包_Description"
+    }
+  },
+  {
+    "id": 112,
+    "item_name": "烤栗子",
+    "item_source": 18,
+    "item_tags": 1,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 1,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤栗子_Name",
+      "localizedDes": "Level_Text_Item_烤栗子_Description"
+    }
+  },
+  {
+    "id": 113,
+    "item_name": "金枫热苹果酒",
+    "item_source": 18,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_金枫热苹果酒_Name",
+      "localizedDes": "Level_Text_Item_金枫热苹果酒_Description"
+    }
+  },
+  {
+    "id": 114,
+    "item_name": "枫蜜果实饼干",
+    "item_source": 18,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_枫蜜果实饼干_Name",
+      "localizedDes": "Level_Text_Item_枫蜜果实饼干_Description"
+    }
+  },
+  {
+    "id": 115,
+    "item_name": "水果套餐",
+    "item_source": 18,
+    "item_tags": 1,
+    "shape": 19,
+    "item_size": 8,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_水果套餐_Name",
+      "localizedDes": "Level_Text_Item_水果套餐_Description"
+    }
+  },
+  {
+    "id": 116,
+    "item_name": "暖炉爆米花",
+    "item_source": 18,
+    "item_tags": 1,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_暖炉爆米花_Name",
+      "localizedDes": "Level_Text_Item_暖炉爆米花_Description"
+    }
+  },
+  {
+    "id": 117,
+    "item_name": "红苹果",
+    "item_source": 19,
+    "item_tags": 5,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_红苹果_Name",
+      "localizedDes": "Level_Text_Item_红苹果_Description"
+    }
+  },
+  {
+    "id": 118,
+    "item_name": "蜜梨",
+    "item_source": 19,
+    "item_tags": 5,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_蜜梨_Name",
+      "localizedDes": "Level_Text_Item_蜜梨_Description"
+    }
+  },
+  {
+    "id": 119,
+    "item_name": "葡萄串",
+    "item_source": 19,
+    "item_tags": 5,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_葡萄串_Name",
+      "localizedDes": "Level_Text_Item_葡萄串_Description"
+    }
+  },
+  {
+    "id": 120,
+    "item_name": "枫糖浆礼盒",
+    "item_source": 19,
+    "item_tags": 6,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_枫糖浆礼盒_Name",
+      "localizedDes": "Level_Text_Item_枫糖浆礼盒_Description"
+    }
+  },
+  {
+    "id": 121,
+    "item_name": "蜜瓜",
+    "item_source": 19,
+    "item_tags": 7,
+    "shape": 14,
+    "item_size": 7,
+    "item_value": 16,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_蜜瓜_Name",
+      "localizedDes": "Level_Text_Item_蜜瓜_Description"
+    }
+  },
+  {
+    "id": 122,
+    "item_name": "无花果",
+    "item_source": 19,
+    "item_tags": 6,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_无花果_Name",
+      "localizedDes": "Level_Text_Item_无花果_Description"
+    }
+  },
+  {
+    "id": 123,
+    "item_name": "南瓜稻草人",
+    "item_source": 16,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_南瓜稻草人_Name",
+      "localizedDes": "Level_Text_Item_南瓜稻草人_Description"
+    }
+  },
+  {
+    "id": 124,
+    "item_name": "琥珀玉米棒",
+    "item_source": 16,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_琥珀玉米棒_Name",
+      "localizedDes": "Level_Text_Item_琥珀玉米棒_Description"
+    }
+  },
+  {
+    "id": 125,
+    "item_name": "火焰小麦穗",
+    "item_source": 16,
+    "item_tags": 1,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_火焰小麦穗_Name",
+      "localizedDes": "Level_Text_Item_火焰小麦穗_Description"
+    }
+  },
+  {
+    "id": 126,
+    "item_name": "枫叶果",
+    "item_source": 16,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_枫叶果_Name",
+      "localizedDes": "Level_Text_Item_枫叶果_Description"
+    }
+  },
+  {
+    "id": 127,
+    "item_name": "大萝卜",
+    "item_source": 16,
+    "item_tags": 1,
+    "shape": 17,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_大萝卜_Name",
+      "localizedDes": "Level_Text_Item_大萝卜_Description"
+    }
+  },
+  {
+    "id": 128,
+    "item_name": "幽光地瓜",
+    "item_source": 16,
+    "item_tags": 1,
+    "shape": 9,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_幽光地瓜_Name",
+      "localizedDes": "Level_Text_Item_幽光地瓜_Description"
+    }
+  },
+  {
+    "id": 129,
+    "item_name": "秋露蜂蜜",
+    "item_source": 16,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_秋露蜂蜜_Name",
+      "localizedDes": "Level_Text_Item_秋露蜂蜜_Description"
+    }
+  },
+  {
+    "id": 130,
+    "item_name": "煎三文鱼",
+    "item_source": 21,
+    "item_tags": 12,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_煎三文鱼_Name",
+      "localizedDes": "Level_Text_Item_煎三文鱼_Description"
+    }
+  },
+  {
+    "id": 131,
+    "item_name": "土豆奶油浓汤",
+    "item_source": 21,
+    "item_tags": 11,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_土豆奶油浓汤_Name",
+      "localizedDes": "Level_Text_Item_土豆奶油浓汤_Description"
+    }
+  },
+  {
+    "id": 132,
+    "item_name": "野莓派",
+    "item_source": 21,
+    "item_tags": 11,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_野莓派_Name",
+      "localizedDes": "Level_Text_Item_野莓派_Description"
+    }
+  },
+  {
+    "id": 133,
+    "item_name": "烤羊排",
+    "item_source": 21,
+    "item_tags": 12,
+    "shape": 24,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_烤羊排_Name",
+      "localizedDes": "Level_Text_Item_烤羊排_Description"
+    }
+  },
+  {
+    "id": 134,
+    "item_name": "煎苹果肉桂卷",
+    "item_source": 21,
+    "item_tags": 12,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_煎苹果肉桂卷_Name",
+      "localizedDes": "Level_Text_Item_煎苹果肉桂卷_Description"
+    }
+  },
+  {
+    "id": 135,
+    "item_name": "南瓜浓汤",
+    "item_source": 21,
+    "item_tags": 11,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_南瓜浓汤_Name",
+      "localizedDes": "Level_Text_Item_南瓜浓汤_Description"
+    }
+  },
+  {
+    "id": 136,
+    "item_name": "香草秋叶冰激凌",
+    "item_source": 20,
+    "item_tags": 2,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_香草秋叶冰激凌_Name",
+      "localizedDes": "Level_Text_Item_香草秋叶冰激凌_Description"
+    }
+  },
+  {
+    "id": 137,
+    "item_name": "南瓜乳酪冰激凌",
+    "item_source": 20,
+    "item_tags": 2,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_南瓜乳酪冰激凌_Name",
+      "localizedDes": "Level_Text_Item_南瓜乳酪冰激凌_Description"
+    }
+  },
+  {
+    "id": 138,
+    "item_name": "枫糖坚果冰激凌",
+    "item_source": 20,
+    "item_tags": 2,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_枫糖坚果冰激凌_Name",
+      "localizedDes": "Level_Text_Item_枫糖坚果冰激凌_Description"
+    }
+  },
+  {
+    "id": 139,
+    "item_name": "幽光星芒冰激凌派",
+    "item_source": 20,
+    "item_tags": 3,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_幽光星芒冰激凌派_Name",
+      "localizedDes": "Level_Text_Item_幽光星芒冰激凌派_Description"
+    }
+  },
+  {
+    "id": 140,
+    "item_name": "苹果派风味冰激凌",
+    "item_source": 20,
+    "item_tags": 2,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_苹果派风味冰激凌_Name",
+      "localizedDes": "Level_Text_Item_苹果派风味冰激凌_Description"
+    }
+  },
+  {
+    "id": 141,
+    "item_name": "焦糖栗子冰激凌船",
+    "item_source": 20,
+    "item_tags": 3,
+    "shape": 12,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_焦糖栗子冰激凌船_Name",
+      "localizedDes": "Level_Text_Item_焦糖栗子冰激凌船_Description"
+    }
+  },
+  {
+    "id": 142,
+    "item_name": "极光草莓蛋糕",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_极光草莓蛋糕_Name",
+      "localizedDes": "Level_Text_Item_极光草莓蛋糕_Description"
+    }
+  },
+  {
+    "id": 143,
+    "item_name": "冰晶苹果挞",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰晶苹果挞_Name",
+      "localizedDes": "Level_Text_Item_冰晶苹果挞_Description"
+    }
+  },
+  {
+    "id": 144,
+    "item_name": "薄荷极地曲奇",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 1,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_薄荷极地曲奇_Name",
+      "localizedDes": "Level_Text_Item_薄荷极地曲奇_Description"
+    }
+  },
+  {
+    "id": 145,
+    "item_name": "白霜蓝莓派",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_白霜蓝莓派_Name",
+      "localizedDes": "Level_Text_Item_白霜蓝莓派_Description"
+    }
+  },
+  {
+    "id": 146,
+    "item_name": "冰魄奶冻",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 2,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰魄奶冻_Name",
+      "localizedDes": "Level_Text_Item_冰魄奶冻_Description"
+    }
+  },
+  {
+    "id": 147,
+    "item_name": "雪原熔岩巧克力蛋糕",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 12,
+    "item_size": 8,
+    "item_value": 8,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪原熔岩巧克力蛋糕_Name",
+      "localizedDes": "Level_Text_Item_雪原熔岩巧克力蛋糕_Description"
+    }
+  },
+  {
+    "id": 148,
+    "item_name": "极寒柠檬塔",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 3,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_极寒柠檬塔_Name",
+      "localizedDes": "Level_Text_Item_极寒柠檬塔_Description"
+    }
+  },
+  {
+    "id": 149,
+    "item_name": "雪花杏仁布丁",
+    "item_source": 24,
+    "item_tags": 1,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪花杏仁布丁_Name",
+      "localizedDes": "Level_Text_Item_雪花杏仁布丁_Description"
+    }
+  },
+  {
+    "id": 150,
+    "item_name": "雪鹿排",
+    "item_source": 26,
+    "item_tags": 13,
+    "shape": 12,
+    "item_size": 8,
+    "item_value": 17,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪鹿排_Name",
+      "localizedDes": "Level_Text_Item_雪鹿排_Description"
+    }
+  },
+  {
+    "id": 151,
+    "item_name": "北极狼肉串",
+    "item_source": 26,
+    "item_tags": 11,
+    "shape": 16,
+    "item_size": 3,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_北极狼肉串_Name",
+      "localizedDes": "Level_Text_Item_北极狼肉串_Description"
+    }
+  },
+  {
+    "id": 152,
+    "item_name": "冻土蘑菇炖汤",
+    "item_source": 26,
+    "item_tags": 12,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冻土蘑菇炖汤_Name",
+      "localizedDes": "Level_Text_Item_冻土蘑菇炖汤_Description"
+    }
+  },
+  {
+    "id": 153,
+    "item_name": "冰原鱼酱拼盘",
+    "item_source": 26,
+    "item_tags": 12,
+    "shape": 18,
+    "item_size": 6,
+    "item_value": 12,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰原鱼酱拼盘_Name",
+      "localizedDes": "Level_Text_Item_冰原鱼酱拼盘_Description"
+    }
+  },
+  {
+    "id": 154,
+    "item_name": "白霜兔腿",
+    "item_source": 26,
+    "item_tags": 11,
+    "shape": 9,
+    "item_size": 3,
+    "item_value": 6,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_白霜兔腿_Name",
+      "localizedDes": "Level_Text_Item_白霜兔腿_Description"
+    }
+  },
+  {
+    "id": 155,
+    "item_name": "极寒鹿肉火腿",
+    "item_source": 26,
+    "item_tags": 12,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_极寒鹿肉火腿_Name",
+      "localizedDes": "Level_Text_Item_极寒鹿肉火腿_Description"
+    }
+  },
+  {
+    "id": 156,
+    "item_name": "冻原浆果酱",
+    "item_source": 26,
+    "item_tags": 11,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冻原浆果酱_Name",
+      "localizedDes": "Level_Text_Item_冻原浆果酱_Description"
+    }
+  },
+  {
+    "id": 157,
+    "item_name": "雪地香肠拼盘",
+    "item_source": 26,
+    "item_tags": 12,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪地香肠拼盘_Name",
+      "localizedDes": "Level_Text_Item_雪地香肠拼盘_Description"
+    }
+  },
+  {
+    "id": 158,
+    "item_name": "麻辣九宫格锅底",
+    "item_source": 27,
+    "item_tags": 13,
+    "shape": 2,
+    "item_size": 9,
+    "item_value": 18,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_麻辣九宫格锅底_Name",
+      "localizedDes": "Level_Text_Item_麻辣九宫格锅底_Description"
+    }
+  },
+  {
+    "id": 159,
+    "item_name": "羊肉卷",
+    "item_source": 27,
+    "item_tags": 11,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_羊肉卷_Name",
+      "localizedDes": "Level_Text_Item_羊肉卷_Description"
+    }
+  },
+  {
+    "id": 160,
+    "item_name": "白雪豆腐",
+    "item_source": 27,
+    "item_tags": 11,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_白雪豆腐_Name",
+      "localizedDes": "Level_Text_Item_白雪豆腐_Description"
+    }
+  },
+  {
+    "id": 161,
+    "item_name": "雪原菌菇拼盘",
+    "item_source": 27,
+    "item_tags": 12,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪原菌菇拼盘_Name",
+      "localizedDes": "Level_Text_Item_雪原菌菇拼盘_Description"
+    }
+  },
+  {
+    "id": 162,
+    "item_name": "冰川虾滑",
+    "item_source": 27,
+    "item_tags": 11,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰川虾滑_Name",
+      "localizedDes": "Level_Text_Item_冰川虾滑_Description"
+    }
+  },
+  {
+    "id": 163,
+    "item_name": "鹅肝酱丸子",
+    "item_source": 27,
+    "item_tags": 12,
+    "shape": 9,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_鹅肝酱丸子_Name",
+      "localizedDes": "Level_Text_Item_鹅肝酱丸子_Description"
+    }
+  },
+  {
+    "id": 164,
+    "item_name": "火焰牛肉片",
+    "item_source": 27,
+    "item_tags": 12,
+    "shape": 12,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_火焰牛肉片_Name",
+      "localizedDes": "Level_Text_Item_火焰牛肉片_Description"
+    }
+  },
+  {
+    "id": 165,
+    "item_name": "雪花毛肚",
+    "item_source": 27,
+    "item_tags": 12,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪花毛肚_Name",
+      "localizedDes": "Level_Text_Item_雪花毛肚_Description"
+    }
+  },
+  {
+    "id": 166,
+    "item_name": "冰霜三文鱼寿司",
+    "item_source": 25,
+    "item_tags": 8,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰霜三文鱼寿司_Name",
+      "localizedDes": "Level_Text_Item_冰霜三文鱼寿司_Description"
+    }
+  },
+  {
+    "id": 167,
+    "item_name": "寒夜鳗鱼寿司",
+    "item_source": 25,
+    "item_tags": 8,
+    "shape": 15,
+    "item_size": 2,
+    "item_value": 5,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_寒夜鳗鱼寿司_Name",
+      "localizedDes": "Level_Text_Item_寒夜鳗鱼寿司_Description"
+    }
+  },
+  {
+    "id": 168,
+    "item_name": "雪原扇贝刺身",
+    "item_source": 25,
+    "item_tags": 9,
+    "shape": 4,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪原扇贝刺身_Name",
+      "localizedDes": "Level_Text_Item_雪原扇贝刺身_Description"
+    }
+  },
+  {
+    "id": 169,
+    "item_name": "北极光寿司卷",
+    "item_source": 25,
+    "item_tags": 9,
+    "shape": 6,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_北极光寿司卷_Name",
+      "localizedDes": "Level_Text_Item_北极光寿司卷_Description"
+    }
+  },
+  {
+    "id": 170,
+    "item_name": "冰魄金枪鱼刺身",
+    "item_source": 25,
+    "item_tags": 9,
+    "shape": 12,
+    "item_size": 5,
+    "item_value": 11,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰魄金枪鱼刺身_Name",
+      "localizedDes": "Level_Text_Item_冰魄金枪鱼刺身_Description"
+    }
+  },
+  {
+    "id": 171,
+    "item_name": "雪花章鱼寿司",
+    "item_source": 25,
+    "item_tags": 8,
+    "shape": 0,
+    "item_size": 1,
+    "item_value": 4,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_雪花章鱼寿司_Name",
+      "localizedDes": "Level_Text_Item_雪花章鱼寿司_Description"
+    }
+  },
+  {
+    "id": 172,
+    "item_name": "冰雪螃蟹手卷",
+    "item_source": 25,
+    "item_tags": 9,
+    "shape": 1,
+    "item_size": 4,
+    "item_value": 10,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冰雪螃蟹手卷_Name",
+      "localizedDes": "Level_Text_Item_冰雪螃蟹手卷_Description"
+    }
+  },
+  {
+    "id": 173,
+    "item_name": "冻原贝壳拼盘",
+    "item_source": 25,
+    "item_tags": 10,
+    "shape": 12,
+    "item_size": 7,
+    "item_value": 16,
+    "item_localization": {
+      "localizedName": "Level_Text_Item_冻原贝壳拼盘_Name",
+      "localizedDes": "Level_Text_Item_冻原贝壳拼盘_Description"
+    }
+  }
+]

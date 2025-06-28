@@ -1,0 +1,270 @@
+[33mcommit 1c0c905648aebe560846b86f584133210adde284[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Thu Oct 5 18:26:09 2023 +0900
+
+    Track large file using Git LFS
+
+[33mcommit e8e42d09c1fa3563a012788d0c8ef2468088fb85[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Thu Oct 5 18:22:46 2023 +0900
+
+    增加大文件
+
+[33mcommit 812901c248a993401cc720df77a06bfaeae93d7d[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Thu Oct 5 18:17:54 2023 +0900
+
+    更新水的shader表现，增加了任务的追踪系统
+
+[33mcommit 9a4bd7a55dbba908bca743ab559939c9bae7cbec[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Tue Oct 3 18:00:42 2023 +0900
+
+    更新了岛屿的生成和天气生成
+
+[33mcommit 242423dee01b87a6eabe2286479d4d6677dff239[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Mon Oct 2 18:02:24 2023 +0900
+
+    增加了水路的移动逻辑，增加了新的地面视觉效果
+
+[33mcommit ed2569cf6a54461819848d56da7f7c2f7a0a186b[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Mon Oct 2 14:49:18 2023 +0900
+
+    更新新的地图生成系统
+
+[33mcommit e06e8cc7881b374efa15e9278d3149f2ba6ab005[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 29 16:51:02 2023 +0900
+
+    更新了场景加载系统和一些优化，以及对话系统。
+
+[33mcommit 7bfea43f8a6e250fe1596bd2f134fdc7a65f9d8c[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Thu Sep 28 18:00:20 2023 +0900
+
+    大量更新
+
+[33mcommit a5602a69fa3caae5240bc5dcc5b826fe0ea99468[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Mon Sep 25 18:03:55 2023 +0900
+
+    增加了AI的NPC与车辆以及优化
+
+[33mcommit e76ba905e62b618f40beb5f7d472a1ed424fbc09[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Fri Sep 22 17:54:55 2023 +0900
+
+    更新了大任务系统，接下来需要更改摄像机逻辑
+
+[33mcommit 865979a1fffa97198276204c18b320ff44d1b8ef[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Thu Sep 21 17:30:23 2023 +0900
+
+    更新载具商店系统，更新子线程寻路系统
+
+[33mcommit 0ab2c9c6d1ca5d343f3fbe1666b9215a0bffb8a8[m
+Author: Jugger <974109307@qq.com>
+Date:   Thu Sep 21 14:33:38 2023 +0800
+
+    threading
+
+[33mcommit c6a256a3ae69a36d6067553920bbe71b2c952f00[m
+Merge: b175e80 8311709
+Author: Jugger <974109307@qq.com>
+Date:   Thu Sep 21 12:53:05 2023 +0800
+
+    Merge branch 'master' of https://github.com/Xuxiaoran1775/PacageGame
+
+[33mcommit 83117093dcef2328351c6572207d436bb99760b1[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Thu Sep 21 13:37:46 2023 +0900
+
+    出现了bug
+
+[33mcommit 17001944428b7160a96c7342a7183a9a2705de31[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Thu Sep 21 09:47:52 2023 +0900
+
+    更新
+
+[33mcommit a6a13f227317a8c354a50e257d630d3fb1562503[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Tue Sep 19 18:04:16 2023 +0900
+
+    更新了员工商店系统
+
+[33mcommit b175e80520c10ee3fd68969867568f725f38fe1e[m
+Author: Jugger <974109307@qq.com>
+Date:   Mon Sep 18 18:45:33 2023 +0800
+
+    随机生成点距离最短限制
+
+[33mcommit c8788c343c3e56dbb1200a99b516de65227c5c73[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 15 18:01:59 2023 +0900
+
+    小修改
+
+[33mcommit 5df0c386b97cd37efd7488880abd09ffb34c4f90[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 15 17:27:28 2023 +0900
+
+    任务系统与移动导航核心架构完成
+
+[33mcommit 10d65abf8f559aafcfd002eeb6f419bb2fc28f79[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Thu Sep 14 17:59:44 2023 +0900
+
+    更新摄像机系统与任务系统
+
+[33mcommit 606129c0ec6a7a0a3395cd870b33bd853e80b111[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Thu Sep 14 17:22:48 2023 +0900
+
+    更新了任务系统，与摄像机系统
+
+[33mcommit 6b9af55a231c5cc96873fe06a1e63a13f2f3a0d7[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Tue Sep 12 18:01:06 2023 +0900
+
+    更新了道路寻路系统
+
+[33mcommit 67c1a8d37f02b78087e6909674b2f8f8693d3fae[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Tue Sep 12 01:36:17 2023 +0900
+
+    update new input
+
+[33mcommit c87fd1d86bd87fb975733d4a186b0f8ddccad7b3[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Mon Sep 11 17:31:05 2023 +0900
+
+    new plugin.
+
+[33mcommit a765f7cb37bef875af2fe5a4f4d3ae6656ecfcf2[m
+Merge: 4b25c6b 82127ad
+Author: Jugger <974109307@qq.com>
+Date:   Fri Sep 8 19:08:11 2023 +0800
+
+    Merge branch 'master' of https://github.com/Xuxiaoran1775/PacageGame
+    
+    # Conflicts:
+    #       Assets/01_Scenes/Scene_MainGame.unity
+
+[33mcommit 4b25c6b850b0a06f62b248c66194970be567358b[m
+Author: Jugger <974109307@qq.com>
+Date:   Fri Sep 8 19:05:26 2023 +0800
+
+    A※寻路算法
+
+[33mcommit 82127ad38aa8d2303050bdcfb8ab19e252a33eb6[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 8 18:02:56 2023 +0900
+
+    111
+
+[33mcommit 22a8f419dfb68a1e0a23b19dc3197dc9c233b196[m
+Merge: 7136252 41c887c
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 8 14:16:19 2023 +0900
+
+    Merge branch 'master' of https://github.com/Xuxiaoran1775/PacageGame
+
+[33mcommit 713625243331f369cadf2099d74f2ddd362f1b64[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 8 14:16:16 2023 +0900
+
+    修改prefab数值
+
+[33mcommit 41c887c4fe1585d88850343e114fbbf0340d1c3a[m
+Author: Jugger <974109307@qq.com>
+Date:   Fri Sep 8 13:15:19 2023 +0800
+
+    修正空间不足错误，但控制台仍旧会提示该错误；
+    添加Livedata异步消息通知
+
+[33mcommit e0034236ccbc03ab5ede330f401607e654c9e1a0[m
+Merge: ffb083c f0c29bc
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 8 13:14:28 2023 +0900
+
+    Merge branch 'master' of https://github.com/Xuxiaoran1775/PacageGame
+
+[33mcommit ffb083c83acec74bee9e33f8e2600cc103eaec84[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Fri Sep 8 13:14:22 2023 +0900
+
+    完善了摄像机旋转的功能
+
+[33mcommit f0c29bc955b08b5ccf14a3a7ff4d24df05146929[m
+Merge: 581328f 5862b86
+Author: Jugger <974109307@qq.com>
+Date:   Fri Sep 8 10:07:38 2023 +0800
+
+    Merge branch 'master' of https://github.com/Xuxiaoran1775/PacageGame
+    
+    # Conflicts:
+    #       .gitignore
+    #       Assets/Plugins/InsaneScatterbrain/MapGraph/Nodes/GameObjectNodes/TextureToChildGameObjectsNode.cs
+
+[33mcommit 581328f124b2f04279b28b8aeb3e5783be995c39[m
+Author: Jugger <974109307@qq.com>
+Date:   Fri Sep 8 10:01:07 2023 +0800
+
+    更新忽视内容
+
+[33mcommit 1fde18da003414fad809e13ca5efbce2438a0f25[m
+Author: Jugger <974109307@qq.com>
+Date:   Fri Sep 8 09:58:14 2023 +0800
+
+    a*准备内容
+
+[33mcommit 5862b862b1cee8c275b669c3cb3424ce91fcb39e[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Thu Sep 7 18:09:53 2023 +0900
+
+    新增了测试场景，增加了摄像机功能等
+
+[33mcommit 6b909a443ddaea453f2300bd3960b45026746765[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Tue Sep 5 18:01:35 2023 +0900
+
+    增加了2D面片测试，更新了测试场景，添加了道路坐标获取
+
+[33mcommit 702d48df0489ec9bb7d4ec3e9153fff32c52e5ec[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Tue Sep 5 16:01:33 2023 +0900
+
+    新增了地图种子系统与表格读取参数的功能
+
+[33mcommit b907e0ddf4e53ece04c0a29724e5aa275ab257a7[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Mon Sep 4 18:06:49 2023 +0900
+
+    Update .gitignore
+
+[33mcommit c1cc9ce3fc583e6020a9dc567db40d02169320f2[m
+Author: Xuxiaoran1775 <1064505833@qq.com>
+Date:   Mon Sep 4 18:06:32 2023 +0900
+
+    改变了文件夹名称
+
+[33mcommit 989c8e1558521eeb2d404944d7525aa84bb49059[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Sun Sep 3 21:21:52 2023 +0900
+
+    增加了临时的建筑prefab
+
+[33mcommit 98d32b9f8ead48e8a0da23c58d9a69970986290a[m
+Author: Jugger <974109307@qq.com>
+Date:   Sun Sep 3 16:16:52 2023 +0800
+
+    多格建筑测试样例
+
+[33mcommit aa63996f6c0464d818c622f3254092b988d1bdcb[m
+Author: Xuxiaoran1775 <xuxiaoran1775@gmail.com>
+Date:   Sun Sep 3 14:53:18 2023 +0900
+
+    First Upload.

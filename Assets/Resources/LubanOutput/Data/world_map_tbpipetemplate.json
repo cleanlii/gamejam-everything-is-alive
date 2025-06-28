@@ -1,0 +1,458 @@
+[
+  {
+    "id": 1,
+    "pipe_name": "低_上下",
+    "pipe_rank": 0,
+    "pipe_available_terrain": [
+      0
+    ],
+    "pipe_direction": 1,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_低上下"
+  },
+  {
+    "id": 2,
+    "pipe_name": "低_左右",
+    "pipe_rank": 0,
+    "pipe_available_terrain": [
+      0
+    ],
+    "pipe_direction": 2,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_低左右"
+  },
+  {
+    "id": 3,
+    "pipe_name": "低_上左",
+    "pipe_rank": 0,
+    "pipe_available_terrain": [
+      0
+    ],
+    "pipe_direction": 4,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_低上左"
+  },
+  {
+    "id": 4,
+    "pipe_name": "低_上右",
+    "pipe_rank": 0,
+    "pipe_available_terrain": [
+      0
+    ],
+    "pipe_direction": 3,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_低上右"
+  },
+  {
+    "id": 5,
+    "pipe_name": "低_下左",
+    "pipe_rank": 0,
+    "pipe_available_terrain": [
+      0
+    ],
+    "pipe_direction": 6,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_低下左"
+  },
+  {
+    "id": 6,
+    "pipe_name": "低_下右",
+    "pipe_rank": 0,
+    "pipe_available_terrain": [
+      0
+    ],
+    "pipe_direction": 5,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_低下右"
+  },
+  {
+    "id": 7,
+    "pipe_name": "中_上下",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 1,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_中上下"
+  },
+  {
+    "id": 8,
+    "pipe_name": "中_左右",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 2,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_中左右"
+  },
+  {
+    "id": 9,
+    "pipe_name": "中_上左",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 4,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_中上左"
+  },
+  {
+    "id": 10,
+    "pipe_name": "中_上右",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 3,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_中上右"
+  },
+  {
+    "id": 11,
+    "pipe_name": "中_下左",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 6,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_中下左"
+  },
+  {
+    "id": 12,
+    "pipe_name": "中_下右",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 5,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_中下右"
+  },
+  {
+    "id": 13,
+    "pipe_name": "中_上下左",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 9,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_中上下左"
+  },
+  {
+    "id": 14,
+    "pipe_name": "中_上下右",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 10,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_中上下右"
+  },
+  {
+    "id": 15,
+    "pipe_name": "中_左右上",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 8,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_中左右上"
+  },
+  {
+    "id": 16,
+    "pipe_name": "中_左右下",
+    "pipe_rank": 1,
+    "pipe_available_terrain": [
+      0,
+      1
+    ],
+    "pipe_direction": 7,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_中左右下"
+  },
+  {
+    "id": 17,
+    "pipe_name": "高_上下",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 1,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_高上下"
+  },
+  {
+    "id": 18,
+    "pipe_name": "高_左右",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 2,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_高左右"
+  },
+  {
+    "id": 19,
+    "pipe_name": "高_上左",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 4,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_高上左"
+  },
+  {
+    "id": 20,
+    "pipe_name": "高_上右",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 3,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_高上右"
+  },
+  {
+    "id": 21,
+    "pipe_name": "高_下左",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 6,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_高下左"
+  },
+  {
+    "id": 22,
+    "pipe_name": "高_下右",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 5,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_高下右"
+  },
+  {
+    "id": 23,
+    "pipe_name": "高_上下左",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 9,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_高上下左"
+  },
+  {
+    "id": 24,
+    "pipe_name": "高_上下右",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 10,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_高上下右"
+  },
+  {
+    "id": 25,
+    "pipe_name": "高_左右上",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 8,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_高左右上"
+  },
+  {
+    "id": 26,
+    "pipe_name": "高_左右下",
+    "pipe_rank": 2,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2
+    ],
+    "pipe_direction": 7,
+    "pipe_weights": 2,
+    "pipe_localized_name": "World_Text_Pipe_高左右下"
+  },
+  {
+    "id": 27,
+    "pipe_name": "旗舰_上下",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 1,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_旗舰上下"
+  },
+  {
+    "id": 28,
+    "pipe_name": "旗舰_左右",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 2,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_旗舰左右"
+  },
+  {
+    "id": 29,
+    "pipe_name": "旗舰_上左",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 4,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_旗舰上左"
+  },
+  {
+    "id": 30,
+    "pipe_name": "旗舰_上右",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 3,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_旗舰上右"
+  },
+  {
+    "id": 31,
+    "pipe_name": "旗舰_下左",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 6,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_旗舰下左"
+  },
+  {
+    "id": 32,
+    "pipe_name": "旗舰_下右",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 5,
+    "pipe_weights": 1,
+    "pipe_localized_name": "World_Text_Pipe_旗舰下右"
+  },
+  {
+    "id": 33,
+    "pipe_name": "旗舰_上下左",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 9,
+    "pipe_weights": 3,
+    "pipe_localized_name": "World_Text_Pipe_旗舰上下左"
+  },
+  {
+    "id": 34,
+    "pipe_name": "旗舰_上下右",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 10,
+    "pipe_weights": 3,
+    "pipe_localized_name": "World_Text_Pipe_旗舰上下右"
+  },
+  {
+    "id": 35,
+    "pipe_name": "旗舰_左右上",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 8,
+    "pipe_weights": 3,
+    "pipe_localized_name": "World_Text_Pipe_旗舰左右上"
+  },
+  {
+    "id": 36,
+    "pipe_name": "旗舰_左右下",
+    "pipe_rank": 3,
+    "pipe_available_terrain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "pipe_direction": 7,
+    "pipe_weights": 3,
+    "pipe_localized_name": "World_Text_Pipe_旗舰左右下"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "bp_name": "3x3_不锈钢货箱",
+    "shape": 2,
+    "bp_size": {
+      "x": 3,
+      "y": 3
+    },
+    "bp_value": 5,
+    "bp_price": 9,
+    "bp_localization": {
+      "localizedName": "Level_Text_Backpack_不锈钢货箱_Name",
+      "localizedDes": "Level_Text_Backpack_3x3不锈钢货箱_Description"
+    }
+  },
+  {
+    "id": 2,
+    "bp_name": "3x2_铁质货箱",
+    "shape": 23,
+    "bp_size": {
+      "x": 2,
+      "y": 3
+    },
+    "bp_value": 4,
+    "bp_price": 7,
+    "bp_localization": {
+      "localizedName": "Level_Text_Backpack_不锈钢货箱_Name",
+      "localizedDes": "Level_Text_Backpack_3x2不锈钢货箱_Description"
+    }
+  },
+  {
+    "id": 3,
+    "bp_name": "2x2_塑料货箱",
+    "shape": 1,
+    "bp_size": {
+      "x": 2,
+      "y": 2
+    },
+    "bp_value": 3,
+    "bp_price": 5,
+    "bp_localization": {
+      "localizedName": "Level_Text_Backpack_不锈钢货箱_Name",
+      "localizedDes": "Level_Text_Backpack_2x2不锈钢货箱_Description"
+    }
+  },
+  {
+    "id": 4,
+    "bp_name": "3x1_木质货箱",
+    "shape": 21,
+    "bp_size": {
+      "x": 1,
+      "y": 3
+    },
+    "bp_value": 2,
+    "bp_price": 4,
+    "bp_localization": {
+      "localizedName": "Level_Text_Backpack_不锈钢货箱_Name",
+      "localizedDes": "Level_Text_Backpack_3x1不锈钢货箱_Description"
+    }
+  },
+  {
+    "id": 5,
+    "bp_name": "2x1_铁质货箱",
+    "shape": 20,
+    "bp_size": {
+      "x": 1,
+      "y": 2
+    },
+    "bp_value": 1,
+    "bp_price": 3,
+    "bp_localization": {
+      "localizedName": "Level_Text_Backpack_不锈钢货箱_Name",
+      "localizedDes": "Level_Text_Backpack_2x1不锈钢货箱_Description"
+    }
+  }
+]

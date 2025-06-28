@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Building
+  - Fire
+  - Item
+  - Prop
+  - Backpack
+  - Lang
+  - BasicTile
+  - BuildingTile
+  - TaskIcon
+  - EventIcon
+  - StoreIcon
+  - ItemFrame
+  - ItemVisual
+  - SpawnPoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Pipe
+  - Town
+  - TownInfo
+  - PackVFX
+  - InTrunk
+  - InPool
+  - InCabinet
+  - Tile
+  - Icon
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 3931910825
+    locked: 0
+  - name: Ground
+    uniqueID: 3152761401
+    locked: 0
+  - name: Path
+    uniqueID: 854174417
+    locked: 0
+  - name: Buildings
+    uniqueID: 2139254857
+    locked: 0
+  - name: Interactable
+    uniqueID: 2797471567
+    locked: 0
+  - name: Clouds
+    uniqueID: 2102277349
+    locked: 0
+  - name: Camera
+    uniqueID: 909647219
+    locked: 0
+  - name: PackVFX
+    uniqueID: 2139497731
+    locked: 0
+  - name: Alert
+    uniqueID: 2803137467
+    locked: 0

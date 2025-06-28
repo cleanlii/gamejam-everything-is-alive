@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3091456175741581771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3091456175741581773}
+  - component: {fileID: 3091456175741581770}
+  m_Layer: 0
+  m_Name: UIController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3091456175741581773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091456175741581771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3091456175741581770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3091456175741581771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f41b0f4dd4ab6144a9dba313a8b2fee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskManager: {fileID: 0}
+  iconManager: {fileID: 0}
+  storePanel: {fileID: 0}
+  backpackPanel: {fileID: 0}
+  fadeIconAnimator: {fileID: 0}
+  drawRoundTMP: {fileID: 0}
+  bpCoinTMP: {fileID: 0}
+  planCoinTMP: {fileID: 0}
+  planSizeTMP: {fileID: 0}
+  planFuelTMP: {fileID: 0}
+  planTargetTMP: {fileID: 0}
+  storeSizeTMP: {fileID: 0}
+  storeCoinTMP: {fileID: 0}
+  storeFuelTMP: {fileID: 0}
+  storePriceTMP:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  resultResultCoinTMP: {fileID: 0}
+  resultTargetTMP: {fileID: 0}
+  resultLastCoinTMP: {fileID: 0}
+  resultItemRewardTMP: {fileID: 0}
+  resultTaskRewardTMP: {fileID: 0}
+  coolTagHandler:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  naturalTagHandler:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fragileTagHandler:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  unplannedTask: {fileID: 0}
+  plannedTask: {fileID: 4753049814680033026, guid: eabc251ca06a949e492aa807818162db,
+    type: 3}
+  tagbind:
+    m_keys: 02000000050000000800000004000000070000000a000000
+    m_values:
+    - data:
+      - {fileID: 0}
+      - {fileID: 0}
+    - data:
+      - {fileID: 0}
+      - {fileID: 0}
+    - data:
+      - {fileID: 0}
+      - {fileID: 0}
+    - data:
+      - {fileID: 0}
+      - {fileID: 0}
+    - data:
+      - {fileID: 0}
+      - {fileID: 0}
+    - data:
+      - {fileID: 0}
+      - {fileID: 0}
+  objNameTMP: {fileID: 0}
+  sourceIcon: {fileID: 0}
+  objDescriptionTMP: {fileID: 0}
+  stateIcon: {fileID: 0}
+  objValueTMP: {fileID: 0}
+  buildings:
+    m_keys: 
+    m_values: []
+  rotateReminder: {fileID: 0}
+  movePercentage: 0.73
+  moveDuration: 0.3
+  elasticEffect: 0.1
+  panelDelay: 1

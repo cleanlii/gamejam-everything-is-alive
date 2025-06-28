@@ -1,0 +1,1796 @@
+[
+  {
+    "id": 1,
+    "board_name": "M1-1",
+    "board_width": 8,
+    "board_height": 8,
+    "bright_tile_name": "春岛_Bright",
+    "dark_tile_name": "春岛_Dark",
+    "water_tile_name": "水体A",
+    "board_map": [
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "春树丛A",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "春树丛C",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "香玉工坊",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "春树丛D",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区C",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "春树丛B",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "物流公司",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "春树丛E",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "board_name": "M1-2",
+    "board_width": 8,
+    "board_height": 8,
+    "bright_tile_name": "春岛_Bright",
+    "dark_tile_name": "春岛_Dark",
+    "water_tile_name": "水体A",
+    "board_map": [
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "木材加工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "电子商店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "小池塘",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "公园",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "医院",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "木材加工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "物流公司",
+            "baseLayer": "物流公司土地"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "小池塘",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "电子商店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "民用建筑区C",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "board_name": "M1-3",
+    "board_width": 8,
+    "board_height": 8,
+    "bright_tile_name": "春岛_Bright",
+    "dark_tile_name": "春岛_Dark",
+    "water_tile_name": "水体A",
+    "board_map": [
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "小池塘",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "公园",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "医院",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "物流公司",
+            "baseLayer": "物流公司土地"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "小池塘",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区C",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "民用建筑区C",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "board_name": "M2-1",
+    "board_width": 8,
+    "board_height": 8,
+    "bright_tile_name": "春岛_Bright",
+    "dark_tile_name": "春岛_Dark",
+    "water_tile_name": "水体A",
+    "board_map": [
+      {
+        "column": [
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区C",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "海鲜市场",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "物流公司",
+            "baseLayer": "物流公司土地"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "海鲜市场",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "医院",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "board_name": "M2-2",
+    "board_width": 8,
+    "board_height": 8,
+    "bright_tile_name": "春岛_Bright",
+    "dark_tile_name": "春岛_Dark",
+    "water_tile_name": "水体A",
+    "board_map": [
+      {
+        "column": [
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区C",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "海鲜市场",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "物流公司",
+            "baseLayer": "物流公司土地"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "海鲜市场",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "医院",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "board_name": "M2-3",
+    "board_width": 8,
+    "board_height": 8,
+    "bright_tile_name": "春岛_Bright",
+    "dark_tile_name": "春岛_Dark",
+    "water_tile_name": "水体A",
+    "board_map": [
+      {
+        "column": [
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区B",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区C",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "海鲜市场",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "物流公司",
+            "baseLayer": "物流公司土地"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "海鲜市场",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark_Flower"
+          },
+          {
+            "upperLayer": "百货店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "医院",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "牛奶工厂",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "礼品店",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "肉店",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright"
+          }
+        ]
+      },
+      {
+        "column": [
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "民用建筑区A",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "水体A"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Bright"
+          },
+          {
+            "upperLayer": "樱花树丛",
+            "baseLayer": "春岛_Dark"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Bright_Flower"
+          },
+          {
+            "upperLayer": "无建筑",
+            "baseLayer": "春岛_Dark"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "town_name": "樱宫",
+    "town_season": 0,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 0
+    },
+    "town_level_name": {
+      "easyLevelName": "L1-1",
+      "mediumLevelName": "L1-2",
+      "hardLevelName": "L1-3"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_樱宫_Name",
+      "localizedDes": "World_Text_Town_樱宫_Description"
+    }
+  },
+  {
+    "id": 2,
+    "town_name": "港区",
+    "town_season": 0,
+    "town_type": 1,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 1
+    },
+    "town_level_name": {
+      "easyLevelName": "L1-1",
+      "mediumLevelName": "L1-2",
+      "hardLevelName": "L1-3"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_港区_Name",
+      "localizedDes": "World_Text_Town_港区_Description"
+    }
+  },
+  {
+    "id": 3,
+    "town_name": "山河星海神坛",
+    "town_season": 0,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 2
+    },
+    "town_level_name": {
+      "easyLevelName": "L1-3",
+      "mediumLevelName": "L1-3",
+      "hardLevelName": "L1-3"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_山河星海神坛_Name",
+      "localizedDes": "World_Text_Town_山河星海神坛_Description"
+    }
+  },
+  {
+    "id": 4,
+    "town_name": "四季岛南区",
+    "town_season": 0,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 3
+    },
+    "town_level_name": {
+      "easyLevelName": "L1-4",
+      "mediumLevelName": "L1-4",
+      "hardLevelName": "L1-4"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_四季岛南区_Name",
+      "localizedDes": "World_Text_Town_四季岛南区_Description"
+    }
+  },
+  {
+    "id": 5,
+    "town_name": "四季岛科技区",
+    "town_season": 0,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 4
+    },
+    "town_level_name": {
+      "easyLevelName": "L2-1",
+      "mediumLevelName": "L2-2",
+      "hardLevelName": "L2-3"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_四季岛科技区_Name",
+      "localizedDes": "World_Text_Town_四季岛科技区_Description"
+    }
+  },
+  {
+    "id": 6,
+    "town_name": "夏之岛港口城",
+    "town_season": 1,
+    "town_type": 1,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 5
+    },
+    "town_level_name": {
+      "easyLevelName": "L2-1",
+      "mediumLevelName": "L2-1",
+      "hardLevelName": "L2-1"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_夏之岛港口城_Name",
+      "localizedDes": "World_Text_Town_夏之岛港口城_Description"
+    }
+  },
+  {
+    "id": 7,
+    "town_name": "萨塞玛洛亚海滨城",
+    "town_season": 1,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 6
+    },
+    "town_level_name": {
+      "easyLevelName": "L2-2",
+      "mediumLevelName": "L2-2",
+      "hardLevelName": "L2-2"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_萨塞玛洛亚海滨城_Name",
+      "localizedDes": "World_Text_Town_萨塞玛洛亚海滨城_Description"
+    }
+  },
+  {
+    "id": 8,
+    "town_name": "火山岛城",
+    "town_season": 1,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 7
+    },
+    "town_level_name": {
+      "easyLevelName": "L2-3",
+      "mediumLevelName": "L2-3",
+      "hardLevelName": "L2-3"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_火山岛城_Name",
+      "localizedDes": "World_Text_Town_火山岛城_Description"
+    }
+  },
+  {
+    "id": 9,
+    "town_name": "夏之岛中心城",
+    "town_season": 1,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 8
+    },
+    "town_level_name": {
+      "easyLevelName": "L2-4",
+      "mediumLevelName": "L2-4",
+      "hardLevelName": "L2-4"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_夏之岛中心城_Name",
+      "localizedDes": "World_Text_Town_夏之岛中心城_Description"
+    }
+  },
+  {
+    "id": 10,
+    "town_name": "绿洲小镇",
+    "town_season": 1,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 9
+    },
+    "town_level_name": {
+      "easyLevelName": "L2-5",
+      "mediumLevelName": "L2-5",
+      "hardLevelName": "L2-5"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_绿洲小镇_Name",
+      "localizedDes": "World_Text_Town_绿洲小镇_Description"
+    }
+  },
+  {
+    "id": 11,
+    "town_name": "幻云岛中心城",
+    "town_season": 2,
+    "town_type": 1,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 10
+    },
+    "town_level_name": {
+      "easyLevelName": "L3-1",
+      "mediumLevelName": "L3-1",
+      "hardLevelName": "L3-1"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_幻云岛中心城_Name",
+      "localizedDes": "World_Text_Town_幻云岛中心城_Description"
+    }
+  },
+  {
+    "id": 12,
+    "town_name": "空中集市小镇",
+    "town_season": 2,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 11
+    },
+    "town_level_name": {
+      "easyLevelName": "L3-2",
+      "mediumLevelName": "L3-2",
+      "hardLevelName": "L3-2"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_空中集市小镇_Name",
+      "localizedDes": "World_Text_Town_空中集市小镇_Description"
+    }
+  },
+  {
+    "id": 13,
+    "town_name": "枫叶谷",
+    "town_season": 2,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 12
+    },
+    "town_level_name": {
+      "easyLevelName": "L3-3",
+      "mediumLevelName": "L3-3",
+      "hardLevelName": "L3-3"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_枫叶谷_Name",
+      "localizedDes": "World_Text_Town_枫叶谷_Description"
+    }
+  },
+  {
+    "id": 14,
+    "town_name": "农牧小镇",
+    "town_season": 2,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 13
+    },
+    "town_level_name": {
+      "easyLevelName": "L3-4",
+      "mediumLevelName": "L3-4",
+      "hardLevelName": "L3-4"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_农牧小镇_Name",
+      "localizedDes": "World_Text_Town_农牧小镇_Description"
+    }
+  },
+  {
+    "id": 15,
+    "town_name": "幻云岛边界小镇",
+    "town_season": 2,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 14
+    },
+    "town_level_name": {
+      "easyLevelName": "L3-5",
+      "mediumLevelName": "L3-5",
+      "hardLevelName": "L3-5"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_幻云岛边界小镇_Name",
+      "localizedDes": "World_Text_Town_幻云岛边界小镇_Description"
+    }
+  },
+  {
+    "id": 16,
+    "town_name": "极光港口城",
+    "town_season": 3,
+    "town_type": 1,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 15
+    },
+    "town_level_name": {
+      "easyLevelName": "L4-1",
+      "mediumLevelName": "L4-1",
+      "hardLevelName": "L4-1"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_极光港口城_Name",
+      "localizedDes": "World_Text_Town_极光港口城_Description"
+    }
+  },
+  {
+    "id": 17,
+    "town_name": "雪峰矿业镇",
+    "town_season": 3,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 16
+    },
+    "town_level_name": {
+      "easyLevelName": "L4-2",
+      "mediumLevelName": "L4-2",
+      "hardLevelName": "L4-2"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_雪峰矿业镇_Name",
+      "localizedDes": "World_Text_Town_雪峰矿业镇_Description"
+    }
+  },
+  {
+    "id": 18,
+    "town_name": "冰湖渔村",
+    "town_season": 3,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 17
+    },
+    "town_level_name": {
+      "easyLevelName": "L4-3",
+      "mediumLevelName": "L4-3",
+      "hardLevelName": "L4-3"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_冰湖渔村_Name",
+      "localizedDes": "World_Text_Town_冰湖渔村_Description"
+    }
+  },
+  {
+    "id": 19,
+    "town_name": "冻土餐饮村",
+    "town_season": 3,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 18
+    },
+    "town_level_name": {
+      "easyLevelName": "L4-4",
+      "mediumLevelName": "L4-4",
+      "hardLevelName": "L4-4"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_冻土餐饮村_Name",
+      "localizedDes": "World_Text_Town_冻土餐饮村_Description"
+    }
+  },
+  {
+    "id": 20,
+    "town_name": "冰川祭典城",
+    "town_season": 3,
+    "town_type": 0,
+    "town_direction": 0,
+    "town_position": {
+      "x": 0,
+      "y": 19
+    },
+    "town_level_name": {
+      "easyLevelName": "L4-5",
+      "mediumLevelName": "L4-5",
+      "hardLevelName": "L4-5"
+    },
+    "town_localization": {
+      "localizedName": "World_Text_Town_冰川祭典城_Name",
+      "localizedDes": "World_Text_Town_冰川祭典城_Description"
+    }
+  }
+]

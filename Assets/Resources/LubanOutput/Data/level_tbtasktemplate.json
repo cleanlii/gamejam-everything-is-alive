@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "template_name": "肉店任务1",
+    "building_name": "肉店",
+    "building_type": 1,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 2,
+    "template_name": "百货店任务1",
+    "building_name": "百货店",
+    "building_type": 2,
+    "task_reward": 2,
+    "max_item_value": 16,
+    "min_item_value": 10,
+    "max_item_count": 6,
+    "min_item_count": 3
+  },
+  {
+    "id": 3,
+    "template_name": "电子商店任务1",
+    "building_name": "电子商店",
+    "building_type": 4,
+    "task_reward": 1,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 4,
+    "template_name": "木材加工厂任务1",
+    "building_name": "木材加工厂",
+    "building_type": 3,
+    "task_reward": 5,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 5,
+    "template_name": "牛奶工厂任务1",
+    "building_name": "牛奶工厂",
+    "building_type": 5,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 6,
+    "template_name": "海鲜市场任务1",
+    "building_name": "海鲜市场",
+    "building_type": 8,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 7,
+    "template_name": "礼品店任务1",
+    "building_name": "礼品店",
+    "building_type": 9,
+    "task_reward": 3,
+    "max_item_value": 18,
+    "min_item_value": 12,
+    "max_item_count": 7,
+    "min_item_count": 3
+  },
+  {
+    "id": 8,
+    "template_name": "机器人餐饮店任务1",
+    "building_name": "机器人餐饮店",
+    "building_type": 10,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 9,
+    "template_name": "艺术餐厅任务1",
+    "building_name": "艺术餐厅",
+    "building_type": 11,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 10,
+    "template_name": "农产品店任务1",
+    "building_name": "农产品店",
+    "building_type": 16,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 11,
+    "template_name": "马场任务1",
+    "building_name": "马场",
+    "building_type": 17,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 12,
+    "template_name": "集市食品店任务1",
+    "building_name": "集市食品店",
+    "building_type": 18,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 13,
+    "template_name": "果园任务1",
+    "building_name": "果园",
+    "building_type": 19,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 14,
+    "template_name": "冰激凌店任务1",
+    "building_name": "冰激凌店",
+    "building_type": 20,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 15,
+    "template_name": "北欧餐厅任务1",
+    "building_name": "北欧餐厅",
+    "building_type": 21,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 16,
+    "template_name": "北海冰鱼堂任务1",
+    "building_name": "北海冰鱼堂",
+    "building_type": 22,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 17,
+    "template_name": "电厂任务1",
+    "building_name": "电厂",
+    "building_type": 23,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 18,
+    "template_name": "极光点心坊任务1",
+    "building_name": "极光点心坊",
+    "building_type": 24,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 19,
+    "template_name": "寿司店任务1",
+    "building_name": "寿司店",
+    "building_type": 25,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 20,
+    "template_name": "野味馆任务1",
+    "building_name": "野味馆",
+    "building_type": 26,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  },
+  {
+    "id": 21,
+    "template_name": "中华火锅任务1",
+    "building_name": "中华火锅",
+    "building_type": 27,
+    "task_reward": 3,
+    "max_item_value": 100,
+    "min_item_value": 5,
+    "max_item_count": 3,
+    "min_item_count": 5
+  }
+]

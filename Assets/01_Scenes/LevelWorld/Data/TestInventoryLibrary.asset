@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bcbfc64b2f643edbe5d0fde07cf7d1, type: 3}
+  m_Name: TestInventoryLibrary
+  m_EditorClassIdentifier: 
+  initialize: 0
+  inventories:
+  - inventoryName: "\u9ED8\u8BA4\u63D0\u8D27\u70B9"
+    inventoryType: 1
+    bgSprite: {fileID: 21300000, guid: 5155ba0bf61a94539b1e252915a1049d, type: 3}
+    gridSprite: {fileID: 21300000, guid: be8468fd599b445aaa06ad3251f92f4f, type: 3}
+    highlightSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    gridColor:
+      serializedVersion: 2
+      rgba: 0
+    highlightGreen:
+      serializedVersion: 2
+      rgba: 0
+    highlightRed:
+      serializedVersion: 2
+      rgba: 0
+    size: {x: 6, y: 6}
+    defaultBpName: "\u9ED8\u8BA4\u7F51\u683C"
+    defaultBpNames: []
+    defaultBpPos: []
+  - inventoryName: "\u9ED8\u8BA4\u8F66\u8F86"
+    inventoryType: 2
+    bgSprite: {fileID: 1620482430, guid: 9120bbddc04404d3d94650c40ef89491, type: 3}
+    gridSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    highlightSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    gridColor:
+      serializedVersion: 2
+      rgba: 3693619240
+    highlightGreen:
+      serializedVersion: 2
+      rgba: 3363103363
+    highlightRed:
+      serializedVersion: 2
+      rgba: 3359988991
+    size: {x: 9, y: 9}
+    defaultBpName: "3x3_\u4E0D\u9508\u94A2\u8D27\u7BB1"
+    defaultBpNames:
+    - "3x3_\u4E0D\u9508\u94A2\u8D27\u7BB1"
+    defaultBpPos:
+    - {x: 2, y: 2}
+  - inventoryName: "\u9ED8\u8BA4\u6682\u5B58\u533A"
+    inventoryType: 0
+    bgSprite: {fileID: 21300000, guid: 15cc363ea3e6baf46a10f9c9bec0ecd9, type: 3}
+    gridSprite: {fileID: 21300000, guid: be8468fd599b445aaa06ad3251f92f4f, type: 3}
+    highlightSprite: {fileID: 21300000, guid: 33d2007492f5b4df0b9154a82bff345d, type: 3}
+    gridColor:
+      serializedVersion: 2
+      rgba: 0
+    highlightGreen:
+      serializedVersion: 2
+      rgba: 0
+    highlightRed:
+      serializedVersion: 2
+      rgba: 0
+    size: {x: 9, y: 9}
+    defaultBpName: "\u9ED8\u8BA4\u7F51\u683C"
+    defaultBpNames: []
+    defaultBpPos: []
+  backpacks:
+  - bpName: "\u9ED8\u8BA4\u7F51\u683C"
+    bgSprite: {fileID: 0}
+    gridSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 3}
+    shape: []
+    size: {x: 9, y: 9}
+    bpValue: 0
+    bpPrice: 0
+    bpLocalizedName:
+      mTerm: 
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    bpLocalizedDescription:
+      mTerm: 
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+  - bpName: "3x3_\u4E0D\u9508\u94A2\u8D27\u7BB1"
+    bgSprite: {fileID: 1587362109, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    gridSprite: {fileID: -1064501994, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    shape:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 2, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 1}
+    - {x: 2, y: 1}
+    - {x: 0, y: 2}
+    - {x: 1, y: 2}
+    - {x: 2, y: 2}
+    size: {x: 3, y: 3}
+    bpValue: 4
+    bpPrice: 9
+    bpLocalizedName:
+      mTerm: "Level_Text_Backpack_\u4E0D\u9508\u94A2\u8D27\u7BB1_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    bpLocalizedDescription:
+      mTerm: "Level_Text_Backpack_3x3\u4E0D\u9508\u94A2\u8D27\u7BB1_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+  - bpName: "4x4_\u7AE5\u5E74\u4E66\u5305"
+    bgSprite: {fileID: 1587362109, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    gridSprite: {fileID: -1064501994, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    shape:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0, y: 2}
+    - {x: 0, y: 3}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    - {x: 1, y: 2}
+    - {x: 1, y: 3}
+    - {x: 2, y: 0}
+    - {x: 2, y: 1}
+    - {x: 2, y: 2}
+    - {x: 2, y: 3}
+    - {x: 3, y: 0}
+    - {x: 3, y: 1}
+    - {x: 3, y: 2}
+    - {x: 3, y: 3}
+    size: {x: 4, y: 4}
+    bpValue: 1
+    bpPrice: 3
+    bpLocalizedName:
+      mTerm: "Level_Text_Backpack_\u4E0D\u9508\u94A2\u8D27\u7BB1_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    bpLocalizedDescription:
+      mTerm: "Level_Text_Backpack_2x1\u4E0D\u9508\u94A2\u8D27\u7BB1_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+  - bpName: "5x5_\u9752\u6625\u80CC\u5305"
+    bgSprite: {fileID: 1587362109, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    gridSprite: {fileID: -1064501994, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    shape:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0, y: 2}
+    - {x: 0, y: 3}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    - {x: 1, y: 2}
+    - {x: 1, y: 3}
+    - {x: 2, y: 0}
+    - {x: 2, y: 1}
+    - {x: 2, y: 2}
+    - {x: 2, y: 3}
+    - {x: 3, y: 0}
+    - {x: 3, y: 1}
+    - {x: 3, y: 2}
+    - {x: 3, y: 3}
+    - {x: 4, y: 0}
+    - {x: 4, y: 1}
+    - {x: 4, y: 2}
+    - {x: 4, y: 3}
+    - {x: 0, y: 4}
+    - {x: 1, y: 4}
+    - {x: 2, y: 4}
+    - {x: 3, y: 4}
+    - {x: 4, y: 4}
+    size: {x: 4, y: 4}
+    bpValue: 1
+    bpPrice: 3
+    bpLocalizedName:
+      mTerm: "Level_Text_Backpack_\u4E0D\u9508\u94A2\u8D27\u7BB1_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    bpLocalizedDescription:
+      mTerm: "Level_Text_Backpack_2x1\u4E0D\u9508\u94A2\u8D27\u7BB1_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+  - bpName: "8x6_\u6210\u5E74\u884C\u674E\u7BB1"
+    bgSprite: {fileID: 1587362109, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    gridSprite: {fileID: -1064501994, guid: debc9538236af4159a020c4ff9666ae9, type: 3}
+    shape:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0, y: 2}
+    - {x: 0, y: 3}
+    - {x: 0, y: 4}
+    - {x: 0, y: 5}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    - {x: 1, y: 2}
+    - {x: 1, y: 3}
+    - {x: 1, y: 4}
+    - {x: 1, y: 5}
+    - {x: 2, y: 0}
+    - {x: 2, y: 1}
+    - {x: 2, y: 2}
+    - {x: 2, y: 3}
+    - {x: 2, y: 4}
+    - {x: 2, y: 5}
+    - {x: 3, y: 0}
+    - {x: 3, y: 1}
+    - {x: 3, y: 2}
+    - {x: 3, y: 3}
+    - {x: 3, y: 4}
+    - {x: 3, y: 5}
+    - {x: 4, y: 0}
+    - {x: 4, y: 1}
+    - {x: 4, y: 2}
+    - {x: 4, y: 3}
+    - {x: 4, y: 4}
+    - {x: 4, y: 5}
+    - {x: 5, y: 0}
+    - {x: 5, y: 1}
+    - {x: 5, y: 2}
+    - {x: 5, y: 3}
+    - {x: 5, y: 4}
+    - {x: 5, y: 5}
+    - {x: 6, y: 0}
+    - {x: 6, y: 1}
+    - {x: 6, y: 2}
+    - {x: 6, y: 3}
+    - {x: 6, y: 4}
+    - {x: 6, y: 5}
+    - {x: 7, y: 0}
+    - {x: 7, y: 1}
+    - {x: 7, y: 2}
+    - {x: 7, y: 3}
+    - {x: 7, y: 4}
+    - {x: 7, y: 5}
+    size: {x: 8, y: 6}
+    bpValue: 1
+    bpPrice: 3
+    bpLocalizedName:
+      mTerm: "Level_Text_Backpack_\u4E0D\u9508\u94A2\u8D27\u7BB1_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    bpLocalizedDescription:
+      mTerm: "Level_Text_Backpack_2x1\u4E0D\u9508\u94A2\u8D27\u7BB1_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0

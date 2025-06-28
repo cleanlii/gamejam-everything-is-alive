@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "main_direction": 0,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": -1,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "main_direction": 1,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": -1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "main_direction": 2,
+    "available_offset": [
+      {
+        "x": -1,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "main_direction": 3,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "main_direction": 4,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": -1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "main_direction": 5,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "main_direction": 6,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": -1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "main_direction": 7,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": -1,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "main_direction": 8,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": -1,
+        "y": 0
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "main_direction": 9,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": -1,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "main_direction": 10,
+    "available_offset": [
+      {
+        "x": 0,
+        "y": 1
+      },
+      {
+        "x": 0,
+        "y": -1
+      },
+      {
+        "x": 1,
+        "y": 0
+      }
+    ]
+  }
+]

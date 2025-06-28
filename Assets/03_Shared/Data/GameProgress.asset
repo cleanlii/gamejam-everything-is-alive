@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9050549695a5ad34b91cf0acb6c7fb2c, type: 3}
+  m_Name: GameProgress
+  m_EditorClassIdentifier: 
+  coins: 100
+  playHours: 10
+  level: 1
+  saveTime: 2024-04-14 23:02:42
+  storyProgress:
+    m_keys:
+    - "\u4E3B\u7EBF\u5267\u60C5"
+    - "\u89D2\u82721\u5267\u60C5"
+    - "\u89D2\u82722\u5267\u60C5"
+    - "\u89D2\u82723\u5267\u60C5"
+    - "\u89D2\u82724\u5267\u60C5"
+    - "\u89D2\u82725\u5267\u60C5"
+    m_values: 000000000000000000000000000000000000000000000000

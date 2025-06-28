@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Slot_Big
+  m_Controller: {fileID: 9100000, guid: dacc37f6fbe7a044396d8040374bf92f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7c36a35a819ef6f44b388157eb637315, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0fd2006119380ff419c29af316160ebc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: aa412abcc15df9d4caf8a05d9e944455, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7a4873a9299c6fb4a933018826333744, type: 2}

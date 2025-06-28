@@ -1,0 +1,1266 @@
+[
+  {
+    "id": 0,
+    "tile_name": "无建筑",
+    "tile_type": 1,
+    "tile_theme": 0,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 1,
+    "tile_name": "物流公司",
+    "tile_type": 1,
+    "tile_theme": 0,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "物流公司",
+      "buildingType": 6,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 2,
+    "tile_name": "物流公司土地",
+    "tile_type": 0,
+    "tile_theme": 0,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 3,
+    "tile_name": "百货店",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "百货店",
+      "buildingType": 2,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_百货店_Name",
+        "localizedDes": "Level_Text_Building_百货店_Description"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "tile_name": "肉店",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "肉店",
+      "buildingType": 1,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_肉店_Name",
+        "localizedDes": "Level_Text_Building_肉店_Description"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "tile_name": "电子商店",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "电子商店",
+      "buildingType": 3,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_电子商店_Name",
+        "localizedDes": "Level_Text_Building_电子商店_Description"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "tile_name": "木材加工厂",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "木材加工厂",
+      "buildingType": 4,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_牛奶工厂_Name",
+        "localizedDes": "Level_Text_Building_牛奶工厂_Description"
+      }
+    }
+  },
+  {
+    "id": 7,
+    "tile_name": "牛奶工厂",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "牛奶工厂",
+      "buildingType": 5,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_木材加工厂_Name",
+        "localizedDes": "Level_Text_Building_木材加工厂_Description"
+      }
+    }
+  },
+  {
+    "id": 8,
+    "tile_name": "香玉工坊",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "香玉工坊",
+      "buildingType": 7,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_香玉工坊_Name",
+        "localizedDes": "Level_Text_Building_香玉工坊_Description"
+      }
+    }
+  },
+  {
+    "id": 9,
+    "tile_name": "普通住宅A",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "普通住宅A",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_普通住宅A_Name",
+        "localizedDes": "Level_Text_Building_普通住宅A_Description"
+      }
+    }
+  },
+  {
+    "id": 10,
+    "tile_name": "普通住宅B",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "普通住宅B",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_普通住宅B_Name",
+        "localizedDes": "Level_Text_Building_普通住宅B_Description"
+      }
+    }
+  },
+  {
+    "id": 11,
+    "tile_name": "普通住宅C",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "普通住宅C",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_普通住宅C_Name",
+        "localizedDes": "Level_Text_Building_普通住宅C_Description"
+      }
+    }
+  },
+  {
+    "id": 12,
+    "tile_name": "椰子树",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 13,
+    "tile_name": "红色花田",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 14,
+    "tile_name": "紫色花田",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 15,
+    "tile_name": "薰衣草田",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 16,
+    "tile_name": "迎春花田",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 17,
+    "tile_name": "普通山脉A",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 18,
+    "tile_name": "普通桥梁A",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": -0.25,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 19,
+    "tile_name": "草坪A",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 20,
+    "tile_name": "草坪B",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 21,
+    "tile_name": "草坪C",
+    "tile_type": 1,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 22,
+    "tile_name": "春岛_Bright",
+    "tile_type": 0,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 23,
+    "tile_name": "春岛_Dark",
+    "tile_type": 0,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 24,
+    "tile_name": "夏岛_Bright",
+    "tile_type": 0,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 25,
+    "tile_name": "夏岛_Dark",
+    "tile_type": 0,
+    "tile_theme": 2,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 26,
+    "tile_name": "水体A",
+    "tile_type": 0,
+    "tile_theme": 0,
+    "tile_offsetY": -0.1,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 27,
+    "tile_name": "瀑布A",
+    "tile_type": 0,
+    "tile_theme": 0,
+    "tile_offsetY": -0.1,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 28,
+    "tile_name": "春岛_Bright_Flower",
+    "tile_type": 0,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 29,
+    "tile_name": "春岛_Dark_Flower",
+    "tile_type": 0,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 30,
+    "tile_name": "樱花树丛",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 31,
+    "tile_name": "春树丛A",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 32,
+    "tile_name": "春树丛B",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 33,
+    "tile_name": "春树丛C",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 34,
+    "tile_name": "春树丛D",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 35,
+    "tile_name": "春树丛E",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 36,
+    "tile_name": "海鲜市场",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "海鲜市场",
+      "buildingType": 8,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_海鲜市场_Name",
+        "localizedDes": "Level_Text_Building_海鲜市场_Description"
+      }
+    }
+  },
+  {
+    "id": 37,
+    "tile_name": "礼品店",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "礼品店",
+      "buildingType": 9,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_礼品店_Name",
+        "localizedDes": "Level_Text_Building_礼品店_Description"
+      }
+    }
+  },
+  {
+    "id": 38,
+    "tile_name": "机器人餐饮店",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "机器人餐饮店",
+      "buildingType": 10,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_机器人餐饮店_Name",
+        "localizedDes": "Level_Text_Building_机器人餐饮店_Description"
+      }
+    }
+  },
+  {
+    "id": 39,
+    "tile_name": "艺术餐厅",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "艺术餐厅",
+      "buildingType": 11,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_艺术餐厅_Name",
+        "localizedDes": "Level_Text_Building_艺术餐厅_Description"
+      }
+    }
+  },
+  {
+    "id": 40,
+    "tile_name": "民用建筑区A",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "春岛民用建筑区A",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_春岛民用建筑区A_Name",
+        "localizedDes": "Level_Text_Building_春岛民用建筑区A_Description"
+      }
+    }
+  },
+  {
+    "id": 41,
+    "tile_name": "民用建筑区B",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "春岛民用建筑区B",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_春岛民用建筑区B_Name",
+        "localizedDes": "Level_Text_Building_春岛民用建筑区B_Description"
+      }
+    }
+  },
+  {
+    "id": 42,
+    "tile_name": "民用建筑区C",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "春岛民用建筑区C",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_春岛民用建筑区C_Name",
+        "localizedDes": "Level_Text_Building_春岛民用建筑区C_Description"
+      }
+    }
+  },
+  {
+    "id": 43,
+    "tile_name": "公园",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 44,
+    "tile_name": "医院",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 45,
+    "tile_name": "小池塘",
+    "tile_type": 1,
+    "tile_theme": 1,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 46,
+    "tile_name": "秋岛_Bright",
+    "tile_type": 0,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 47,
+    "tile_name": "秋岛_Dark",
+    "tile_type": 0,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 48,
+    "tile_name": "湖泊",
+    "tile_type": 0,
+    "tile_theme": 3,
+    "tile_offsetY": -0.1,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 49,
+    "tile_name": "秋植物A",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 50,
+    "tile_name": "秋植物B",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 51,
+    "tile_name": "秋植物C",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 52,
+    "tile_name": "丘陵",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 53,
+    "tile_name": "农产品店",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "农产品店",
+      "buildingType": 16,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_农产品店_Name",
+        "localizedDes": "Level_Text_Building_农产品店_Description"
+      }
+    }
+  },
+  {
+    "id": 54,
+    "tile_name": "马场",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "马场",
+      "buildingType": 17,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_马场_Name",
+        "localizedDes": "Level_Text_Building_马场_Description"
+      }
+    }
+  },
+  {
+    "id": 55,
+    "tile_name": "集市食品店",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "集市食品店",
+      "buildingType": 18,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_集市食品店_Name",
+        "localizedDes": "Level_Text_Building_集市食品店_Description"
+      }
+    }
+  },
+  {
+    "id": 56,
+    "tile_name": "果园",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "果园",
+      "buildingType": 19,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_果园_Name",
+        "localizedDes": "Level_Text_Building_果园_Description"
+      }
+    }
+  },
+  {
+    "id": 57,
+    "tile_name": "冰激凌店",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "冰激凌店",
+      "buildingType": 20,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_冰激凌店_Name",
+        "localizedDes": "Level_Text_Building_冰激凌店_Description"
+      }
+    }
+  },
+  {
+    "id": 58,
+    "tile_name": "北欧餐厅",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "北欧餐厅",
+      "buildingType": 21,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_北欧餐厅_Name",
+        "localizedDes": "Level_Text_Building_北欧餐厅_Description"
+      }
+    }
+  },
+  {
+    "id": 59,
+    "tile_name": "秋岛建筑区A",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "秋岛建筑区A",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_秋岛建筑区A_Name",
+        "localizedDes": "Level_Text_Building_秋岛建筑区A_Description"
+      }
+    }
+  },
+  {
+    "id": 60,
+    "tile_name": "秋岛建筑区B",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "秋岛建筑区B",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_秋岛建筑区B_Name",
+        "localizedDes": "Level_Text_Building_秋岛建筑区B_Description"
+      }
+    }
+  },
+  {
+    "id": 61,
+    "tile_name": "秋岛建筑区C",
+    "tile_type": 1,
+    "tile_theme": 3,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "秋岛建筑区C",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_秋岛建筑区C_Name",
+        "localizedDes": "Level_Text_Building_秋岛建筑区C_Description"
+      }
+    }
+  },
+  {
+    "id": 62,
+    "tile_name": "冬岛_Bright",
+    "tile_type": 0,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 63,
+    "tile_name": "冬岛_Dark",
+    "tile_type": 0,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 64,
+    "tile_name": "冰川",
+    "tile_type": 0,
+    "tile_theme": 4,
+    "tile_offsetY": -0.1,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 65,
+    "tile_name": "冬植物A",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 66,
+    "tile_name": "冬植物B",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 67,
+    "tile_name": "冬植物C",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 68,
+    "tile_name": "冰石",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 69,
+    "tile_name": "冰原裂谷",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0.25,
+    "tile_addon": {
+      "isBuilding": false,
+      "buildingName": "",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "",
+        "localizedDes": ""
+      }
+    }
+  },
+  {
+    "id": 70,
+    "tile_name": "北海冰鱼堂",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "北海冰鱼堂",
+      "buildingType": 22,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_北海冰鱼堂_Name",
+        "localizedDes": "Level_Text_Building_北海冰鱼堂_Description"
+      }
+    }
+  },
+  {
+    "id": 71,
+    "tile_name": "电厂",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "电厂",
+      "buildingType": 23,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_电厂_Name",
+        "localizedDes": "Level_Text_Building_电厂_Description"
+      }
+    }
+  },
+  {
+    "id": 72,
+    "tile_name": "极光点心坊",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "极光点心坊",
+      "buildingType": 24,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_极光点心坊_Name",
+        "localizedDes": "Level_Text_Building_极光点心坊_Description"
+      }
+    }
+  },
+  {
+    "id": 73,
+    "tile_name": "寿司店",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "寿司店",
+      "buildingType": 25,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_寿司店_Name",
+        "localizedDes": "Level_Text_Building_寿司店_Description"
+      }
+    }
+  },
+  {
+    "id": 74,
+    "tile_name": "野味馆",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "野味馆",
+      "buildingType": 26,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_野味馆_Name",
+        "localizedDes": "Level_Text_Building_野味馆_Description"
+      }
+    }
+  },
+  {
+    "id": 75,
+    "tile_name": "中华火锅",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "中华火锅",
+      "buildingType": 27,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_中华火锅_Name",
+        "localizedDes": "Level_Text_Building_中华火锅_Description"
+      }
+    }
+  },
+  {
+    "id": 76,
+    "tile_name": "冬岛建筑区A",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "冬岛建筑区A",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_冬岛建筑区A_Name",
+        "localizedDes": "Level_Text_Building_冬岛建筑区A_Description"
+      }
+    }
+  },
+  {
+    "id": 77,
+    "tile_name": "冬岛建筑区B",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "冬岛建筑区B",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_冬岛建筑区B_Name",
+        "localizedDes": "Level_Text_Building_冬岛建筑区B_Description"
+      }
+    }
+  },
+  {
+    "id": 78,
+    "tile_name": "冬岛建筑区C",
+    "tile_type": 1,
+    "tile_theme": 4,
+    "tile_offsetY": 0,
+    "tile_addon": {
+      "isBuilding": true,
+      "buildingName": "冬岛建筑区C",
+      "buildingType": 0,
+      "buildingLoc": {
+        "localizedName": "Level_Text_Building_冬岛建筑区C_Name",
+        "localizedDes": "Level_Text_Building_冬岛建筑区C_Description"
+      }
+    }
+  }
+]
