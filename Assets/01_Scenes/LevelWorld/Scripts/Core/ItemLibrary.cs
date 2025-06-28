@@ -245,6 +245,9 @@ public class Item
     public LocalizedString itemLocalizedName;
     public LocalizedString itemLocalizedDescription; // 物品描述
     public ItemTag[] itemTags;
+    public string likeItemName;
+    public string hateItemName;
+    public bool needCorner;
 
     // public Item(string name, ItemTag[] tags, Sprite sprite, Vector2Int[] shape)
     // {

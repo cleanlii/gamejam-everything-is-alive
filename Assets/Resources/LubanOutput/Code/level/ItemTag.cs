@@ -8,6 +8,7 @@
 //------------------------------------------------------------------------------
 
 
+using Unity.VisualScripting;
 
 namespace cfg.level
 { 
@@ -70,6 +71,18 @@ namespace cfg.level
         /// 3级保温
         /// </summary>
         HeatIII = 13,
+        /// <summary>
+        /// 必须放在角落
+        /// </summary>
+        NeedCorner = 14,
+        /// <summary>
+        /// 必须和某个物品放在一起
+        /// </summary>
+        LikeSomeone = 15,
+        /// <summary>
+        /// 不能和某个物品放在一起
+        /// </summary>
+        HateSomeone = 16,
     }
 
 } 

@@ -7291,6 +7291,13 @@ MonoBehaviour:
   itemNaturalBefore: {fileID: 2100000, guid: 1928b04634c2b214ead539f7d177e19e, type: 2}
   itemNaturalAfter: {fileID: 2100000, guid: 1b35815a88f81c94e9fa599b489af699, type: 2}
   itemNormal: {fileID: 2100000, guid: d07c0007be80943968e87046b5ca43fe, type: 2}
+  itemNormalActivate: {fileID: 2100000, guid: ccf0ccf7ee947884bb11b0c9b5ab3095, type: 2}
+  itemCornerBefore: {fileID: 2100000, guid: 0267b1c849825a94fb4069a140247be5, type: 2}
+  itemCornerAfter: {fileID: 2100000, guid: 02e7001f3eadb2741a90067a2eca1442, type: 2}
+  itemHateBefore: {fileID: 2100000, guid: 0bcddc8e304a7fb41b89c180a047621d, type: 2}
+  itemHateAfter: {fileID: 2100000, guid: 662565a2774c4d9488abf6ee4a586e36, type: 2}
+  itemLikeBefore: {fileID: 2100000, guid: 2798c79204867d347a3e2424c00dbe04, type: 2}
+  itemLikeAfter: {fileID: 2100000, guid: 7003ae727e2b4a24b9f8a8680665ea8b, type: 2}
   itemPutDownVFX: {fileID: 1802518757616599771, guid: 717dc4104b31a174daa4019ab33a6784,
     type: 3}
 --- !u!1 &750073562
@@ -10206,7 +10213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 3169, y: -801}
+  m_AnchoredPosition: {x: 214, y: -927}
   m_SizeDelta: {x: 404, y: 648}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1000097641
@@ -17144,8 +17151,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149, y: -1159}
-  m_SizeDelta: {x: 204, y: 434}
+  m_AnchoredPosition: {x: 3223, y: -776}
+  m_SizeDelta: {x: 202, y: 665}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1808204688
 MonoBehaviour:

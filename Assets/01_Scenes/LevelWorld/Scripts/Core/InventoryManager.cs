@@ -8,8 +8,9 @@ using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour
 {
     [Header("写死的背包名字")]
-    [SerializeField] string InventoryName = "Inventory";
-  
+    [SerializeField]
+    private string InventoryName = "Inventory";
+
     [Space(10)]
     public static Action<ObjectInformation> OnDraggingBpInfo;
 
@@ -37,7 +38,7 @@ public class InventoryManager : MonoBehaviour
         var inventoryInfo = inventoryLibrary.GetInventoryData(inventoryName);
         inventoryWidth = inventoryInfo.size.x;
         inventoryHeight = inventoryInfo.size.y;
-        
+
         var bpInfo = new Dictionary<Backpack, Vector2Int>();
         if (inventoryInfo.inventoryType == InventoryType.Truck)
         {
@@ -452,6 +453,9 @@ public class ItemData : ObjectData
     public GridShape gridShape;
     public ActivateTagDictionary itemTagDic;
     public int itemValue;
+    public bool needCorner;
+    public string likeItemName;
+    public string hateItemName;
 
     public ItemData(Item template, ItemInteraction itemInc, GameObject obj, Image img, Vector2Int position)
     {
@@ -471,6 +475,10 @@ public class ItemData : ObjectData
         // this.itemTags = new List<ItemTag>();
         // this.itemTags.AddRange(template.itemTags);
         itemTagDic = new ActivateTagDictionary();
+
+        likeItemName = template.likeItemName;
+        hateItemName = template.hateItemName;
+        needCorner = template.needCorner;
 
         if (template.itemTags.Length > 0)
         {

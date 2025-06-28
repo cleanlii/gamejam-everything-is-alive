@@ -134,7 +134,7 @@ public class ItemInteraction : ObjectInteraction
         _leftPanelDraggingLayer = _inventoryInitializer.transform.Find("DraggingLayer");
         leftPanelRect = leftPanelItemLayer.GetComponent<RectTransform>();
         _rightPanelRect = _rightPanelItemLayer.GetComponent<RectTransform>();
-        
+
         // 初始化旋转形状数据
         var tempShape = RectUtils.RotateShape(itemData.shape);
         for (var i = 0; i < 4; i++)
@@ -323,7 +323,7 @@ public class ItemInteraction : ObjectInteraction
             rectTransform.DOScale(Vector3.one * 1.1f, 0.3f).SetEase(Ease.OutElastic); // 放大
 
             SetRigidbody(false);
-            
+
             if (originalParent == _rightPanelItemLayer)
             {
                 UpdateCells(_lastGridPosition, currentShape, false);
@@ -335,7 +335,6 @@ public class ItemInteraction : ObjectInteraction
                 SnapObjectRotation();
                 ObjUtils.SetParentAndLayer(gameObject, _rightPanelDraggingLayer, InventoryType.Truck);
             }
-            
         }
     }
 
@@ -371,7 +370,7 @@ public class ItemInteraction : ObjectInteraction
             rectTransform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutElastic);
             canvasGroup.DOFade(1f, 0.3f);
             canvasGroup.blocksRaycasts = true;
-            
+
             if (originalParent == leftPanelItemLayer) HandleLeftPanelDropInTask();
             if (originalParent == _rightPanelItemLayer) HandleRightPanelDropInTask();
 
@@ -381,6 +380,7 @@ public class ItemInteraction : ObjectInteraction
             ClearHighlight();
 
             _itemManager.HighlightUntaggedItem(itemData);
+            _itemManager.CheckItemRelationships();
         }
     }
 
@@ -550,7 +550,7 @@ public class ItemInteraction : ObjectInteraction
     }
 
     #endregion
-    
+
     #region 任务点内交互逻辑
 
     private void HandleLeftPanelDropInTask()
