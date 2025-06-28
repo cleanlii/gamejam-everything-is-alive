@@ -10,10 +10,9 @@ Material:
   m_Name: Item_Hate_After
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
   m_ValidKeywords:
-  - HITEFFECT_ON
-  - INNEROUTLINE_ON
+  - GRADIENT_ON
   - OUTBASE_ON
-  - OVERLAY_ON
+  - SHAKEUV_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -112,7 +111,7 @@ Material:
     - _FadeBurnGlow: 2
     - _FadeBurnTransition: 0.075
     - _FadeBurnWidth: 0.025
-    - _FishEyeUvAmount: 0.35
+    - _FishEyeUvAmount: 0
     - _FlickerAlpha: 0
     - _FlickerFreq: 0.2
     - _FlickerPercent: 0.05
@@ -123,7 +122,7 @@ Material:
     - _GlitchSize: 1
     - _Glow: 10
     - _GlowGlobal: 1
-    - _GradBlend: 1
+    - _GradBlend: 0.117
     - _GradBoostX: 1.2
     - _GradBoostY: 1.2
     - _GradIsRadial: 0
@@ -168,16 +167,16 @@ Material:
     - _OutlineDistortAmount: 0.5
     - _OutlineDistortTexXSpeed: 5
     - _OutlineDistortTexYSpeed: 5
-    - _OutlineGlow: 1.5
+    - _OutlineGlow: 1
     - _OutlinePixelWidth: 1
     - _OutlineTexXSpeed: 10
     - _OutlineTexYSpeed: 0
-    - _OutlineWidth: 0.004
+    - _OutlineWidth: 0.0444
     - _OverlayBlend: 1
     - _OverlayGlow: 0.5
     - _OverlayTextureScrollXSpeed: 0.25
     - _OverlayTextureScrollYSpeed: 0.25
-    - _PinchUvAmount: 0.35
+    - _PinchUvAmount: 0
     - _PixelateSize: 32
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
@@ -193,16 +192,16 @@ Material:
     - _ShadowAlpha: 0.5
     - _ShadowX: 0.1
     - _ShadowY: -0.05
-    - _ShakeUvSpeed: 2.5
+    - _ShakeUvSpeed: 1
     - _ShakeUvX: 1.5
-    - _ShakeUvY: 1
+    - _ShakeUvY: 0
     - _ShineGlow: 1
     - _ShineLocation: 0.5
     - _ShineRotate: 0
     - _ShineWidth: 0.1
     - _TextureScrollXSpeed: 1
     - _TextureScrollYSpeed: 0
-    - _TwistUvAmount: 1
+    - _TwistUvAmount: 0
     - _TwistUvPosX: 0.5
     - _TwistUvPosY: 0.5
     - _TwistUvRadius: 0.75
@@ -239,7 +238,7 @@ Material:
     - _HitEffectColor: {r: 1, g: 1, b: 1, a: 1}
     - _HologramStripeColor: {r: 0, g: 1, b: 1, a: 1}
     - _InnerOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.7028302, g: 1, b: 0.9673696, a: 1}
+    - _OutlineColor: {r: 0.50474775, g: 1, b: 0.49685526, a: 1}
     - _OverlayColor: {r: 0, g: 1, b: 0.9906742, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}

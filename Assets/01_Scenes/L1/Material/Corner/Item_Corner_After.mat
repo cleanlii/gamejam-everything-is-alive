@@ -10,10 +10,9 @@ Material:
   m_Name: Item_Corner_After
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
   m_ValidKeywords:
-  - HITEFFECT_ON
-  - INNEROUTLINE_ON
+  - GHOST_ON
   - OUTBASE_ON
-  - OVERLAY_ON
+  - WAVEUV_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -116,9 +115,9 @@ Material:
     - _FlickerAlpha: 0
     - _FlickerFreq: 0.2
     - _FlickerPercent: 0.05
-    - _GhostBlend: 1
-    - _GhostColorBoost: 1
-    - _GhostTransparency: 0
+    - _GhostBlend: 0.562
+    - _GhostColorBoost: 0
+    - _GhostTransparency: 0.424
     - _GlitchAmount: 3
     - _GlitchSize: 1
     - _Glow: 10
@@ -145,9 +144,9 @@ Material:
     - _HologramStripesAmount: 0.1
     - _HologramStripesSpeed: 4.5
     - _HologramUnmodAmount: 0
-    - _HsvBright: 1
-    - _HsvSaturation: 1
-    - _HsvShift: 180
+    - _HsvBright: 0.58
+    - _HsvSaturation: 1.663
+    - _HsvShift: 0
     - _InnerOutlineAlpha: 0.407
     - _InnerOutlineGlow: 1.2
     - _InnerOutlineThickness: 1
@@ -168,11 +167,11 @@ Material:
     - _OutlineDistortAmount: 0.5
     - _OutlineDistortTexXSpeed: 5
     - _OutlineDistortTexYSpeed: 5
-    - _OutlineGlow: 1.5
+    - _OutlineGlow: 1
     - _OutlinePixelWidth: 1
     - _OutlineTexXSpeed: 10
     - _OutlineTexYSpeed: 0
-    - _OutlineWidth: 0.004
+    - _OutlineWidth: 0.0503
     - _OverlayBlend: 1
     - _OverlayGlow: 0.5
     - _OverlayTextureScrollXSpeed: 0.25
@@ -211,15 +210,15 @@ Material:
     - _WarpStrength: 0.025
     - _WaveAmount: 7
     - _WaveSpeed: 10
-    - _WaveStrength: 7.5
-    - _WaveX: 0
-    - _WaveY: 0.5
+    - _WaveStrength: 8.4
+    - _WaveX: 0.5
+    - _WaveY: 0
     - _ZTestMode: 4
     - _ZWrite: 0
     - _ZoomUvAmount: 0.5
     m_Colors:
     - _AlphaOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.86477983, g: 0.9827384, b: 1, a: 1}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeNewCol2: {r: 1, g: 1, b: 0, a: 1}
     - _ColorChangeNewCol3: {r: 1, g: 1, b: 0, a: 1}
