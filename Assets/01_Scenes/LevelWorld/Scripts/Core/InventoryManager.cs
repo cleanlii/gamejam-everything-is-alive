@@ -35,6 +35,9 @@ public class InventoryManager : MonoBehaviour
     {
         // 查找网格信息
         var inventoryInfo = inventoryLibrary.GetInventoryData(inventoryName);
+        inventoryWidth = inventoryInfo.size.x;
+        inventoryHeight = inventoryInfo.size.y;
+        
         var bpInfo = new Dictionary<Backpack, Vector2Int>();
         if (inventoryInfo.inventoryType == InventoryType.Truck)
         {

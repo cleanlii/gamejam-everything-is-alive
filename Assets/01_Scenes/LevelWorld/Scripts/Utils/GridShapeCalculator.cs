@@ -158,6 +158,12 @@ public class GridShapeCalculator
                     "111",
                     "010"
                 );
+            case GridShape.L_SHAPE_VERTICAL_REVERSED:
+                return RectUtils.CreateShape(
+                    "11",
+                    "10",
+                    "10"
+                );
             // 如果新增形状，在这里添加
             default:
                 throw new ArgumentOutOfRangeException(nameof(shape), shape, null);

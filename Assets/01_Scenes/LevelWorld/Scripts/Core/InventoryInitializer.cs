@@ -104,6 +104,7 @@ public class InventoryInitializer : MonoBehaviour
         bgImage.type = Image.Type.Sliced;
         bgImage.rectTransform.sizeDelta = new Vector2(Screen.width, Screen.height);
         RectUtils.SetBackgroundPivot(bgImage.rectTransform);
+        bgImage.gameObject.SetActive(false);
 
         // 网格层
         var gridLayer = CreateLayer("GridLayer", parentPanel);
@@ -140,6 +141,7 @@ public class InventoryInitializer : MonoBehaviour
                 var gridImage = grid.GetComponent<Image>();
                 gridImage.sprite = inventoryInfo.gridSprite;
                 gridImage.type = Image.Type.Sliced;
+                gridImage.raycastTarget = false;
                 // gridImage.pixelsPerUnitMultiplier = 0.15f;
                 gridImage.color = inventoryInfo.gridColor;
 
@@ -196,7 +198,6 @@ public class InventoryInitializer : MonoBehaviour
         // 正在拖拽中的物体放入此层暂存
         var draggingLayer = CreateLayer("DraggingLayer", parentPanel);
 
-
         // 读取默认背包
         foreach (var bp in bpDic.Keys)
         {
@@ -206,7 +207,7 @@ public class InventoryInitializer : MonoBehaviour
                 var startX = (inventoryWidth - bp.size.x) / 2;
                 var startY = (inventoryHeight - bp.size.y) / 2;
                 var startPos = new Vector2Int(startX, startY);
-                var bpInstance = CreateBackpack(inventoryLayer, bp, bp.bpName, startPos);
+                var bpInstance = CreateBackpack(inventoryLayer, bp, bp.bpName, new Vector2Int(0,0));
             }
             else
             {
@@ -230,6 +231,9 @@ public class InventoryInitializer : MonoBehaviour
 
         inventoryManager.gridLayoutGroup = gridLayout;
         inventoryManager.defaultGridObj = cells[0, 0].gridObj;
+
+        parentPanel.Find("BackpackFront")?.transform.SetAsLastSibling();
+        draggingLayer.transform.SetAsLastSibling();
     }
 
     private GameObject CreateLayer(string name, Transform parent)
@@ -256,6 +260,7 @@ public class InventoryInitializer : MonoBehaviour
         var bpImage = bpInstance.AddComponent<Image>();
         bpImage.sprite = bp.bgSprite;
         bpImage.type = Image.Type.Sliced;
+        bpImage.enabled = false;
         // bpImage.pixelsPerUnitMultiplier = 0.3f;
 
         // 设置锚点和偏移量
@@ -289,6 +294,7 @@ public class InventoryInitializer : MonoBehaviour
                 var slotImage = slot.GetComponent<Image>();
                 slotImage.sprite = bp.gridSprite;
                 slotImage.color = Color.white;
+                slotImage.enabled = false;
                 cells[x + startPos.x, y + startPos.y].slotObj = slot;
                 cells[x + startPos.x, y + startPos.y].innerBp = bpInc.backpackData; // 注册为背包格
                 cells[x + startPos.x, y + startPos.y].UpdateCellState();
@@ -340,48 +346,50 @@ public class InventoryInitializer : MonoBehaviour
 
     private void OptimizedGridLayer(float screenWidth, float screenHeight)
     {
-        var aspectRatio = screenWidth / screenHeight;
-        var optimizedRatioPC = screenWidth / 1920;
-        var optimizedRatioMobile = screenWidth / 2778;
-
-        var gridOffset = 100f;
-
-        LevelStateController.Instance.SetScreenModeBasedOnDevice();
-
-        switch (LevelStateController.Instance.GetCurrentScreenMode())
-        {
-            case ScreenMode.SingleScale:
-                break;
-            case ScreenMode.DoubleScale:
-                gridOffset = 160f;
-                break;
-        }
-
-        if (aspectRatio >= 2) // 宽高比大于等于2（宽屏、iPhone新机型）
-        {
-            // gridSize = 116f * optimizedRatioMobile;
-            gridSize = gridOffset * optimizedRatioMobile;
-            // gridPadding = new RectOffset(Mathf.FloorToInt(59 * optimizedRatioMobile), 0, Mathf.FloorToInt(59 * optimizedRatioMobile), 0);
-            // isHairScreen = true;
-        }
-        else if (aspectRatio >= 16f / 9f) // 16:9比例（PC、iPhone老机型）
-        {
-            // gridSize = 100f * optimizedRatioPC;
-            gridSize = 150f;
-            // gridPadding = new RectOffset(Mathf.FloorToInt(26 * optimizedRatioPC), 0, Mathf.FloorToInt(86 * optimizedRatioPC), 0);
-            // isHairScreen = false;
-        }
-        else // 默认
-        {
-            gridSize = gridOffset;
-            // gridPadding = new RectOffset(10, 0, 10, 0);
-            // isHairScreen = false;
-        }
+        // var aspectRatio = screenWidth / screenHeight;
+        // var optimizedRatioPC = screenWidth / 1920;
+        // var optimizedRatioMobile = screenWidth / 2778;
+        //
+        // var gridOffset = 100f;
+        //
+        // LevelStateController.Instance.SetScreenModeBasedOnDevice();
+        //
+        // switch (LevelStateController.Instance.GetCurrentScreenMode())
+        // {
+        //     case ScreenMode.SingleScale:
+        //         break;
+        //     case ScreenMode.DoubleScale:
+        //         gridOffset = 160f;
+        //         break;
+        // }
+        //
+        // if (aspectRatio >= 2) // 宽高比大于等于2（宽屏、iPhone新机型）
+        // {
+        //     // gridSize = 116f * optimizedRatioMobile;
+        //     gridSize = gridOffset * optimizedRatioMobile;
+        //     // gridPadding = new RectOffset(Mathf.FloorToInt(59 * optimizedRatioMobile), 0, Mathf.FloorToInt(59 * optimizedRatioMobile), 0);
+        //     // isHairScreen = true;
+        // }
+        // else if (aspectRatio >= 16f / 9f) // 16:9比例（PC、iPhone老机型）
+        // {
+        //     // gridSize = 100f * optimizedRatioPC;
+        //     gridSize = 150f;
+        //     // gridPadding = new RectOffset(Mathf.FloorToInt(26 * optimizedRatioPC), 0, Mathf.FloorToInt(86 * optimizedRatioPC), 0);
+        //     // isHairScreen = false;
+        // }
+        // else // 默认
+        // {
+        //     gridSize = gridOffset;
+        //     // gridPadding = new RectOffset(10, 0, 10, 0);
+        //     // isHairScreen = false;
+        // }
 
         // Debug.Log("!!!!!!CurrentScreenMode!!!!!: " + inventoryManager.GetCurrentScreenMode());
         // Debug.Log("!!!!!!AspectRatio!!!!!: " + aspectRatio);
         // Debug.Log("!!!!!!OptimizedRatio!!!!!: " + optimizedRatioMobile);
         // Debug.Log("!!!!!!gridSize!!!!!: " + gridSize);
+
+        gridSize = 360f;
     }
 
     public void ResetCellData()

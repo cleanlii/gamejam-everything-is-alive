@@ -15,31 +15,32 @@ MonoBehaviour:
   update: 1
   spritePath: Sprites
   items:
-  - itemName: "\u9ED1\u91D1\u706B\u817F"
-    itemSprite: {fileID: 21300000, guid: cf8da2363beb9486da96aca4401ca9f6, type: 3}
-    itemSource: 1
-    gridType: 20
+  - itemName: "3\u884C1\u5217_L1_\u4FDD\u6E29\u676F"
+    itemSprite: {fileID: 21300000, guid: 09dc211b02e476543bc77c5c68f058ed, type: 3}
+    itemSource: 0
+    gridType: 21
     shape:
     - {x: 0, y: 0}
     - {x: 0, y: 1}
-    itemSize: 2
-    itemValue: 5
+    - {x: 0, y: 2}
+    itemSize: 3
+    itemValue: 6
     itemLocalizedName:
-      mTerm: "ItemName/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Name"
+      mTerm: "ItemName/Level_Text_Item_\u9999\u8F9B\u7206\u6C41\u80A0_Name"
       mRTL_IgnoreArabicFix: 0
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemLocalizedDescription:
-      mTerm: "ItemDescription/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Description"
+      mTerm: "ItemDescription/Level_Text_Item_\u9999\u8F9B\u7206\u6C41\u80A0_Description"
       mRTL_IgnoreArabicFix: 0
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 02000000
-  - itemName: "\u9999\u9165\u767D\u7389\u9E21"
-    itemSprite: {fileID: 21300000, guid: cf1889962d6094448b5756e901f38b43, type: 3}
-    itemSource: 1
+    itemTags: 01000000
+  - itemName: "2\u884C2\u5217_L1_\u996D\u76D2"
+    itemSprite: {fileID: 21300000, guid: 7095d4c66ab0c5f46a1f3a3733b21021, type: 3}
+    itemSource: 0
     gridType: 1
     shape:
     - {x: 0, y: 0}
@@ -60,25 +61,93 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 02000000
-  - itemName: "\u9999\u8F9B\u7206\u6C41\u80A0"
-    itemSprite: {fileID: 21300000, guid: c4ea000df5f5d49d882be6922e4ec940, type: 3}
-    itemSource: 1
-    gridType: 21
+    itemTags: 01000000
+  - itemName: "1\u884C2\u5217_L1_\u96F6\u98DF"
+    itemSprite: {fileID: 21300000, guid: 9227cbfeeff027e44b8f2cf9a9ecaa38, type: 3}
+    itemSource: 0
+    gridType: 15
     shape:
     - {x: 0, y: 0}
-    - {x: 0, y: 1}
-    - {x: 0, y: 2}
-    itemSize: 3
-    itemValue: 6
+    - {x: 1, y: 0}
+    itemSize: 2
+    itemValue: 9
     itemLocalizedName:
-      mTerm: "ItemName/Level_Text_Item_\u9999\u8F9B\u7206\u6C41\u80A0_Name"
+      mTerm: "ItemName/Level_Text_Item_\u4E07\u80FD\u9065\u63A7\u5668_Name"
       mRTL_IgnoreArabicFix: 0
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemLocalizedDescription:
-      mTerm: "ItemDescription/Level_Text_Item_\u9999\u8F9B\u7206\u6C41\u80A0_Description"
+      mTerm: "ItemDescription/Level_Text_Item_\u4E07\u80FD\u9065\u63A7\u5668_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemTags: 01000000
+  - itemName: "1\u884C3\u5217_L1_\u6587\u5177\u76D2"
+    itemSprite: {fileID: 21300000, guid: 02da0de28e81b7a4b9cafb20327ca5f7, type: 3}
+    itemSource: 0
+    gridType: 16
+    shape:
+    - {x: 0, y: 0}
+    - {x: 1, y: 0}
+    - {x: 2, y: 0}
+    itemSize: 3
+    itemValue: 3
+    itemLocalizedName:
+      mTerm: "ItemName/Level_Text_Item_\u70E4\u83E0\u841D\u7247_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemLocalizedDescription:
+      mTerm: "ItemDescription/Level_Text_Item_\u70E4\u83E0\u841D\u7247_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemTags: 01000000
+  - itemName: "3\u884C2\u5217L\u5B57_L1_\u5076\u50CF"
+    itemSprite: {fileID: 21300000, guid: e188c348b4fb21b4abcb4f968aa612ba, type: 3}
+    itemSource: 0
+    gridType: 27
+    shape:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0, y: 2}
+    - {x: 1, y: 0}
+    itemSize: 4
+    itemValue: 5
+    itemLocalizedName:
+      mTerm: "ItemName/Level_Text_Item_\u82B1\u9999\u53A8\u623F\u7EB8_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemLocalizedDescription:
+      mTerm: "ItemDescription/Level_Text_Item_\u82B1\u9999\u53A8\u623F\u7EB8_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemTags: 01000000
+  - itemName: "\u9ED1\u91D1\u706B\u817F"
+    itemSprite: {fileID: 21300000, guid: cf8da2363beb9486da96aca4401ca9f6, type: 3}
+    itemSource: 1
+    gridType: 20
+    shape:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    itemSize: 2
+    itemValue: 5
+    itemLocalizedName:
+      mTerm: "ItemName/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemLocalizedDescription:
+      mTerm: "ItemDescription/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Description"
       mRTL_IgnoreArabicFix: 0
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
@@ -342,28 +411,6 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 09000000
-  - itemName: "\u4E07\u80FD\u9065\u63A7\u5668"
-    itemSprite: {fileID: 21300000, guid: 95bbdfa3261084318bff15861d8b21b1, type: 3}
-    itemSource: 4
-    gridType: 15
-    shape:
-    - {x: 0, y: 0}
-    - {x: 1, y: 0}
-    itemSize: 2
-    itemValue: 9
-    itemLocalizedName:
-      mTerm: "ItemName/Level_Text_Item_\u4E07\u80FD\u9065\u63A7\u5668_Name"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemLocalizedDescription:
-      mTerm: "ItemDescription/Level_Text_Item_\u4E07\u80FD\u9065\u63A7\u5668_Description"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemTags: 09000000
   - itemName: "\u6587\u660E\u8BFB\u53D6\u5668"
     itemSprite: {fileID: 21300000, guid: ebafcb47914af46c2a3a4e02ab835e99, type: 3}
     itemSource: 4
@@ -606,30 +653,6 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 09000000
-  - itemName: "\u82B1\u9999\u53A8\u623F\u7EB8"
-    itemSprite: {fileID: 21300000, guid: 7e5fcfa7c18684fb587bc9883f983622, type: 3}
-    itemSource: 2
-    gridType: 9
-    shape:
-    - {x: 0, y: 0}
-    - {x: 0, y: 1}
-    - {x: 0, y: 2}
-    - {x: 1, y: 2}
-    itemSize: 4
-    itemValue: 5
-    itemLocalizedName:
-      mTerm: "ItemName/Level_Text_Item_\u82B1\u9999\u53A8\u623F\u7EB8_Name"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemLocalizedDescription:
-      mTerm: "ItemDescription/Level_Text_Item_\u82B1\u9999\u53A8\u623F\u7EB8_Description"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemTags: 01000000
   - itemName: "\u592A\u9633\u6D17\u8863\u6DB2"
     itemSprite: {fileID: 21300000, guid: eb74fcb1011774454a9951e2ceff5493, type: 3}
     itemSource: 2
@@ -1744,29 +1767,6 @@ MonoBehaviour:
       m_DontLocalizeParameters: 0
     itemLocalizedDescription:
       mTerm: "ItemDescription/Level_Text_Item_\u70ED\u5E26\u6D77\u9C9C\u70E7\u70E4_Description"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemTags: 01000000
-  - itemName: "\u70E4\u83E0\u841D\u7247"
-    itemSprite: {fileID: 21300000, guid: 9eaf6e89052234cf798311cfb20258f4, type: 3}
-    itemSource: 12
-    gridType: 16
-    shape:
-    - {x: 0, y: 0}
-    - {x: 1, y: 0}
-    - {x: 2, y: 0}
-    itemSize: 3
-    itemValue: 3
-    itemLocalizedName:
-      mTerm: "ItemName/Level_Text_Item_\u70E4\u83E0\u841D\u7247_Name"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemLocalizedDescription:
-      mTerm: "ItemDescription/Level_Text_Item_\u70E4\u83E0\u841D\u7247_Description"
       mRTL_IgnoreArabicFix: 0
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0

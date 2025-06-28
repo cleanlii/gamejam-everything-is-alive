@@ -124,6 +124,10 @@ namespace cfg.level
         /// 00 10 11 20
         /// </summary>
         T_SHAPE_SHORT = 26,
+        /// <summary>
+        /// 00 10 20 12
+        /// </summary>
+        L_SHAPE_VERTICAL_REVERSED = 27
     }
 
 } 
