@@ -207,7 +207,7 @@ public class InventoryInitializer : MonoBehaviour
                 var startX = (inventoryWidth - bp.size.x) / 2;
                 var startY = (inventoryHeight - bp.size.y) / 2;
                 var startPos = new Vector2Int(startX, startY);
-                var bpInstance = CreateBackpack(inventoryLayer, bp, bp.bpName, new Vector2Int(0,0));
+                var bpInstance = CreateBackpack(inventoryLayer, bp, bp.bpName, new Vector2Int(0, 0));
             }
             else
             {
@@ -389,7 +389,17 @@ public class InventoryInitializer : MonoBehaviour
         // Debug.Log("!!!!!!OptimizedRatio!!!!!: " + optimizedRatioMobile);
         // Debug.Log("!!!!!!gridSize!!!!!: " + gridSize);
 
-        gridSize = 360f;
+        // gridSize = 360f;
+
+        var currentLevelIndex = LevelStateController.Instance.levelCompleteTrigger.levelIndex;
+
+        gridSize = currentLevelIndex switch
+        {
+            1 => 360f,
+            2 => 295f,
+            3 => 245f,
+            _ => 180f
+        };
     }
 
     public void ResetCellData()

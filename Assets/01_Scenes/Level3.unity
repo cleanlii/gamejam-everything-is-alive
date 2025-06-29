@@ -920,7 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12afeaa8576a8f40b5d5bfe291ea5fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InventoryName: L1
+  InventoryName: L3
   inventoryLibrary: {fileID: 11400000, guid: e9edc7a5440664d1493644ece76fd6e0, type: 2}
   itemManager: {fileID: 747755274}
   pickingBp: {fileID: 0}
@@ -1071,6 +1071,7 @@ MonoBehaviour:
   propManager: {fileID: 1448658195}
   itemManager: {fileID: 747755274}
   inventoryManager: {fileID: 122039275}
+  levelCompleteTrigger: {fileID: 1450521509}
   currentTags: 
   isAnyObjDragging: 0
   animationCount: 0
@@ -5419,7 +5420,7 @@ RectTransform:
   m_GameObject: {fileID: 586477680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -5816,8 +5817,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1920, y: 673}
-  m_SizeDelta: {x: 3210.9, y: 1806.1}
+  m_AnchoredPosition: {x: -1920, y: 802.8}
+  m_SizeDelta: {x: 2739.8, y: 2056.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &601289096
 CanvasGroup:
@@ -5851,7 +5852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee07f1bb590e63245a2cbee1728e9a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32184ea6394bec248be85b21e46e50bb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6181,8 +6182,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -790, y: -156}
-  m_SizeDelta: {x: 1923.6, y: 1877.5}
+  m_AnchoredPosition: {x: -1175, y: -5}
+  m_SizeDelta: {x: 2286.5, y: 2231.7}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &625499216
 GameObject:
@@ -7283,6 +7284,7 @@ MonoBehaviour:
   levelProgress:
     levelCompleted: 00000000
     levelUnlocked: 00010000
+    isFirstTimeEnteringGame: 1
     pendingUnlockAnimations: 
     pendingCompletionAnimations: 
     levelBestTimes:
@@ -7291,6 +7293,7 @@ MonoBehaviour:
     - 0
     - 0
     levelPlayCounts: 00000000000000000000000000000000
+    pendingEndingAnimation: 0
   isFirstPlay: 0
 --- !u!4 &700735534
 Transform:
@@ -8564,8 +8567,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u65CB\u8F6C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0da3c40b5387e4828b31d005a1f07e11, type: 2}
-  m_sharedMaterial: {fileID: -3458849884185733466, guid: 0da3c40b5387e4828b31d005a1f07e11,
+  m_fontAsset: {fileID: 11400000, guid: c967058d334234d3cb0e5a3c9cd1ad58, type: 2}
+  m_sharedMaterial: {fileID: 4695863768335361567, guid: c967058d334234d3cb0e5a3c9cd1ad58,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8718,7 +8721,7 @@ RectTransform:
   m_GameObject: {fileID: 845204460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -10405,7 +10408,7 @@ RectTransform:
   m_GameObject: {fileID: 1000097639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -11148,7 +11151,7 @@ RectTransform:
   m_GameObject: {fileID: 1073169378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -12886,7 +12889,7 @@ RectTransform:
   m_GameObject: {fileID: 1276989885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -13585,7 +13588,7 @@ RectTransform:
   m_GameObject: {fileID: 1318560230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -14391,7 +14394,7 @@ RectTransform:
   m_GameObject: {fileID: 1405653451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -14905,8 +14908,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelIndex: 3
-  requirePlayerTrigger: 1
-  playerTag: Player
   completionUI: {fileID: 0}
   completionText: {fileID: 0}
   timeText: {fileID: 0}
@@ -16017,7 +16018,7 @@ RectTransform:
   m_GameObject: {fileID: 1618937715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -16791,7 +16792,7 @@ RectTransform:
   m_GameObject: {fileID: 1682476193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}
@@ -17193,8 +17194,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1133.6, y: 1094.75}
-  m_SizeDelta: {x: 3210.9, y: 1806.1}
+  m_AnchoredPosition: {x: -961.8, y: 1114}
+  m_SizeDelta: {x: 2739.8, y: 2056.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1726726709
 CanvasGroup:
@@ -17215,7 +17216,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726726707}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -17806,7 +17807,7 @@ RectTransform:
   m_GameObject: {fileID: 1808204686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.84, y: 1.84, z: 1.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 827139486}

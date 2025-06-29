@@ -22,6 +22,7 @@ public class LevelStateController : MonoBehaviour
     public PropManager propManager;
     public ItemManager itemManager;
     public InventoryManager inventoryManager;
+    public LevelCompleteTrigger levelCompleteTrigger;
 
     [Header("小世界全局状态")]
     [Space(5)]

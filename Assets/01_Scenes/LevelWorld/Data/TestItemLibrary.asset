@@ -328,7 +328,7 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 08000000
+    itemTags: 01000000
     likeItemName: 
     hateItemName: 
     needCorner: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 09000000
+    itemTags: 01000000
     likeItemName: 
     hateItemName: 
     needCorner: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 01000000
-    likeItemName: 
+    likeItemName: "3\u884C2\u5217_L3_\u7259\u5237"
     hateItemName: 
     needCorner: 0
   - itemName: "2\u884C1\u5217_L3_\u53E3\u7EA2"
@@ -468,39 +468,10 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 01000000
-    likeItemName: 
+    likeItemName: "2\u884C4\u5217_L3_\u8863\u670D"
     hateItemName: 
     needCorner: 0
   - itemName: "2\u884C4\u5217_L3_\u53F3\u978B"
-    itemSprite: {fileID: 21300000, guid: ac4f823ed8388f24387662d6750a81bd, type: 3}
-    itemSource: 0
-    gridType: 20
-    shape:
-    - {x: 0, y: 1}
-    - {x: 1, y: 1}
-    - {x: 2, y: 0}
-    - {x: 2, y: 1}
-    - {x: 3, y: 0}
-    - {x: 3, y: 1}
-    itemSize: 6
-    itemValue: 5
-    itemLocalizedName:
-      mTerm: "ItemName/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Name"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemLocalizedDescription:
-      mTerm: "ItemDescription/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Description"
-      mRTL_IgnoreArabicFix: 0
-      mRTL_MaxLineLength: 0
-      mRTL_ConvertNumbers: 0
-      m_DontLocalizeParameters: 0
-    itemTags: 01000000
-    likeItemName: 
-    hateItemName: 
-    needCorner: 0
-  - itemName: "2\u884C4\u5217_L3_\u5DE6\u978B"
     itemSprite: {fileID: 21300000, guid: b897adfbafd824c4183cd41bc1a5d52f, type: 3}
     itemSource: 0
     gridType: 20
@@ -527,6 +498,35 @@ MonoBehaviour:
       m_DontLocalizeParameters: 0
     itemTags: 01000000
     likeItemName: 
+    hateItemName: 
+    needCorner: 1
+  - itemName: "2\u884C4\u5217_L3_\u5DE6\u978B"
+    itemSprite: {fileID: 21300000, guid: b897adfbafd824c4183cd41bc1a5d52f, type: 3}
+    itemSource: 0
+    gridType: 20
+    shape:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 1, y: 0}
+    - {x: 1, y: 1}
+    - {x: 2, y: 1}
+    - {x: 3, y: 1}
+    itemSize: 6
+    itemValue: 5
+    itemLocalizedName:
+      mTerm: "ItemName/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Name"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemLocalizedDescription:
+      mTerm: "ItemDescription/Level_Text_Item_\u9ED1\u91D1\u706B\u817F_Description"
+      mRTL_IgnoreArabicFix: 0
+      mRTL_MaxLineLength: 0
+      mRTL_ConvertNumbers: 0
+      m_DontLocalizeParameters: 0
+    itemTags: 01000000
+    likeItemName: "2\u884C4\u5217_L3_\u53F3\u978B"
     hateItemName: 
     needCorner: 0
   - itemName: "3\u884C2\u5217_L3_\u7259\u5237"
@@ -556,7 +556,7 @@ MonoBehaviour:
     itemTags: 01000000
     likeItemName: 
     hateItemName: 
-    needCorner: 0
+    needCorner: 1
   - itemName: "3\u884C3\u5217_L3_\u9999\u6C34"
     itemSprite: {fileID: 21300000, guid: 5a2ca3e41ca268245922239889784098, type: 3}
     itemSource: 0
@@ -583,7 +583,7 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 01000000
-    likeItemName: 
+    likeItemName: "2\u884C4\u5217_L3_\u5DE6\u978B"
     hateItemName: 
     needCorner: 0
   - itemName: "\u8106\u5AE9\u7389\u9E21\u817F"
