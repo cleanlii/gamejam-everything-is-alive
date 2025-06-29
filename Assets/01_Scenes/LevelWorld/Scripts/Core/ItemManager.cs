@@ -1955,38 +1955,83 @@ public class ItemManager : MonoBehaviour
     /// <summary>
     ///     检查6x8网格中央的2x2区域是否为空
     /// </summary>
+    // private bool CheckCenterAreaEmpty()
+    // {
+    //     // 6x8网格的中央2x2区域坐标
+    //     var centerPositions = new List<Vector2Int>
+    //     {
+    //         new(3, 2),
+    //         new(3, 3),
+    //         new(4, 2),
+    //         new(4, 3)
+    //     };
+    //
+    //     foreach (var pos in centerPositions)
+    //     {
+    //         // 检查该位置是否有物品占据
+    //         var cellOccupied = items.Any(item =>
+    //         {
+    //             if (!item.isPlaced) return false;
+    //
+    //             var occupiedCells = GetItemOccupiedCells(item);
+    //             return occupiedCells.Contains(pos);
+    //         });
+    //
+    //         if (cellOccupied)
+    //         {
+    //             Debug.Log($"中央2x2区域不为空：位置({pos.x}, {pos.y})被占据");
+    //             return false;
+    //         }
+    //     }
+    //
+    //     Debug.Log("中央2x2区域检查通过：区域为空");
+    //     return true;
+    // }
+
+    /// <summary>
+    ///     检查网格中是否有至少4个空格（不需要连续）
+    /// </summary>
     private bool CheckCenterAreaEmpty()
     {
-        // 6x8网格的中央2x2区域坐标
-        var centerPositions = new List<Vector2Int>
+        var gridWidth = backpackHolder.cells.GetLength(0);
+        var gridHeight = backpackHolder.cells.GetLength(1);
+
+        // 获取所有已被物品占据的格子
+        var occupiedPositions = new HashSet<Vector2Int>();
+
+        foreach (var item in items)
         {
-            new(3, 2),
-            new(3, 3),
-            new(4, 2),
-            new(4, 3)
-        };
+            if (!item.isPlaced) continue;
 
-        foreach (var pos in centerPositions)
-        {
-            // 检查该位置是否有物品占据
-            var cellOccupied = items.Any(item =>
+            var occupiedCells = GetItemOccupiedCells(item);
+            foreach (var cell in occupiedCells)
             {
-                if (!item.isPlaced) return false;
-
-                var occupiedCells = GetItemOccupiedCells(item);
-                return occupiedCells.Contains(pos);
-            });
-
-            if (cellOccupied)
-            {
-                Debug.Log($"中央2x2区域不为空：位置({pos.x}, {pos.y})被占据");
-                return false;
+                occupiedPositions.Add(cell);
             }
         }
 
-        Debug.Log("中央2x2区域检查通过：区域为空");
-        return true;
+        // 计算空格数量
+        var emptyCount = 0;
+        for (var x = 0; x < gridWidth; x++)
+        {
+            for (var y = 0; y < gridHeight; y++)
+            {
+                var position = new Vector2Int(x, y);
+                if (!occupiedPositions.Contains(position)) emptyCount++;
+            }
+        }
+
+        var hasEnoughEmptySpaces = emptyCount >= 4;
+
+        if (hasEnoughEmptySpaces)
+            Debug.Log($"空格检查通过：网格中有 {emptyCount} 个空格（需要至少4个）");
+        else
+            Debug.Log($"空格不足：网格中只有 {emptyCount} 个空格（需要至少4个）");
+
+        return hasEnoughEmptySpaces;
     }
+
+    public bool isBackpackMoved;
 
     /// <summary>
     ///     使用DOTween将BACKPACK面板移动到左侧20f位置
@@ -2014,7 +2059,11 @@ public class ItemManager : MonoBehaviour
         // 使用DOTween执行移动动画
         rectTransform.DOAnchorPos(targetPosition, 0.5f)
             .SetEase(Ease.OutQuad)
-            .OnComplete(() => { Debug.Log("关卡3特殊条件完成：背包面板已移动到左侧"); });
+            .OnComplete(() =>
+            {
+                isBackpackMoved = true;
+                Debug.Log("关卡3特殊条件完成：背包面板已移动到左侧");
+            });
 
         Debug.Log("关卡3特殊条件触发：开始移动背包面板");
     }

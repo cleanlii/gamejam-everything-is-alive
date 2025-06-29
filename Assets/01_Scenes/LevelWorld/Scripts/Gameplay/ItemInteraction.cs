@@ -638,7 +638,13 @@ public class ItemInteraction : ObjectInteraction
             if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
             {
                 // rectTransform.anchoredPosition = originalPosition;
-                rectTransform.anchoredPosition = itemData.spawnPoint.GetPosition();
+                if (!_itemManager.isBackpackMoved) rectTransform.anchoredPosition = itemData.spawnPoint.GetPosition();
+                else
+                {
+                    var sizeX = _inventoryInitializer.inventoryInfo.size.x;
+                    var sizeY = _inventoryInitializer.inventoryInfo.size.y;
+                    rectTransform.anchoredPosition = _inventoryInitializer.cells[sizeX - 1, sizeY - 1].worldPosition + new Vector3(450f, 300f, 0f);
+                }
             }
 
             SetColliderAndRigidbody(true);
