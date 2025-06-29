@@ -13,7 +13,7 @@ Material:
   - DOODLE_ON
   - MOTIONBLUR_ON
   - OUTBASEPIXELPERF_ON
-  - OUTDIST_ON
+  - OUTBASE_ON
   - POSTERIZE_ON
   - SHAKEUV_ON
   m_InvalidKeywords: []
@@ -170,7 +170,7 @@ Material:
     - _OutlineDistortAmount: 0.64
     - _OutlineDistortTexXSpeed: 5
     - _OutlineDistortTexYSpeed: 5
-    - _OutlineGlow: 1.5
+    - _OutlineGlow: 1
     - _OutlinePixelWidth: 1
     - _OutlineTexXSpeed: 10
     - _OutlineTexYSpeed: 0
@@ -241,7 +241,7 @@ Material:
     - _HitEffectColor: {r: 1, g: 1, b: 1, a: 1}
     - _HologramStripeColor: {r: 0, g: 1, b: 1, a: 1}
     - _InnerOutlineColor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
-    - _OutlineColor: {r: 1, g: 0.3962838, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 0.2, b: 0, a: 1}
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
