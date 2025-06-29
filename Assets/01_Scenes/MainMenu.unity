@@ -1773,6 +1773,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2217602275265012056, guid: 6385bca161326444da61c76a5e94c696,
+        type: 3}
+      propertyPath: normalCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 0239c788890c6a7418e207380f68804a, type: 3}
+    - target: {fileID: 2217602275265012056, guid: 6385bca161326444da61c76a5e94c696,
+        type: 3}
+      propertyPath: onDragCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: a81ba1fea7b004247bc0213ee7ee2a4a, type: 3}
+    - target: {fileID: 2217602275265012056, guid: 6385bca161326444da61c76a5e94c696,
+        type: 3}
+      propertyPath: readyToDragCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 83cb74ba8dbe11e4486fad90d8328f90, type: 3}
     - target: {fileID: 2217602275265012057, guid: 6385bca161326444da61c76a5e94c696,
         type: 3}
       propertyPath: m_RootOrder

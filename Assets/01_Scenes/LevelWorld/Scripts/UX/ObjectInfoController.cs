@@ -26,6 +26,8 @@ public class ObjectInfoController : MonoBehaviour
     [Space(5)]
     [SerializeField] private GameObject likeIcon;
     [SerializeField] private GameObject hateIcon;
+    [SerializeField] private GameObject cornerIcon;
+    [SerializeField] private GameObject ordinaryIcon;
     [SerializeField] private Image targetImg;
 
     [Header("浮窗界面_动画参数")]
@@ -274,6 +276,8 @@ public class ObjectInfoController : MonoBehaviour
 
         hateIcon.SetActive(false);
         likeIcon.SetActive(false);
+        cornerIcon.SetActive(false);
+        ordinaryIcon.SetActive(false);
 
         // 显示物品名称
         nameTMP.text = itemData.name;
@@ -281,8 +285,8 @@ public class ObjectInfoController : MonoBehaviour
         // 显示needCorner状态
         if (itemData.needCorner)
         {
-            hateIcon.SetActive(true);
-            targetImg.sprite = Resources.Load<Sprite>("CornerIcon");
+            cornerIcon.SetActive(true);
+            targetImg.sprite = itemData.itemImage.sprite;
             targetImg.SetNativeSize();
             return;
         }
@@ -293,8 +297,8 @@ public class ObjectInfoController : MonoBehaviour
 
         if (!hasLike && !hasHate)
         {
-            likeIcon.SetActive(true);
-            targetImg.sprite = Resources.Load<Sprite>("LoveAllIcon");
+            ordinaryIcon.SetActive(true);
+            targetImg.sprite = itemData.itemImage.sprite;
             targetImg.SetNativeSize();
             return;
         }
