@@ -486,7 +486,7 @@ MonoBehaviour:
     satisfiedSprite: {fileID: 271490377, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae, type: 3}
     unsatisfiedSprite: {fileID: 271490377, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    itemType: 1
+    itemType: 2
   - itemName: "2\u884C2\u5217_L3_\u676F\u5B50"
     itemSprite: {fileID: 21300000, guid: 8cda9479e6644994cb2c5c8141cd0f3f, type: 3}
     itemSource: 0
