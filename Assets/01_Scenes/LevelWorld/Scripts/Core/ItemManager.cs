@@ -219,6 +219,7 @@ public class ItemManager : MonoBehaviour
         var item = itemGO.GetComponent<ItemInteraction>().itemData;
         item.name = newItemName;
         item.itemMood = moodImg;
+        item.spawnPoint = spawnPoint;
         items.Add(item);
         _currentTaskItems.Add(item);
 

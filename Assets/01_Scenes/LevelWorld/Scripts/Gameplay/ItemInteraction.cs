@@ -637,8 +637,8 @@ public class ItemInteraction : ObjectInteraction
             ObjUtils.SetParentAndLayer(gameObject, leftPanelItemLayer, InventoryType.Pool);
             if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
             {
-                rectTransform.anchoredPosition = originalPosition;
-                // rectTransform.anchoredPosition = _middlePosition;
+                // rectTransform.anchoredPosition = originalPosition;
+                rectTransform.anchoredPosition = itemData.spawnPoint.GetPosition();
             }
 
             SetColliderAndRigidbody(true);
