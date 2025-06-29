@@ -41,8 +41,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: "2\u884C2\u5217_L1_\u996D\u76D2"
     needCorner: 0
-    satisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae, type: 3}
-    unsatisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+      type: 3}
+    unsatisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "1\u884C2\u5217_L1_\u96F6\u98DF"
     itemSprite: {fileID: 21300000, guid: 9227cbfeeff027e44b8f2cf9a9ecaa38, type: 3}
@@ -98,8 +99,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: "1\u884C2\u5217_L1_\u96F6\u98DF"
     needCorner: 0
-    satisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae, type: 3}
-    unsatisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+      type: 3}
+    unsatisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "3\u884C2\u5217L\u5B57_L1_\u5076\u50CF"
     itemSprite: {fileID: 21300000, guid: e188c348b4fb21b4abcb4f968aa612ba, type: 3}
@@ -158,9 +160,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: 
     needCorner: 1
-    satisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "2\u884C1\u5217_L2_\u60C5\u4E66"
     itemSprite: {fileID: 21300000, guid: f151fbbde9cbb1642a184c8a190a9a5c, type: 3}
@@ -187,9 +189,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: 
     needCorner: 1
-    satisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "2\u884C2\u5217_L2_\u624B\u673A"
     itemSprite: {fileID: 21300000, guid: a6ae47b76bd7baf47a1bb6c49a114083, type: 3}
@@ -218,9 +220,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: 
     needCorner: 1
-    satisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "1\u884C1\u5217_L2_\u6A61\u76AE"
     itemSprite: {fileID: 21300000, guid: 3433cebb637eee24bb53eaacc1423d77, type: 3}
@@ -246,9 +248,9 @@ MonoBehaviour:
     likeItemName: "3\u884C2\u5217_L2_\u8F85\u5BFC\u4E66"
     hateItemName: 
     needCorner: 0
-    satisfiedSprite: {fileID: -1299119770, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: 1662447741, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: 1662447741, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: -1299119770, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "3\u884C2\u5217_L2_\u6821\u95E8\u53E3\u6742\u5FD7"
     itemSprite: {fileID: 21300000, guid: 2ccfef7f73e300f4087b350a088ded86, type: 3}
@@ -311,8 +313,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: "3\u884C2\u5217_L2_\u6821\u95E8\u53E3\u6742\u5FD7"
     needCorner: 0
-    satisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae, type: 3}
-    unsatisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+      type: 3}
+    unsatisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "2\u884C4\u5217_L2_MP3"
     itemSprite: {fileID: 21300000, guid: c45b797c884f52a4aa6e931d39437eee, type: 3}
@@ -496,9 +499,9 @@ MonoBehaviour:
     likeItemName: "3\u884C2\u5217_L3_\u7259\u5237"
     hateItemName: 
     needCorner: 0
-    satisfiedSprite: {fileID: -1299119770, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: 1662447741, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: 1662447741, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: -1299119770, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "2\u884C1\u5217_L3_\u53E3\u7EA2"
     itemSprite: {fileID: 21300000, guid: 749b8998ffd856f4cb407f65f24aa70a, type: 3}
@@ -525,8 +528,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: "2\u884C4\u5217_L3_\u8863\u670D"
     needCorner: 0
-    satisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae, type: 3}
-    unsatisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+      type: 3}
+    unsatisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "2\u884C4\u5217_L3_\u53F3\u978B"
     itemSprite: {fileID: 21300000, guid: ac4f823ed8388f24387662d6750a81bd, type: 3}
@@ -557,9 +561,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: 
     needCorner: 1
-    satisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "2\u884C4\u5217_L3_\u5DE6\u978B"
     itemSprite: {fileID: 21300000, guid: b897adfbafd824c4183cd41bc1a5d52f, type: 3}
@@ -590,9 +594,9 @@ MonoBehaviour:
     likeItemName: "2\u884C4\u5217_L3_\u53F3\u978B"
     hateItemName: 
     needCorner: 0
-    satisfiedSprite: {fileID: -1299119770, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: 1662447741, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: 1662447741, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: -1299119770, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "3\u884C2\u5217_L3_\u7259\u5237"
     itemSprite: {fileID: 21300000, guid: 2af34dea824e49f45ac09fba6d42ef67, type: 3}
@@ -622,9 +626,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: 
     needCorner: 1
-    satisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
-    unsatisfiedSprite: {fileID: -1478216916, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    unsatisfiedSprite: {fileID: 1869119326, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "3\u884C3\u5217_L3_\u9999\u6C34"
     itemSprite: {fileID: 21300000, guid: 5a2ca3e41ca268245922239889784098, type: 3}
@@ -655,8 +659,9 @@ MonoBehaviour:
     likeItemName: 
     hateItemName: "2\u884C4\u5217_L3_\u5DE6\u978B"
     needCorner: 0
-    satisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae, type: 3}
-    unsatisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+    satisfiedSprite: {fileID: -1900605649, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
+      type: 3}
+    unsatisfiedSprite: {fileID: 220683180, guid: 8f3c3b3c6c1653f4f8fc1585e87cd9ae,
       type: 3}
   - itemName: "\u8106\u5AE9\u7389\u9E21\u817F"
     itemSprite: {fileID: 0}
