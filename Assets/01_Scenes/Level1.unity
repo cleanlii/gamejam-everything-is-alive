@@ -20519,7 +20519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6932a2ab223c4d4bac67ff3b00cd867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownTime: 3
+  countdownTime: 10
   targetObject: {fileID: 1720235726648288771}
 --- !u!61 &1720235726372301503
 BoxCollider2D:
