@@ -65,3 +65,39 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 7188d3e06d16ccc40a0a711aed52a8e4, type: 3}
     type: 1
     volume: 0.5
+  - name: "SE_\u62FF\u8D77\u666E\u901A\u7269\u54C1"
+    clip: {fileID: 8300000, guid: e9f8414ecea4c8547b3095915de7a79d, type: 3}
+    type: 3
+    volume: 1
+  - name: "SE_\u653E\u4E0B\u4E66"
+    clip: {fileID: 8300000, guid: 56144b897fbf8c7429797dc782c0baac, type: 3}
+    type: 3
+    volume: 0.7
+  - name: "SE_\u653E\u4E0B\u4FE1\u4EF6"
+    clip: {fileID: 8300000, guid: 9fc4af20c3829574eb11d4c14949f715, type: 3}
+    type: 3
+    volume: 0.7
+  - name: "SE_\u653E\u4E0B\u5851\u6599"
+    clip: {fileID: 8300000, guid: 5e54768dba9da574da76fbdb97b201f0, type: 3}
+    type: 3
+    volume: 0.7
+  - name: "SE_\u653E\u4E0B\u5E03\u6599"
+    clip: {fileID: 8300000, guid: 8c0b33ae7a627be449a03777a6827466, type: 3}
+    type: 3
+    volume: 0.7
+  - name: "SE_\u653E\u4E0B\u666E\u901A\u7269\u54C1"
+    clip: {fileID: 8300000, guid: 8675e00a71d0def418e5236adac173d9, type: 3}
+    type: 3
+    volume: 0.7
+  - name: "SE_\u653E\u4E0B\u6A61\u76AE"
+    clip: {fileID: 8300000, guid: 21b234f8faeef51489fac494ea4c1490, type: 3}
+    type: 3
+    volume: 0.7
+  - name: "SE_\u653E\u4E0B\u73BB\u7483"
+    clip: {fileID: 8300000, guid: e827c9756ffc23e4abb08185cfab598f, type: 3}
+    type: 3
+    volume: 0.7
+  - name: "SE_\u653E\u5728\u91D1\u5C5E\u548C\u74F7\u5668"
+    clip: {fileID: 8300000, guid: dddf3bcbc5422184f9c4229e8bb2eb9e, type: 3}
+    type: 3
+    volume: 0.7
