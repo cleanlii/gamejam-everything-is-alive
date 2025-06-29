@@ -22,7 +22,7 @@ public abstract class ObjectInteraction : MonoBehaviour, IBeginDragHandler, IDra
 
     // 当前物体的类型与状态
     protected bool isDragging;
-    protected Vector2Int[] currentShape;
+    public Vector2Int[] currentShape;
     protected List<Vector2Int[]> rotatedShapes;
 
     // 动画参数

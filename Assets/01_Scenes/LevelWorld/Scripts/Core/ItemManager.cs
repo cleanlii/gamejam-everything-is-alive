@@ -1118,6 +1118,8 @@ public class ItemManager : MonoBehaviour
 
         // 检查是否所有物品都满足条件，如果是则进入下一关
         CheckLevelComplete();
+
+        CheckLevel3SpecialCondition();
     }
 
     /// <summary>
@@ -1199,7 +1201,7 @@ public class ItemManager : MonoBehaviour
 
         if (allItemsSatisfied)
         {
-            Debug.Log("🎉 恭喜！所有物品都已正确放置，关卡完成！");
+            Debug.Log("恭喜！所有物品都已正确放置，关卡完成！");
             OnLevelComplete();
         }
         else
@@ -1226,11 +1228,8 @@ public class ItemManager : MonoBehaviour
         // 等待1秒让玩家看到完成效果
         yield return new WaitForSeconds(1f);
 
-        // 调用GameManager加载下一关
-        if (GameManager.Instance != null)
-            GameManager.Instance.LoadLevelSelect();
-        else
-            Debug.LogError("GameManager.Instance 为空，无法加载下一关！");
+        // 回到关卡界面
+        LevelStateController.Instance.levelCompleteTrigger.CompleteLevel();
     }
 
     /// <summary>
@@ -1407,8 +1406,9 @@ public class ItemManager : MonoBehaviour
     private List<Vector2Int> GetItemOccupiedCells(ItemData itemData)
     {
         var occupiedCells = new List<Vector2Int>();
+        var itemInc = itemData.objInc as ItemInteraction;
 
-        foreach (var offset in itemData.shape)
+        foreach (var offset in itemInc.currentShape)
         {
             var cellPosition = new Vector2Int(
                 itemData.position.x + offset.x,
@@ -1444,6 +1444,67 @@ public class ItemManager : MonoBehaviour
     /// <summary>
     ///     检查角落需求 - 需要占据四角之一
     /// </summary>
+    // private void CheckCornerRequirement(ItemData itemData)
+    // {
+    //     // 如果不需要角落位置，跳过检测
+    //     if (!itemData.needCorner) return;
+    //
+    //     // 获取网格的尺寸
+    //     var gridWidth = backpackHolder.cells.GetLength(0);
+    //     var gridHeight = backpackHolder.cells.GetLength(1);
+    //
+    //     // 定义四个角落位置
+    //     var corners = new List<Vector2Int>
+    //     {
+    //         new(0, 0), // 左上角
+    //         new(gridWidth - 1, 0), // 右上角
+    //         new(0, gridHeight - 1), // 左下角
+    //         new(gridWidth - 1, gridHeight - 1) // 右下角
+    //     };
+    //
+    //     // 获取当前物品占据的所有网格位置
+    //     var occupiedCells = GetItemOccupiedCells(itemData);
+    //
+    //     // 检查是否占据了任何一个角落
+    //     var occupiesCorner = false;
+    //     var occupiedCorner = Vector2Int.zero;
+    //
+    //     foreach (var corner in corners)
+    //     {
+    //         if (occupiedCells.Contains(corner))
+    //         {
+    //             occupiesCorner = true;
+    //             occupiedCorner = corner;
+    //             break;
+    //         }
+    //     }
+    //
+    //     // 检查当前状态是否已经正确
+    //     var currentlyInCorrectState = IsItemInCorrectCornerState(itemData, occupiesCorner);
+    //
+    //     if (currentlyInCorrectState)
+    //     {
+    //         // 状态没有变化，不需要重新播放动画
+    //         return;
+    //     }
+    //
+    //     if (!occupiesCorner)
+    //     {
+    //         Debug.Log($"违反角落规则：物品 {itemData.name} 需要放置在角落位置！当前位置不满足要求。");
+    //         TriggerCornerRelationshipViolationEffect(itemData);
+    //     }
+    //     else
+    //     {
+    //         var cornerName = GetCornerName(occupiedCorner, gridWidth, gridHeight);
+    //         Debug.Log($"满足角落规则：物品 {itemData.name} 正确占据了{cornerName}！");
+    //         TriggerCornerRelationshipSatisfiedEffect(itemData);
+    //     }
+    // }
+
+
+    /// <summary>
+    ///     检查角落需求 - 增强调试版本
+    /// </summary>
     private void CheckCornerRequirement(ItemData itemData)
     {
         // 如果不需要角落位置，跳过检测
@@ -1452,6 +1513,10 @@ public class ItemManager : MonoBehaviour
         // 获取网格的尺寸
         var gridWidth = backpackHolder.cells.GetLength(0);
         var gridHeight = backpackHolder.cells.GetLength(1);
+
+        // 添加调试日志
+        Debug.Log($"网格尺寸: {gridWidth} x {gridHeight}");
+        Debug.Log($"物品 {itemData.name} 位置: {itemData.position}");
 
         // 定义四个角落位置
         var corners = new List<Vector2Int>
@@ -1462,8 +1527,22 @@ public class ItemManager : MonoBehaviour
             new(gridWidth - 1, gridHeight - 1) // 右下角
         };
 
+        // 调试输出所有角落坐标
+        Debug.Log("四个角落坐标:");
+        Debug.Log("左上角: (0, 0)");
+        Debug.Log($"右上角: ({gridWidth - 1}, 0)");
+        Debug.Log($"左下角: (0, {gridHeight - 1})");
+        Debug.Log($"右下角: ({gridWidth - 1}, {gridHeight - 1})");
+
         // 获取当前物品占据的所有网格位置
         var occupiedCells = GetItemOccupiedCells(itemData);
+
+        // 调试输出物品占据的所有格子
+        Debug.Log($"物品 {itemData.name} 占据的格子:");
+        foreach (var cell in occupiedCells)
+        {
+            Debug.Log($"  - ({cell.x}, {cell.y})");
+        }
 
         // 检查是否占据了任何一个角落
         var occupiesCorner = false;
@@ -1475,8 +1554,11 @@ public class ItemManager : MonoBehaviour
             {
                 occupiesCorner = true;
                 occupiedCorner = corner;
+                Debug.Log($"✓ 物品占据了角落: ({corner.x}, {corner.y}) - {GetCornerName(corner, gridWidth, gridHeight)}");
                 break;
             }
+
+            Debug.Log($"✗ 物品未占据角落: ({corner.x}, {corner.y}) - {GetCornerName(corner, gridWidth, gridHeight)}");
         }
 
         // 检查当前状态是否已经正确
@@ -1485,19 +1567,63 @@ public class ItemManager : MonoBehaviour
         if (currentlyInCorrectState)
         {
             // 状态没有变化，不需要重新播放动画
+            Debug.Log($"物品 {itemData.name} 角落状态正确，无需改变");
             return;
         }
 
         if (!occupiesCorner)
         {
-            Debug.Log($"违反角落规则：物品 {itemData.name} 需要放置在角落位置！当前位置不满足要求。");
+            Debug.Log($"❌ 违反角落规则：物品 {itemData.name} 需要放置在角落位置！当前位置不满足要求。");
             TriggerCornerRelationshipViolationEffect(itemData);
         }
         else
         {
             var cornerName = GetCornerName(occupiedCorner, gridWidth, gridHeight);
-            Debug.Log($"满足角落规则：物品 {itemData.name} 正确占据了{cornerName}！");
+            Debug.Log($"✅ 满足角落规则：物品 {itemData.name} 占据了{cornerName}");
             TriggerCornerRelationshipSatisfiedEffect(itemData);
+        }
+    }
+
+    /// <summary>
+    ///     额外的调试方法：验证网格边界
+    /// </summary>
+    private void DebugGridBoundaries()
+    {
+        var gridWidth = backpackHolder.cells.GetLength(0);
+        var gridHeight = backpackHolder.cells.GetLength(1);
+
+        Debug.Log("=== 网格边界调试 ===");
+        Debug.Log($"网格尺寸: {gridWidth} x {gridHeight}");
+
+        // 检查四个角落是否在有效范围内
+        var corners = new[]
+        {
+            new Vector2Int(0, 0),
+            new Vector2Int(gridWidth - 1, 0),
+            new Vector2Int(0, gridHeight - 1),
+            new Vector2Int(gridWidth - 1, gridHeight - 1)
+        };
+
+        foreach (var corner in corners)
+        {
+            var isValid = corner.x >= 0 && corner.x < gridWidth &&
+                          corner.y >= 0 && corner.y < gridHeight;
+            var cornerName = GetCornerName(corner, gridWidth, gridHeight);
+            Debug.Log($"{cornerName} ({corner.x}, {corner.y}): {(isValid ? "有效" : "无效")}");
+
+            // 检查对应的cell是否存在
+            if (isValid)
+            {
+                try
+                {
+                    var cell = backpackHolder.cells[corner.x, corner.y];
+                    Debug.Log($"  - 对应cell存在: {cell != null}");
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"  - 访问cell时出错: {e.Message}");
+                }
+            }
         }
     }
 
@@ -1744,6 +1870,177 @@ public class ItemManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    #endregion
+
+    #region L3特殊检测
+
+    /// <summary>
+    ///     检查关卡3的特殊条件：6x8网格中央2x2区域为空且所有条件满足时移动背包面板
+    /// </summary>
+    private void CheckLevel3SpecialCondition()
+    {
+        // 检查是否为关卡3
+        if (LevelStateController.Instance.levelCompleteTrigger == null ||
+            LevelStateController.Instance.levelCompleteTrigger.levelIndex != 3)
+            return;
+
+        // 检查网格是否为6x8
+        if (backpackHolder.cells.GetLength(0) != 8 || backpackHolder.cells.GetLength(1) != 6)
+        {
+            Debug.LogWarning("关卡3特殊检查：网格尺寸不匹配，期望6x8");
+            return;
+        }
+
+        // 检查所有物品是否都已放置且满足条件
+        var allItemsSatisfied = CheckAllItemsSatisfied();
+        if (!allItemsSatisfied) return;
+
+        // 检查中央2x2区域是否为空
+        var centerAreaEmpty = CheckCenterAreaEmpty();
+        if (!centerAreaEmpty) return;
+
+        // 所有条件都满足，执行背包面板移动动画
+        MoveBackpackPanelToLeft();
+    }
+
+    /// <summary>
+    ///     检查所有物品是否都满足条件
+    /// </summary>
+    private bool CheckAllItemsSatisfied()
+    {
+        // 排除特殊物品的名称
+        const string excludedItemName = "2行2列_L3_乐队合照";
+
+        // 检查是否所有物品都已放置（排除特殊物品）
+        var allItemsPlaced = items.Where(item => item.name != excludedItemName).All(item => item.isPlaced);
+        if (!allItemsPlaced) return false;
+
+        // 检查是否所有物品都满足条件（排除特殊物品）
+        foreach (var item in items)
+        {
+            if (!item.isPlaced) continue;
+
+            // 排除特殊物品
+            if (item.name == excludedItemName) continue;
+
+            // 检查喜欢关系
+            if (!string.IsNullOrEmpty(item.likeItemName))
+            {
+                var likedItem = items.FirstOrDefault(i => i.name == item.likeItemName && i.isPlaced);
+                if (likedItem == null)
+                    return false;
+
+                var currentCells = GetItemOccupiedCells(item);
+                var likedCells = GetItemOccupiedCells(likedItem);
+                if (!IsItemsAdjacent(currentCells, likedCells))
+                    return false;
+            }
+
+            // 检查讨厌关系
+            if (!string.IsNullOrEmpty(item.hateItemName))
+            {
+                var hatedItem = items.FirstOrDefault(i => i.name == item.hateItemName && i.isPlaced);
+                if (hatedItem != null)
+                {
+                    var currentCells = GetItemOccupiedCells(item);
+                    var hatedCells = GetItemOccupiedCells(hatedItem);
+                    if (IsItemsAdjacent(currentCells, hatedCells))
+                        return false;
+                }
+            }
+
+            // 检查角落需求
+            if (item.needCorner)
+            {
+                var gridWidth = backpackHolder.cells.GetLength(0);
+                var gridHeight = backpackHolder.cells.GetLength(1);
+
+                var corners = new List<Vector2Int>
+                {
+                    new(0, 0),
+                    new(gridWidth - 1, 0),
+                    new(0, gridHeight - 1),
+                    new(gridWidth - 1, gridHeight - 1)
+                };
+
+                var occupiedCells = GetItemOccupiedCells(item);
+                var occupiesCorner = corners.Any(corner => occupiedCells.Contains(corner));
+
+                if (!occupiesCorner)
+                    return false;
+            }
+        }
+
+        return true;
+    }
+
+    /// <summary>
+    ///     检查6x8网格中央的2x2区域是否为空
+    /// </summary>
+    private bool CheckCenterAreaEmpty()
+    {
+        // 6x8网格的中央2x2区域坐标
+        var centerPositions = new List<Vector2Int>
+        {
+            new(3, 2),
+            new(3, 3),
+            new(4, 2),
+            new(4, 3)
+        };
+
+        foreach (var pos in centerPositions)
+        {
+            // 检查该位置是否有物品占据
+            var cellOccupied = items.Any(item =>
+            {
+                if (!item.isPlaced) return false;
+
+                var occupiedCells = GetItemOccupiedCells(item);
+                return occupiedCells.Contains(pos);
+            });
+
+            if (cellOccupied)
+            {
+                Debug.Log($"中央2x2区域不为空：位置({pos.x}, {pos.y})被占据");
+                return false;
+            }
+        }
+
+        Debug.Log("中央2x2区域检查通过：区域为空");
+        return true;
+    }
+
+    /// <summary>
+    ///     使用DOTween将BACKPACK面板移动到左侧20f位置
+    /// </summary>
+    private void MoveBackpackPanelToLeft()
+    {
+        var backpackPanel = backpackHolder.transform.parent.parent;
+        if (backpackPanel == null)
+        {
+            Debug.LogError("无法找到BACKPACK panel引用");
+            return;
+        }
+
+        var rectTransform = backpackPanel.GetComponent<RectTransform>();
+        if (rectTransform == null)
+        {
+            Debug.LogError("BACKPACK panel没有RectTransform组件");
+            return;
+        }
+
+        // 计算目标位置（向左移动）
+        var currentPosition = rectTransform.anchoredPosition;
+        var targetPosition = new Vector2(currentPosition.x - 600f, currentPosition.y);
+
+        // 使用DOTween执行移动动画
+        rectTransform.DOAnchorPos(targetPosition, 0.5f)
+            .SetEase(Ease.OutQuad)
+            .OnComplete(() => { Debug.Log("关卡3特殊条件完成：背包面板已移动到左侧"); });
+
+        Debug.Log("关卡3特殊条件触发：开始移动背包面板");
     }
 
     #endregion

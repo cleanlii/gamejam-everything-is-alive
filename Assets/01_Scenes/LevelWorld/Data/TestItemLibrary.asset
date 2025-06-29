@@ -328,7 +328,7 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 08000000
+    itemTags: 01000000
     likeItemName: 
     hateItemName: 
     needCorner: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 09000000
+    itemTags: 01000000
     likeItemName: 
     hateItemName: 
     needCorner: 0
@@ -476,11 +476,11 @@ MonoBehaviour:
     itemSource: 0
     gridType: 20
     shape:
+    - {x: 0, y: 0}
     - {x: 0, y: 1}
+    - {x: 1, y: 0}
     - {x: 1, y: 1}
-    - {x: 2, y: 0}
     - {x: 2, y: 1}
-    - {x: 3, y: 0}
     - {x: 3, y: 1}
     itemSize: 6
     itemValue: 5
