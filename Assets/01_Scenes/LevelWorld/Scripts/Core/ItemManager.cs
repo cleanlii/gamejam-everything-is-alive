@@ -2093,7 +2093,7 @@ public class ItemManager : MonoBehaviour
                 .SetEase(Ease.OutBack);
 
             // 启动1秒后隐藏的协程
-            var hideCoroutine = StartCoroutine(HideBubbleAfterDelay(itemData, 1.5f));
+            var hideCoroutine = StartCoroutine(HideBubbleAfterDelay(itemData, 3f));
             itemData.SetBubbleHideCoroutine(hideCoroutine);
         }
     }
