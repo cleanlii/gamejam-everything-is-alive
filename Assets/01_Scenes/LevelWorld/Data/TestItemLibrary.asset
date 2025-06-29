@@ -39,7 +39,7 @@ MonoBehaviour:
       m_DontLocalizeParameters: 0
     itemTags: 01000000
     likeItemName: 
-    hateItemName: 
+    hateItemName: "2\u884C2\u5217_L1_\u996D\u76D2"
     needCorner: 0
   - itemName: "1\u884C2\u5217_L1_\u96F6\u98DF"
     itemSprite: {fileID: 21300000, guid: 9227cbfeeff027e44b8f2cf9a9ecaa38, type: 3}
@@ -144,8 +144,8 @@ MonoBehaviour:
       m_DontLocalizeParameters: 0
     itemTags: 01000000
     likeItemName: 
-    hateItemName: "3\u884C1\u5217_L1_\u4FDD\u6E29\u676F"
-    needCorner: 0
+    hateItemName: 
+    needCorner: 1
   - itemName: "2\u884C1\u5217_L2_\u60C5\u4E66"
     itemSprite: {fileID: 21300000, guid: f151fbbde9cbb1642a184c8a190a9a5c, type: 3}
     itemSource: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
     itemTags: 01000000
     likeItemName: 
     hateItemName: 
-    needCorner: 0
+    needCorner: 1
   - itemName: "2\u884C2\u5217_L2_\u624B\u673A"
     itemSprite: {fileID: 21300000, guid: a6ae47b76bd7baf47a1bb6c49a114083, type: 3}
     itemSource: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 01000000
+    itemTags: 08000000
     likeItemName: 
     hateItemName: 
     needCorner: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
       mRTL_MaxLineLength: 0
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
-    itemTags: 01000000
+    itemTags: 09000000
     likeItemName: 
     hateItemName: 
     needCorner: 0
@@ -468,19 +468,19 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 01000000
-    likeItemName: "2\u884C4\u5217_L3_\u8863\u670D"
-    hateItemName: 
+    likeItemName: 
+    hateItemName: "2\u884C4\u5217_L3_\u8863\u670D"
     needCorner: 0
   - itemName: "2\u884C4\u5217_L3_\u53F3\u978B"
-    itemSprite: {fileID: 21300000, guid: b897adfbafd824c4183cd41bc1a5d52f, type: 3}
+    itemSprite: {fileID: 21300000, guid: ac4f823ed8388f24387662d6750a81bd, type: 3}
     itemSource: 0
     gridType: 20
     shape:
-    - {x: 0, y: 0}
     - {x: 0, y: 1}
-    - {x: 1, y: 0}
     - {x: 1, y: 1}
+    - {x: 2, y: 0}
     - {x: 2, y: 1}
+    - {x: 3, y: 0}
     - {x: 3, y: 1}
     itemSize: 6
     itemValue: 5
@@ -583,11 +583,11 @@ MonoBehaviour:
       mRTL_ConvertNumbers: 0
       m_DontLocalizeParameters: 0
     itemTags: 01000000
-    likeItemName: "2\u884C4\u5217_L3_\u5DE6\u978B"
-    hateItemName: 
+    likeItemName: 
+    hateItemName: "2\u884C4\u5217_L3_\u5DE6\u978B"
     needCorner: 0
   - itemName: "\u8106\u5AE9\u7389\u9E21\u817F"
-    itemSprite: {fileID: 21300000, guid: 2407dedfec2a449dfb4193844effcbd9, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 1
     gridType: 7
     shape:
@@ -614,7 +614,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "\u917F\u9999\u725B\u8169"
-    itemSprite: {fileID: 21300000, guid: 2731c6419cccd40f4a5b66ef5ee6cfca, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 1
     gridType: 4
     shape:
@@ -641,7 +641,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "\u8106\u9AA8\u5927\u6392"
-    itemSprite: {fileID: 21300000, guid: 1a23dbe3ed47f49faabc225cc84ee558, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 1
     gridType: 18
     shape:
@@ -670,7 +670,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "\u971C\u964D\u661F\u7A7A\u725B"
-    itemSprite: {fileID: 21300000, guid: c8b9471435cfb4c55a61b95ef4194b13, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 1
     gridType: 13
     shape:
@@ -701,7 +701,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "\u590F\u591A\u5E03\u91CC\u6602\u725B\u6392"
-    itemSprite: {fileID: 21300000, guid: 7e245e02f7ecb4d639f1e7ee87cef638, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 1
     gridType: 4
     shape:
@@ -728,7 +728,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "ID\u7EC8\u7AEF"
-    itemSprite: {fileID: 21300000, guid: 027eb27f800fd4d8a835881d95381a03, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 4
     gridType: 20
     shape:
@@ -753,7 +753,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "\u5929\u7C41\u8033\u673A"
-    itemSprite: {fileID: 21300000, guid: 3f7126aaf955842bf83cc2642b8e440d, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 4
     gridType: 0
     shape:
@@ -777,7 +777,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "\u822A\u6D77\u65E5\u5FD7\u8155\u8868"
-    itemSprite: {fileID: 21300000, guid: af03c85810d564b8d82ddd6ce01120fc, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 4
     gridType: 0
     shape:
@@ -801,7 +801,7 @@ MonoBehaviour:
     hateItemName: 
     needCorner: 0
   - itemName: "\u5149\u5B66\u7535\u6E90"
-    itemSprite: {fileID: 21300000, guid: b0a37cc575aad4a9884668bc30a5d24a, type: 3}
+    itemSprite: {fileID: 0}
     itemSource: 4
     gridType: 20
     shape:
