@@ -20,51 +20,51 @@ MonoBehaviour:
   - name: BGM_LevelSelect
     clip: {fileID: 8300000, guid: 8afa2ec95aeb3bc4b9dd5f72972efb03, type: 3}
     type: 0
-    volume: 0.692
+    volume: 1
   - name: "\u5C0F\u4E16\u754C_SE_\u62FF\u8D77\u8D27\u7269"
     clip: {fileID: 8300000, guid: 5b4b32277b83c47689cdebff7b1252e2, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "\u5C0F\u4E16\u754C_SE_\u653E\u4E0B\u8D27\u7269"
     clip: {fileID: 8300000, guid: 893720804411248d1b60c7c1bb8d8561, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "\u5C0F\u4E16\u754C_SE_\u62FF\u8D77\u8D27\u7BB1"
     clip: {fileID: 8300000, guid: 2668b75ed9ac8476faad8900de013aed, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "\u5C0F\u4E16\u754C_SE_\u653E\u4E0B\u8D27\u7BB1"
     clip: {fileID: 8300000, guid: d108895cb7a07413792bd79d65fd72c7, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: BGM_Level1
     clip: {fileID: 8300000, guid: a3df2072f47824a40856411b8a122759, type: 3}
     type: 0
-    volume: 0.862
+    volume: 0.4
   - name: BGM_Level2
     clip: {fileID: 8300000, guid: 3aee93c290b32334bb121ca0e8f12255, type: 3}
     type: 0
-    volume: 0.823
+    volume: 0.4
   - name: BGM_Level3
     clip: {fileID: 8300000, guid: cbd42f954215e7b49aa061f1f9577c58, type: 3}
     type: 0
-    volume: 0.839
+    volume: 0.4
   - name: BGS_EnterLevel1
     clip: {fileID: 8300000, guid: c30fb18b9bfbeb64792b20d281aebc12, type: 3}
     type: 1
-    volume: 0.4
+    volume: 0.7
   - name: BGS_EnterLevel2
     clip: {fileID: 8300000, guid: 28982bfd252f0bc438517d893a407eb1, type: 3}
     type: 1
-    volume: 0.4
+    volume: 0.7
   - name: BGS_EnterLevel3
     clip: {fileID: 8300000, guid: b3737fef67512fc48a257a09dc9d92cf, type: 3}
     type: 1
-    volume: 0.4
+    volume: 0.7
   - name: BGS_CompleteLevel
     clip: {fileID: 8300000, guid: 7188d3e06d16ccc40a0a711aed52a8e4, type: 3}
     type: 1
-    volume: 0.5
+    volume: 0.7
   - name: "SE_\u62FF\u8D77\u666E\u901A\u7269\u54C1"
     clip: {fileID: 8300000, guid: e9f8414ecea4c8547b3095915de7a79d, type: 3}
     type: 3
@@ -72,32 +72,32 @@ MonoBehaviour:
   - name: "SE_\u653E\u4E0B\u4E66"
     clip: {fileID: 8300000, guid: 56144b897fbf8c7429797dc782c0baac, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "SE_\u653E\u4E0B\u4FE1\u4EF6"
     clip: {fileID: 8300000, guid: 9fc4af20c3829574eb11d4c14949f715, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "SE_\u653E\u4E0B\u5851\u6599"
     clip: {fileID: 8300000, guid: 5e54768dba9da574da76fbdb97b201f0, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "SE_\u653E\u4E0B\u5E03\u6599"
     clip: {fileID: 8300000, guid: 8c0b33ae7a627be449a03777a6827466, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "SE_\u653E\u4E0B\u666E\u901A\u7269\u54C1"
     clip: {fileID: 8300000, guid: 8675e00a71d0def418e5236adac173d9, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "SE_\u653E\u4E0B\u6A61\u76AE"
     clip: {fileID: 8300000, guid: 21b234f8faeef51489fac494ea4c1490, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
   - name: "SE_\u653E\u4E0B\u73BB\u7483"
     clip: {fileID: 8300000, guid: e827c9756ffc23e4abb08185cfab598f, type: 3}
     type: 3
-    volume: 0.7
-  - name: "SE_\u653E\u5728\u91D1\u5C5E\u548C\u74F7\u5668"
+    volume: 1
+  - name: "SE_\u653E\u4E0B\u91D1\u5C5E\u548C\u74F7\u5668"
     clip: {fileID: 8300000, guid: dddf3bcbc5422184f9c4229e8bb2eb9e, type: 3}
     type: 3
-    volume: 0.7
+    volume: 1
