@@ -53,8 +53,8 @@ public class ItemInteraction : ObjectInteraction
     private Vector2 _middlePosition;
 
     // 音效和反馈
-    private readonly string _pickupSound = "小世界_SE_拿起货物";
-    private readonly string _dropSound = "小世界_SE_放下货物";
+    private string _pickupSound = "SE_拿起物品";
+    private string _dropSound = "小世界_SE_放下货物";
 
     protected override void Awake()
     {
@@ -149,6 +149,9 @@ public class ItemInteraction : ObjectInteraction
 
         // 更换默认Initializer引用
         ChangePanel();
+
+        _dropSound = _itemManager.GetDropAudioName(itemData);
+        _pickupSound = _itemManager.GetPickUpAudioName(itemData);
     }
 
     private void ChangePanel()

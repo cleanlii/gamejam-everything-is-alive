@@ -456,8 +456,9 @@ public class ItemData : ObjectData
     public bool needCorner;
     public string likeItemName;
     public string hateItemName;
-    
+
     public SpawnPoint spawnPoint;
+    public ItemType itemType;
 
     // 新增气泡相关属性
     public Image itemMood; // 气泡Image组件
@@ -483,6 +484,8 @@ public class ItemData : ObjectData
         // this.itemTags = new List<ItemTag>();
         // this.itemTags.AddRange(template.itemTags);
         itemTagDic = new ActivateTagDictionary();
+
+        itemType = template.itemType;
 
         likeItemName = template.likeItemName;
         hateItemName = template.hateItemName;

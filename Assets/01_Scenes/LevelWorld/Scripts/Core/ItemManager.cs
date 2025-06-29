@@ -1129,7 +1129,7 @@ public class ItemManager : MonoBehaviour
         // 检查是否所有物品都满足条件，如果是则进入下一关
         CheckLevelComplete();
 
-        CheckLevel3SpecialCondition();
+        if (!isBackpackMoved) CheckLevel3SpecialCondition();
     }
 
     /// <summary>
@@ -2119,10 +2119,56 @@ public class ItemManager : MonoBehaviour
     }
 
     #endregion
+
+    #region 音效获取
+
+    public string GetDropAudioName(ItemData itemData)
+    {
+        switch (itemData.itemType)
+        {
+            case ItemType.Normal:
+                return "SE_放下普通物品";
+            case ItemType.Book:
+                return "SE_放下书";
+            case ItemType.Letter:
+                return "SE_放下信件";
+            case ItemType.Plastic:
+                return "SE_放下塑料";
+            case ItemType.Fabric:
+                return "SE_放下布料";
+            case ItemType.Rubber:
+                return "SE_放下橡皮";
+            case ItemType.Glass:
+                return "SE_放下玻璃";
+            case ItemType.Metal:
+                return "SE_放下金属和瓷器";
+            default:
+                return "SE_放下普通物品";
+        }
+    }
+
+    public string GetPickUpAudioName(ItemData itemData)
+    {
+        return "SE_拿起普通物品";
+    }
+
+    #endregion
 }
 
 public enum ItemMood
 {
     Satisfied,
     Unsatisfied
+}
+
+public enum ItemType
+{
+    Normal,
+    Book,
+    Letter,
+    Plastic,
+    Fabric,
+    Rubber,
+    Glass,
+    Metal
 }

@@ -250,6 +250,7 @@ public class Item
     public bool needCorner;
     public Sprite satisfiedSprite;
     public Sprite unsatisfiedSprite;
+    public ItemType itemType;
 
     // public Item(string name, ItemTag[] tags, Sprite sprite, Vector2Int[] shape)
     // {
