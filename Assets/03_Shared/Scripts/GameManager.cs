@@ -43,9 +43,6 @@ public class GameManager : MonoBehaviour
     // 事件：关卡完成时触发
     public static event Action<int> OnLevelCompleted;
 
-    // 事件：需要播放解锁动画时触发
-    public static event Action<int> OnPlayUnlockAnimation;
-
     private void Awake()
     {
         if (Instance != null)
@@ -66,8 +63,6 @@ public class GameManager : MonoBehaviour
     {
         // 订阅关卡完成事件
         OnLevelCompleted += HandleLevelCompleted;
-
-        AudioManager.PlaySound("BGM_MainMenu", AudioType.BGM, true);
     }
 
     private void OnDestroy()
@@ -100,104 +95,6 @@ public class GameManager : MonoBehaviour
                 Debug.Log($"关卡 {nextLevel} 已解锁，准备播放解锁动画");
             }
         }
-    }
-
-    /// <summary>
-    ///     完成当前关卡（由关卡脚本调用）
-    /// </summary>
-    /// <param name="levelIndex">完成的关卡索引</param>
-    /// <param name="completionTime">完成时间</param>
-    public void CompleteCurrentLevel(int levelIndex, float completionTime = 0f)
-    {
-        // 更新最佳时间
-        if (completionTime > 0f) levelProgress.UpdateBestTime(levelIndex, completionTime);
-
-        // 触发关卡完成事件
-        OnLevelCompleted?.Invoke(levelIndex);
-
-        // 根据关卡决定跳转逻辑
-        if (levelIndex == 3)
-        {
-            // L3完成后播放结局动画，然后回到主菜单
-            StartCoroutine(PlayEndingAnimationAndReturnToMenu());
-        }
-        else
-        {
-            // L1/L2完成后直接返回关卡选择界面
-            LoadLevelSelect();
-        }
-    }
-
-    /// <summary>
-    ///     播放结局动画并返回主菜单
-    /// </summary>
-    private IEnumerator PlayEndingAnimationAndReturnToMenu()
-    {
-        Debug.Log("L3完成，播放结局动画");
-
-        // 触发结局动画
-        OnPlayEndingAnimation?.Invoke();
-
-        // 等待结局动画播放完成
-        yield return new WaitForSeconds(GetEndingAnimationDuration());
-
-        // 结局动画后回到主菜单
-        LoadMainMenu();
-    }
-
-    /// <summary>
-    ///     检查并播放待播放的动画（在LevelSelect场景中调用）
-    /// </summary>
-    public void CheckAndPlayPendingAnimations()
-    {
-        // 先播放圆满动画
-        var pendingCompletions = levelProgress.GetAndClearPendingCompletionAnimations();
-        foreach (var completedLevel in pendingCompletions)
-        {
-            OnPlayCompletionAnimation?.Invoke(completedLevel);
-            Debug.Log($"播放关卡 {completedLevel} 圆满动画");
-        }
-
-        // 延迟播放解锁动画，确保圆满动画先播放
-        StartCoroutine(PlayUnlockAnimationsWithDelay());
-    }
-
-    /// <summary>
-    ///     延迟播放解锁动画
-    /// </summary>
-    private IEnumerator PlayUnlockAnimationsWithDelay()
-    {
-        // 等待圆满动画播放一段时间
-        yield return new WaitForSeconds(2f);
-
-        // 播放解锁动画
-        var pendingUnlocks = levelProgress.GetAndClearPendingAnimations();
-        foreach (var levelToUnlock in pendingUnlocks)
-        {
-            OnPlayUnlockAnimation?.Invoke(levelToUnlock);
-            Debug.Log($"播放关卡 {levelToUnlock} 解锁动画");
-        }
-    }
-
-    /// <summary>
-    ///     获取结局动画时长
-    /// </summary>
-    private float GetEndingAnimationDuration()
-    {
-        return 8f; // 结局动画时长，根据实际调整
-    }
-
-    // 事件定义
-    public static event Action<int> OnPlayCompletionAnimation; // 播放关卡按钮圆满动画
-    public static event Action OnPlayEndingAnimation; // 播放结局动画
-
-    /// <summary>
-    ///     完成当前关卡（由关卡脚本调用）
-    /// </summary>
-    /// <param name="levelIndex">完成的关卡索引</param>
-    public void CompleteCurrentLevel(int levelIndex)
-    {
-        OnLevelCompleted?.Invoke(levelIndex);
     }
 
     /// <summary>
@@ -297,6 +194,175 @@ public class GameManager : MonoBehaviour
     private IEnumerator WaitForSecondsCoroutine(float seconds)
     {
         yield return new WaitForSeconds(seconds);
+    }
+
+    #endregion
+
+    #region 关卡解锁
+
+    // 事件定义
+    public static event Action<int> OnPlayCompletionAnimation; // 播放关卡按钮圆满动画
+    public static event Action<int> OnPlayUnlockAnimation; // 播放关卡解锁动画
+    public static event Action OnPlayEndingAnimation; // 播放结局动画
+    public static event Action<int> OnSetLevelUnlocked; // 直接设置关卡为已解锁状态（跳过动画）
+
+    /// <summary>
+    ///     完成当前关卡（由关卡脚本调用）
+    /// </summary>
+    /// <param name="levelIndex">完成的关卡索引</param>
+    /// <param name="completionTime">完成时间</param>
+    public void CompleteCurrentLevel(int levelIndex, float completionTime = 0f)
+    {
+        // 更新最佳时间
+        if (completionTime > 0f) levelProgress.UpdateBestTime(levelIndex, completionTime);
+
+        // 触发关卡完成事件
+        OnLevelCompleted?.Invoke(levelIndex);
+
+        // 检查是否为首次完成，只有首次完成才播放圆满动画
+        var isFirstTimeComplete = levelProgress.CompleteLevel(levelIndex);
+        if (isFirstTimeComplete)
+        {
+            levelProgress.SetPendingCompletionAnimation(levelIndex);
+            Debug.Log($"关卡 {levelIndex} 首次完成，标记播放圆满动画");
+        }
+        else
+            Debug.Log($"关卡 {levelIndex} 重复完成，跳过圆满动画");
+
+        // 根据关卡决定跳转逻辑和解锁下一关
+        if (levelIndex == 1)
+        {
+            // L1完成：解锁L2，标记L2需要播放解锁动画（仅首次）
+            if (!levelProgress.IsLevelUnlocked(2))
+            {
+                levelProgress.UnlockLevel(2);
+                levelProgress.SetPendingUnlockAnimation(2);
+                Debug.Log("L1完成，L2已解锁，准备播放L2解锁动画");
+            }
+
+            LoadLevelSelect();
+        }
+        else if (levelIndex == 2)
+        {
+            // L2完成：解锁L3，标记L3需要播放解锁动画（仅首次）
+            if (!levelProgress.IsLevelUnlocked(3))
+            {
+                levelProgress.UnlockLevel(3);
+                levelProgress.SetPendingUnlockAnimation(3);
+                Debug.Log("L2完成，L3已解锁，准备播放L3解锁动画");
+            }
+
+            LoadLevelSelect();
+        }
+        else if (levelIndex == 3)
+        {
+            // L3完成：设置待播放结局动画标记（仅首次），然后回到关卡选择界面
+            if (isFirstTimeComplete)
+            {
+                levelProgress.SetPendingEndingAnimation();
+                Debug.Log("L3首次完成，准备播放结局动画");
+            }
+            else
+                Debug.Log("L3重复完成，跳过结局动画");
+
+            LoadLevelSelect();
+        }
+    }
+
+    /// <summary>
+    ///     检查并播放待播放的动画（在LevelSelect场景中调用）
+    /// </summary>
+    public void CheckAndPlayPendingAnimations()
+    {
+        // 首先初始化所有已解锁关卡的状态（跳过不需要播放动画的关卡）
+        InitializeUnlockedLevelsState();
+
+        // 开始播放动画序列
+        StartCoroutine(PlayAnimationSequence());
+    }
+
+    /// <summary>
+    ///     初始化已解锁关卡的状态（跳过解锁动画）
+    /// </summary>
+    private void InitializeUnlockedLevelsState()
+    {
+        // 获取待播放动画的关卡列表（不清除）
+        var pendingUnlocks = levelProgress.GetPendingAnimations();
+        var pendingCompletions = levelProgress.GetPendingCompletionAnimations();
+
+        // 检查所有关卡的解锁和完成状态
+        for (var i = 1; i <= 3; i++)
+        {
+            var isUnlocked = levelProgress.IsLevelUnlocked(i);
+            var isCompleted = levelProgress.IsLevelCompleted(i);
+
+            // 如果关卡已解锁且不在待播放解锁动画列表中，直接设置为已解锁状态
+            if (isUnlocked && !pendingUnlocks.Contains(i))
+            {
+                OnSetLevelUnlocked?.Invoke(i);
+                Debug.Log($"关卡 {i} 已解锁，跳过解锁动画，直接设置为解锁状态");
+            }
+
+            // 如果关卡已完成且不在待播放圆满动画列表中，确保显示为完成状态
+            if (isCompleted && !pendingCompletions.Contains(i))
+            {
+                // 这里不需要额外事件，因为OnSetLevelUnlocked会根据完成状态设置正确的显示
+                Debug.Log($"关卡 {i} 已完成，跳过圆满动画");
+            }
+        }
+    }
+
+    /// <summary>
+    ///     播放动画序列
+    /// </summary>
+    private IEnumerator PlayAnimationSequence()
+    {
+        // 获取待播放的动画
+        var pendingCompletions = levelProgress.GetAndClearPendingCompletionAnimations();
+        var pendingUnlocks = levelProgress.GetAndClearPendingAnimations();
+        var hasEndingAnimation = levelProgress.HasPendingEndingAnimation();
+
+        // 1. 播放圆满动画
+        foreach (var completedLevel in pendingCompletions)
+        {
+            OnPlayCompletionAnimation?.Invoke(completedLevel);
+            Debug.Log($"播放关卡 {completedLevel} 圆满动画");
+            yield return new WaitForSeconds(2f); // 等待圆满动画播放
+        }
+
+        // 2. 如果有结局动画，播放结局动画
+        if (hasEndingAnimation)
+        {
+            Debug.Log("开始播放Level3结局动画");
+            levelProgress.ClearPendingEndingAnimation();
+            OnPlayEndingAnimation?.Invoke();
+
+            // 等待结局动画播放完成
+            yield return new WaitForSeconds(GetEndingAnimationDuration());
+
+            Debug.Log("Level3结局动画播放完成，即将返回主菜单");
+
+            // 结局动画播放完后返回主菜单
+            yield return new WaitForSeconds(1f); // 短暂停顿
+            LoadMainMenu();
+            yield break; // 结束协程，不再播放解锁动画
+        }
+
+        // 3. 播放解锁动画（如果没有结局动画）
+        foreach (var levelToUnlock in pendingUnlocks)
+        {
+            OnPlayUnlockAnimation?.Invoke(levelToUnlock);
+            Debug.Log($"播放关卡 {levelToUnlock} 解锁动画");
+            yield return new WaitForSeconds(2f); // 等待解锁动画播放
+        }
+    }
+
+    /// <summary>
+    ///     获取结局动画时长
+    /// </summary>
+    private float GetEndingAnimationDuration()
+    {
+        return 8f; // 结局动画时长，根据实际调整
     }
 
     #endregion
@@ -413,28 +479,6 @@ public class LevelProgress
     }
 
     /// <summary>
-    ///     获取并清空待播放的解锁动画列表
-    /// </summary>
-    /// <returns>待播放解锁动画的关卡索引列表</returns>
-    public List<int> GetAndClearPendingAnimations()
-    {
-        var result = new List<int>(pendingUnlockAnimations);
-        pendingUnlockAnimations.Clear();
-        return result;
-    }
-
-    /// <summary>
-    ///     获取并清空待播放的圆满动画列表
-    /// </summary>
-    /// <returns>待播放圆满动画的关卡索引列表</returns>
-    public List<int> GetAndClearPendingCompletionAnimations()
-    {
-        var result = new List<int>(pendingCompletionAnimations);
-        pendingCompletionAnimations.Clear();
-        return result;
-    }
-
-    /// <summary>
     ///     更新关卡最佳时间
     /// </summary>
     /// <param name="levelIndex">关卡索引</param>
@@ -494,7 +538,86 @@ public class LevelProgress
     }
 
     /// <summary>
-    ///     重置所有进度（调试用）
+    ///     解锁指定关卡（不标记完成状态）
+    /// </summary>
+    /// <param name="levelIndex">关卡索引 (1-3)</param>
+    public void UnlockLevel(int levelIndex)
+    {
+        if (levelIndex < 1 || levelIndex > 3)
+        {
+            Debug.LogError($"无效的关卡索引: {levelIndex}");
+            return;
+        }
+
+        if (!levelUnlocked[levelIndex])
+        {
+            levelUnlocked[levelIndex] = true;
+            Debug.Log($"关卡 {levelIndex} 已解锁！");
+        }
+    }
+
+    /// <summary>
+    ///     获取待播放的解锁动画列表（不清除）
+    /// </summary>
+    /// <returns>待播放解锁动画的关卡索引列表</returns>
+    public List<int> GetPendingAnimations()
+    {
+        return new List<int>(pendingUnlockAnimations);
+    }
+
+    /// <summary>
+    ///     获取待播放的圆满动画列表（不清除）
+    /// </summary>
+    /// <returns>待播放圆满动画的关卡索引列表</returns>
+    public List<int> GetPendingCompletionAnimations()
+    {
+        return new List<int>(pendingCompletionAnimations);
+    }
+
+    /// <summary>
+    ///     获取并清空待播放的解锁动画列表
+    /// </summary>
+    /// <returns>待播放解锁动画的关卡索引列表</returns>
+    public List<int> GetAndClearPendingAnimations()
+    {
+        var result = new List<int>(pendingUnlockAnimations);
+        pendingUnlockAnimations.Clear();
+        return result;
+    }
+
+    /// <summary>
+    ///     获取并清空待播放的圆满动画列表
+    /// </summary>
+    /// <returns>待播放圆满动画的关卡索引列表</returns>
+    public List<int> GetAndClearPendingCompletionAnimations()
+    {
+        var result = new List<int>(pendingCompletionAnimations);
+        pendingCompletionAnimations.Clear();
+        return result;
+    }
+
+    // 结局动画相关方法
+    [SerializeField] private bool pendingEndingAnimation;
+
+    public void SetPendingEndingAnimation()
+    {
+        pendingEndingAnimation = true;
+        Debug.Log("设置结局动画待播放标记");
+    }
+
+    public bool HasPendingEndingAnimation()
+    {
+        return pendingEndingAnimation;
+    }
+
+    public void ClearPendingEndingAnimation()
+    {
+        pendingEndingAnimation = false;
+        Debug.Log("清除结局动画标记");
+    }
+
+    /// <summary>
+    ///     重置所有进度（调试用） - 更新版本
     /// </summary>
     public void ResetAllProgress()
     {
@@ -508,6 +631,7 @@ public class LevelProgress
 
         pendingUnlockAnimations.Clear();
         pendingCompletionAnimations.Clear();
+        pendingEndingAnimation = false;
         Debug.Log("所有关卡进度已重置");
     }
 }

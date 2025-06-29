@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 0
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: HakurokuDo
-  productName: ProjectPackage
+  companyName: WhiteBabelStudio
+  productName: Lives
   defaultCursor: {fileID: 2800000, guid: df27bd99c0f5245e6b2d0f6264deab16, type: 3}
   cursorHotspot: {x: 7, y: 2}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 0
     16:9: 1
     Others: 0
-  bundleVersion: 0.8.0
+  bundleVersion: 0.1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -275,7 +275,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: c54c0e32f98264fa9ab777a2dee876c8, type: 3}
+      m_Icon: {fileID: 2800000, guid: 3433cebb637eee24bb53eaacc1423d77, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

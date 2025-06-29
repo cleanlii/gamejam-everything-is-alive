@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
         _explosionSounds = Current.audioLibrary.audioEntries.FindAll(x => x.type == AudioType.SE && x.name.Contains("货物爆炸"));
 
         // PlaySound("登录界面_BGM_MainTitle", "BGM", true);
-        PlaySound("大世界_BGM_欢乐曲", AudioType.BGM, true);
+        PlaySound("BGM_MainMenu", AudioType.BGM, true);
     }
 
     private static AudioSource GetAudioSource(AudioType type)
