@@ -167,7 +167,7 @@ Material:
     - _OnlyInnerOutline: 0
     - _OnlyOutline: 0
     - _OutlineAlpha: 1
-    - _OutlineDistortAmount: 1.673
+    - _OutlineDistortAmount: 0.783
     - _OutlineDistortTexXSpeed: 1
     - _OutlineDistortTexYSpeed: -5
     - _OutlineGlow: 1
