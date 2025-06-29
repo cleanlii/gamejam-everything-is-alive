@@ -42,6 +42,34 @@ public class LevelCompleteTrigger : MonoBehaviour
     }
 
     /// <summary>
+    ///     重置当前关卡（重新加载当前关卡场景）
+    /// </summary>
+    public void ResetLevel()
+    {
+        Debug.Log($"重置关卡 {levelIndex}");
+
+        // 播放重置音效（可选）
+        // AudioManager.Current?.PlaySound("关卡重置", AudioType.SFX);
+
+        // 根据当前关卡索引重新加载对应的关卡场景
+        switch (levelIndex)
+        {
+            case 1:
+                GameManager.Instance.LoadLevel1();
+                break;
+            case 2:
+                GameManager.Instance.LoadLevel2();
+                break;
+            case 3:
+                GameManager.Instance.LoadLevel3();
+                break;
+            default:
+                Debug.LogError($"无效的关卡索引: {levelIndex}，无法重置关卡");
+                break;
+        }
+    }
+
+    /// <summary>
     ///     显示完成UI
     /// </summary>
     private void ShowCompletionUI(float completionTime)
