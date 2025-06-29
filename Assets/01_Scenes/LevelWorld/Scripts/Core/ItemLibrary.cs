@@ -248,6 +248,8 @@ public class Item
     public string likeItemName;
     public string hateItemName;
     public bool needCorner;
+    public Sprite satisfiedSprite;
+    public Sprite unsatisfiedSprite;
 
     // public Item(string name, ItemTag[] tags, Sprite sprite, Vector2Int[] shape)
     // {

@@ -129,6 +129,14 @@ public class ItemManager : MonoBehaviour
         var itemVisual = itemGO.transform.Find("Visual");
         // 查找子Obj配置自带边框
         var itemFrame = itemGO.transform.Find("Frame");
+        var itemBubble = itemGO.transform.Find("Bubble");
+        var itemMood = itemBubble.transform.Find("Mood").GetComponent<Image>();
+
+        // 获取气泡Image组件
+        var moodImg = itemMood.GetComponent<Image>();
+
+        // 初始隐藏气泡
+        if (itemBubble != null) itemBubble.gameObject.SetActive(false);
 
         // 设置物品的图片
         var itemImage = itemVisual.GetComponent<Image>();
@@ -210,6 +218,7 @@ public class ItemManager : MonoBehaviour
         itemGO.SetActive(true);
         var item = itemGO.GetComponent<ItemInteraction>().itemData;
         item.name = newItemName;
+        item.itemMood = moodImg;
         items.Add(item);
         _currentTaskItems.Add(item);
 
@@ -1528,21 +1537,21 @@ public class ItemManager : MonoBehaviour
         };
 
         // 调试输出所有角落坐标
-        Debug.Log("四个角落坐标:");
-        Debug.Log("左上角: (0, 0)");
-        Debug.Log($"右上角: ({gridWidth - 1}, 0)");
-        Debug.Log($"左下角: (0, {gridHeight - 1})");
-        Debug.Log($"右下角: ({gridWidth - 1}, {gridHeight - 1})");
+        // Debug.Log("四个角落坐标:");
+        // Debug.Log("左上角: (0, 0)");
+        // Debug.Log($"右上角: ({gridWidth - 1}, 0)");
+        // Debug.Log($"左下角: (0, {gridHeight - 1})");
+        // Debug.Log($"右下角: ({gridWidth - 1}, {gridHeight - 1})");
 
         // 获取当前物品占据的所有网格位置
         var occupiedCells = GetItemOccupiedCells(itemData);
 
         // 调试输出物品占据的所有格子
-        Debug.Log($"物品 {itemData.name} 占据的格子:");
-        foreach (var cell in occupiedCells)
-        {
-            Debug.Log($"  - ({cell.x}, {cell.y})");
-        }
+        // Debug.Log($"物品 {itemData.name} 占据的格子:");
+        // foreach (var cell in occupiedCells)
+        // {
+        //     Debug.Log($"  - ({cell.x}, {cell.y})");
+        // }
 
         // 检查是否占据了任何一个角落
         var occupiesCorner = false;
@@ -1634,156 +1643,122 @@ public class ItemManager : MonoBehaviour
     {
         if (itemData.itemImage == null) return;
 
-        // 设置激活材质
-        itemData.itemImage.material = itemNormalActivate;
+        // 显示满意气泡
+        ShowItemMoodBubble(itemData, ItemMood.Satisfied);
 
-        // 先进行轻微的果冻抖动效果（表示确认）
+        // 原有的材质和动画效果
+        itemData.itemImage.material = itemNormalActivate;
         itemData.itemImage.transform.DOShakeScale(0.3f, 0.1f).OnComplete(() =>
         {
-            // 果冻抖动完成后触发 Shine 动画
             itemData.itemImage.material.EnableKeyword("SHINE_ON");
-            shaderAnimator.AnimateShader(itemData.itemImage.material, "_ShineLocation", () =>
-            {
-                // 动画结束后，切换到喜欢关系的最终材质
-                itemData.itemImage.material = itemLikeAfter;
-            });
+            shaderAnimator.AnimateShader(itemData.itemImage.material, "_ShineLocation", () => { itemData.itemImage.material = itemLikeAfter; });
         });
 
-        // 标记物品为合规状态
         itemData.isValuable = true;
     }
 
-    /// <summary>
-    ///     触发喜欢关系违反的动画效果
-    /// </summary>
     private void TriggerLikeRelationshipViolationEffect(ItemData itemData)
     {
         if (itemData.itemImage == null) return;
 
-        // 先进行果冻抖动效果（更强烈的抖动表示警告）
+        // 显示不满意气泡
+        ShowItemMoodBubble(itemData, ItemMood.Unsatisfied);
+
+        // 原有的材质和动画效果
         itemData.itemImage.transform.DOShakeScale(0.5f, 0.2f).OnComplete(() =>
         {
-            // 抖动完成后设置违反规则的材质
             itemData.itemImage.material = itemLikeBefore;
-
-            // 添加闪烁效果
-            StartCoroutine(FlashEffect(itemData.itemImage, itemLikeBefore, 3, 0.3f));
+            // StartCoroutine(FlashEffect(itemData.itemImage, itemLikeBefore, 3, 0.3f));
         });
 
-        // 标记物品为不合规状态
         itemData.isValuable = false;
     }
 
-    /// <summary>
-    ///     触发讨厌关系满足的动画效果
-    /// </summary>
     private void TriggerHateRelationshipSatisfiedEffect(ItemData itemData)
     {
         if (itemData.itemImage == null) return;
 
-        // 设置激活材质
-        itemData.itemImage.material = itemNormalActivate;
+        // 显示满意气泡
+        ShowItemMoodBubble(itemData, ItemMood.Satisfied);
 
-        // 先进行轻微的果冻抖动效果（表示确认）
+        itemData.itemImage.material = itemNormalActivate;
         itemData.itemImage.transform.DOShakeScale(0.3f, 0.1f).OnComplete(() =>
         {
-            // 果冻抖动完成后触发 Shine 动画
             itemData.itemImage.material.EnableKeyword("SHINE_ON");
-            shaderAnimator.AnimateShader(itemData.itemImage.material, "_ShineLocation", () =>
-            {
-                // 动画结束后，切换到讨厌关系的最终材质
-                itemData.itemImage.material = itemHateAfter;
-            });
+            shaderAnimator.AnimateShader(itemData.itemImage.material, "_ShineLocation", () => { itemData.itemImage.material = itemHateAfter; });
         });
 
-        // 标记物品为合规状态
         itemData.isValuable = true;
     }
 
-    /// <summary>
-    ///     触发讨厌关系违反的动画效果
-    /// </summary>
     private void TriggerHateRelationshipViolationEffect(ItemData itemData)
     {
         if (itemData.itemImage == null) return;
 
-        // 先进行果冻抖动效果（更强烈的抖动表示警告）
+        // 显示不满意气泡
+        ShowItemMoodBubble(itemData, ItemMood.Unsatisfied);
+
+        // 原有效果代码...
         itemData.itemImage.transform.DOShakeScale(0.5f, 0.2f).OnComplete(() =>
         {
-            // 抖动完成后设置违反规则的材质
             itemData.itemImage.material = itemHateBefore;
-
-            // 添加闪烁效果
-            StartCoroutine(FlashEffect(itemData.itemImage, itemHateBefore, 3, 0.3f));
+            // StartCoroutine(FlashEffect(itemData.itemImage, itemHateBefore, 3, 0.3f));
         });
 
-        // 标记物品为不合规状态
         itemData.isValuable = false;
     }
 
-    /// <summary>
-    ///     触发角落关系满足的动画效果
-    /// </summary>
     private void TriggerCornerRelationshipSatisfiedEffect(ItemData itemData)
     {
         if (itemData.itemImage == null) return;
 
-        // 设置激活材质
-        itemData.itemImage.material = itemNormalActivate;
+        // 显示满意气泡
+        ShowItemMoodBubble(itemData, ItemMood.Satisfied);
 
-        // 先进行轻微的果冻抖动效果（表示确认）
+        // 原有效果代码...
+        itemData.itemImage.material = itemNormalActivate;
         itemData.itemImage.transform.DOShakeScale(0.3f, 0.1f).OnComplete(() =>
         {
-            // 果冻抖动完成后触发 Shine 动画
             itemData.itemImage.material.EnableKeyword("SHINE_ON");
-            shaderAnimator.AnimateShader(itemData.itemImage.material, "_ShineLocation", () =>
-            {
-                // 动画结束后，切换到角落关系的最终材质
-                itemData.itemImage.material = itemCornerAfter;
-            });
+            shaderAnimator.AnimateShader(itemData.itemImage.material, "_ShineLocation", () => { itemData.itemImage.material = itemCornerAfter; });
         });
 
-        // 标记物品为合规状态
         itemData.isValuable = true;
     }
 
-    /// <summary>
-    ///     触发角落关系违反的动画效果
-    /// </summary>
     private void TriggerCornerRelationshipViolationEffect(ItemData itemData)
     {
         if (itemData.itemImage == null) return;
 
-        // 先进行果冻抖动效果（更强烈的抖动表示警告）
+        // 显示不满意气泡
+        ShowItemMoodBubble(itemData, ItemMood.Unsatisfied);
+
+        // 原有效果代码...
         itemData.itemImage.transform.DOShakeScale(0.5f, 0.2f).OnComplete(() =>
         {
-            // 抖动完成后设置违反规则的材质
             itemData.itemImage.material = itemCornerBefore;
-
-            // 添加闪烁效果
-            StartCoroutine(FlashEffect(itemData.itemImage, itemCornerBefore, 3, 0.3f));
+            // StartCoroutine(FlashEffect(itemData.itemImage, itemCornerBefore, 3, 0.3f));
         });
 
-        // 标记物品为不合规状态
         itemData.isValuable = false;
     }
 
     /// <summary>
     ///     闪烁效果协程
     /// </summary>
-    private IEnumerator FlashEffect(Image itemImage, Material baseMaterial, int flashCount, float flashInterval)
-    {
-        for (var i = 0; i < flashCount; i++)
-        {
-            // 切换到正常材质
-            itemImage.material = itemNormal;
-            yield return new WaitForSeconds(flashInterval);
-
-            // 切换回警告材质
-            itemImage.material = baseMaterial;
-            yield return new WaitForSeconds(flashInterval);
-        }
-    }
+    // private IEnumerator FlashEffect(Image itemImage, Material baseMaterial, int flashCount, float flashInterval)
+    // {
+    //     for (var i = 0; i < flashCount; i++)
+    //     {
+    //         // 切换到正常材质
+    //         itemImage.material = itemNormal;
+    //         yield return new WaitForSeconds(flashInterval);
+    //
+    //         // 切换回警告材质
+    //         itemImage.material = baseMaterial;
+    //         yield return new WaitForSeconds(flashInterval);
+    //     }
+    // }
 
     /// <summary>
     ///     检查物品是否处于正确的喜欢关系状态
@@ -2044,4 +2019,60 @@ public class ItemManager : MonoBehaviour
     }
 
     #endregion
+
+    #region 心情气泡
+
+    public void ShowItemMoodBubble(ItemData itemData, ItemMood mood)
+    {
+        if (itemData?.itemMood == null) return;
+
+        // 停止之前的隐藏协程
+        itemData.StopBubbleHideCoroutine();
+
+        // 根据心情设置对应的精灵
+        var bubbleSprite = mood == ItemMood.Satisfied ? itemData.satisfiedSprite : itemData.unsatisfiedSprite;
+
+        if (bubbleSprite != null)
+        {
+            itemData.itemMood.sprite = bubbleSprite;
+            itemData.itemMood.transform.parent.gameObject.SetActive(true);
+
+            // 添加弹出动画效果
+            itemData.itemMood.transform.parent.localScale = Vector3.zero;
+            itemData.itemMood.transform.parent.DOScale(Vector3.one, 0.3f)
+                .SetEase(Ease.OutBack);
+
+            // 启动1秒后隐藏的协程
+            var hideCoroutine = StartCoroutine(HideBubbleAfterDelay(itemData, 1.5f));
+            itemData.SetBubbleHideCoroutine(hideCoroutine);
+        }
+    }
+
+// 协程：延时隐藏气泡
+    private IEnumerator HideBubbleAfterDelay(ItemData itemData, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (itemData?.itemMood != null)
+        {
+            // 添加缩小动画
+            itemData.itemMood.transform.parent.DOScale(Vector3.zero, 0.2f)
+                .SetEase(Ease.InBack)
+                .OnComplete(() =>
+                {
+                    if (itemData?.itemMood != null) itemData.itemMood.transform.parent.gameObject.SetActive(false);
+                });
+        }
+
+        // 清除协程引用
+        itemData?.SetBubbleHideCoroutine(null);
+    }
+
+    #endregion
+}
+
+public enum ItemMood
+{
+    Satisfied,
+    Unsatisfied
 }

@@ -457,6 +457,12 @@ public class ItemData : ObjectData
     public string likeItemName;
     public string hateItemName;
 
+    // 新增气泡相关属性
+    public Image itemMood; // 气泡Image组件
+    public Sprite satisfiedSprite; // 满意气泡精灵
+    public Sprite unsatisfiedSprite; // 不满意气泡精灵
+    private Coroutine _bubbleHideCoroutine; // 隐藏气泡的协程引用
+
     public ItemData(Item template, ItemInteraction itemInc, GameObject obj, Image img, Vector2Int position)
     {
         name = template.itemName;
@@ -487,6 +493,12 @@ public class ItemData : ObjectData
                 itemTagDic[tag] = false;
             }
         }
+
+        // 初始化气泡相关属性
+        satisfiedSprite = template.satisfiedSprite;
+        unsatisfiedSprite = template.unsatisfiedSprite;
+        itemMood = null; // 将在CreateItemInPosition中设置
+        _bubbleHideCoroutine = null;
     }
 
     public bool isActivated(List<ItemTag> availableTags)
@@ -502,6 +514,22 @@ public class ItemData : ObjectData
 
         // 检查所有标签是否都被激活
         return itemTagDic.Values.All(isActive => isActive);
+    }
+
+    // 停止当前的气泡隐藏协程
+    public void StopBubbleHideCoroutine()
+    {
+        if (_bubbleHideCoroutine != null)
+        {
+            LevelStateController.Instance.GetService<ItemManager>().StopCoroutine(_bubbleHideCoroutine);
+            _bubbleHideCoroutine = null;
+        }
+    }
+
+    // 设置气泡隐藏协程
+    public void SetBubbleHideCoroutine(Coroutine coroutine)
+    {
+        _bubbleHideCoroutine = coroutine;
     }
 }
 
