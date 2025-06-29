@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +10,13 @@ public class LevelSelectManager : MonoBehaviour
     [SerializeField] private Animator[] levelButtonAnimators; // 关卡按钮动画器数组
     [SerializeField] private CanvasGroup[] levelBlock; // 关卡遮罩
 
-    [Header("关卡按钮")]
+    [Header("结局动画")]
     [SerializeField] private Animator endingAnimator;
+
+    [Header("关卡按钮")]
+    [SerializeField] private CanvasGroup[] levelCompletion;
+
+    private readonly Dictionary<int, CanvasGroup> completionDic = new();
 
     private void OnEnable()
     {
@@ -49,6 +55,8 @@ public class LevelSelectManager : MonoBehaviour
             var buttonIndex = i - 1; // 数组索引从0开始
             var isUnlocked = GameManager.Instance.levelProgress.IsLevelUnlocked(i);
             var isCompleted = GameManager.Instance.levelProgress.IsLevelCompleted(i);
+
+            completionDic[i] = levelCompletion[buttonIndex];
 
             if (isCompleted)
             {
@@ -112,10 +120,11 @@ public class LevelSelectManager : MonoBehaviour
         {
             // 播放圆满动画
             levelButtonAnimators[buttonIndex].SetTrigger("Complete");
+            // completionDic[levelIndex].DOFade(1f, .5f).SetEase(Ease.OutSine);
             Debug.Log($"播放关卡 {levelIndex} 圆满动画");
 
             // 动画结束后设置为完成状态
-            StartCoroutine(SetButtonStateAfterAnimation(buttonIndex, ButtonState.Completed, 2f));
+            StartCoroutine(SetButtonStateAfterAnimation(buttonIndex, ButtonState.Completed, 0.5f));
         }
     }
 

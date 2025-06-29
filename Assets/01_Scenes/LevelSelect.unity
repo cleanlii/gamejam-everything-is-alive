@@ -868,7 +868,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -893,9 +893,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802848575}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &804024263
 GameObject:
@@ -954,6 +954,10 @@ MonoBehaviour:
   - {fileID: 574270121}
   - {fileID: 848555834}
   endingAnimator: {fileID: 1219172928}
+  levelCompletion:
+  - {fileID: 802848579}
+  - {fileID: 574270121}
+  - {fileID: 848555834}
 --- !u!1 &848555830
 GameObject:
   m_ObjectHideFlags: 0

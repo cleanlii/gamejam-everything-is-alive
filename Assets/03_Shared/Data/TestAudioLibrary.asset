@@ -20,7 +20,7 @@ MonoBehaviour:
   - name: BGM_LevelSelect
     clip: {fileID: 8300000, guid: 8afa2ec95aeb3bc4b9dd5f72972efb03, type: 3}
     type: 0
-    volume: 0.444
+    volume: 0.692
   - name: "\u5C0F\u4E16\u754C_SE_\u62FF\u8D77\u8D27\u7269"
     clip: {fileID: 8300000, guid: 5b4b32277b83c47689cdebff7b1252e2, type: 3}
     type: 3
