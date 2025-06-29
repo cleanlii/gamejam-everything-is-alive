@@ -52,16 +52,16 @@ MonoBehaviour:
   - name: BGS_EnterLevel1
     clip: {fileID: 8300000, guid: c30fb18b9bfbeb64792b20d281aebc12, type: 3}
     type: 1
-    volume: 0.6
+    volume: 0.4
   - name: BGS_EnterLevel2
     clip: {fileID: 8300000, guid: 28982bfd252f0bc438517d893a407eb1, type: 3}
     type: 1
-    volume: 0.6
+    volume: 0.4
   - name: BGS_EnterLevel3
     clip: {fileID: 8300000, guid: b3737fef67512fc48a257a09dc9d92cf, type: 3}
     type: 1
-    volume: 0.6
+    volume: 0.4
   - name: BGS_CompleteLevel
     clip: {fileID: 8300000, guid: 7188d3e06d16ccc40a0a711aed52a8e4, type: 3}
     type: 1
-    volume: 0.6
+    volume: 0.5

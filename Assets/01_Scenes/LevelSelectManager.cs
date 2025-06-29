@@ -9,6 +9,8 @@ public class LevelSelectManager : MonoBehaviour
     [SerializeField] private Animator[] levelButtonAnimators; // 关卡按钮动画器数组
     [SerializeField] private CanvasGroup[] levelBlock; // 关卡遮罩
 
+    [Header("关卡按钮")]
+    [SerializeField] private Animator endingAnimator;
 
     private void OnEnable()
     {
@@ -125,6 +127,7 @@ public class LevelSelectManager : MonoBehaviour
         Debug.Log("在LevelSelect场景中播放结局动画");
         // 这里可以播放全屏的结局动画，比如显示结局动画面板等
         // 实际的结局动画逻辑根据你的需求来实现
+        endingAnimator.SetTrigger("Ending");
     }
 
     /// <summary>
@@ -139,6 +142,7 @@ public class LevelSelectManager : MonoBehaviour
 
         var button = levelButtons[buttonIndex];
         var canvasGroup = levelBlock[buttonIndex];
+        var animator = levelButtonAnimators[buttonIndex];
 
         switch (state)
         {
@@ -150,6 +154,7 @@ public class LevelSelectManager : MonoBehaviour
                 break;
             case ButtonState.Completed:
                 button.interactable = true;
+                animator.SetTrigger("Complete");
                 canvasGroup.transform.gameObject.SetActive(false);
                 // TODO: 圆满状态涂色
                 break;

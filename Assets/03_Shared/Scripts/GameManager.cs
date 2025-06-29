@@ -77,24 +77,24 @@ public class GameManager : MonoBehaviour
     /// <param name="levelIndex">完成的关卡索引 (1, 2, 3)</param>
     private void HandleLevelCompleted(int levelIndex)
     {
-        var wasNewlyCompleted = levelProgress.CompleteLevel(levelIndex);
-
-        if (wasNewlyCompleted)
-        {
-            Debug.Log($"关卡 {levelIndex} 首次完成！");
-
-            // 标记需要播放圆满动画
-            levelProgress.SetPendingCompletionAnimation(levelIndex);
-
-            // 检查是否有新关卡解锁
-            var nextLevel = levelIndex + 1;
-            if (nextLevel <= 3 && levelProgress.IsLevelUnlocked(nextLevel))
-            {
-                // 标记需要播放解锁动画
-                levelProgress.SetPendingUnlockAnimation(nextLevel);
-                Debug.Log($"关卡 {nextLevel} 已解锁，准备播放解锁动画");
-            }
-        }
+        // var wasNewlyCompleted = levelProgress.CompleteLevel(levelIndex);
+        //
+        // if (wasNewlyCompleted)
+        // {
+        //     Debug.Log($"关卡 {levelIndex} 首次完成！");
+        //
+        //     // 标记需要播放圆满动画
+        //     levelProgress.SetPendingCompletionAnimation(levelIndex);
+        //
+        //     // 检查是否有新关卡解锁
+        //     var nextLevel = levelIndex + 1;
+        //     if (nextLevel <= 3 && levelProgress.IsLevelUnlocked(nextLevel))
+        //     {
+        //         // 标记需要播放解锁动画
+        //         levelProgress.SetPendingUnlockAnimation(nextLevel);
+        //         Debug.Log($"关卡 {nextLevel} 已解锁，准备播放解锁动画");
+        //     }
+        // }
     }
 
     /// <summary>
@@ -216,11 +216,16 @@ public class GameManager : MonoBehaviour
         // 更新最佳时间
         if (completionTime > 0f) levelProgress.UpdateBestTime(levelIndex, completionTime);
 
-        // 触发关卡完成事件
+        // **关键修复：在修改状态之前检查是否为首次完成**
+        var isFirstTimeComplete = !levelProgress.IsLevelCompleted(levelIndex);
+
+        // 触发关卡完成事件（用于统计等其他逻辑）
         OnLevelCompleted?.Invoke(levelIndex);
 
-        // 检查是否为首次完成，只有首次完成才播放圆满动画
-        var isFirstTimeComplete = levelProgress.CompleteLevel(levelIndex);
+        // 完成关卡（这里会修改levelCompleted状态）
+        levelProgress.CompleteLevel(levelIndex);
+
+        // 基于之前检查的结果决定是否播放动画
         if (isFirstTimeComplete)
         {
             levelProgress.SetPendingCompletionAnimation(levelIndex);
@@ -274,6 +279,13 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void CheckAndPlayPendingAnimations()
     {
+        // 如果是首次进入游戏，标记为已进入
+        if (levelProgress.IsFirstTimeEntering())
+        {
+            levelProgress.MarkGameEntered();
+            Debug.Log("首次进入LevelSelect场景，将播放L1解锁动画");
+        }
+
         // 首先初始化所有已解锁关卡的状态（跳过不需要播放动画的关卡）
         InitializeUnlockedLevelsState();
 
@@ -382,6 +394,7 @@ public class LevelProgress
     [Header("关卡状态")]
     [SerializeField] private bool[] levelCompleted = new bool[4]; // 索引0不使用，1-3对应L1-L3
     [SerializeField] private bool[] levelUnlocked = new bool[4]; // 索引0不使用，1-3对应L1-L3
+    [SerializeField] private bool isFirstTimeEnteringGame = true; // 新增：是否为首次进入游戏
 
     [Header("动画状态")]
     [SerializeField] private List<int> pendingUnlockAnimations = new(); // 待播放解锁动画的关卡
@@ -401,13 +414,15 @@ public class LevelProgress
         levelCompleted[1] = false;
         levelCompleted[2] = false;
         levelCompleted[3] = false;
+
+        // 首次进入游戏时，标记L1需要播放解锁动画
+        if (isFirstTimeEnteringGame)
+        {
+            pendingUnlockAnimations.Add(1);
+            Debug.Log("首次进入游戏，L1需要播放解锁动画");
+        }
     }
 
-    /// <summary>
-    ///     完成指定关卡
-    /// </summary>
-    /// <param name="levelIndex">关卡索引 (1-3)</param>
-    /// <returns>是否为首次完成</returns>
     public bool CompleteLevel(int levelIndex)
     {
         if (levelIndex < 1 || levelIndex > 3)
@@ -420,16 +435,13 @@ public class LevelProgress
         levelCompleted[levelIndex] = true;
         levelPlayCounts[levelIndex]++;
 
-        // 解锁下一关卡
-        if (wasFirstTime && levelIndex < 3)
-        {
-            var nextLevel = levelIndex + 1;
-            if (!levelUnlocked[nextLevel])
-            {
-                levelUnlocked[nextLevel] = true;
-                Debug.Log($"关卡 {nextLevel} 已解锁！");
-            }
-        }
+        // 解锁下一关卡的逻辑已经移到GameManager.CompleteCurrentLevel中处理
+        // 这里只处理完成状态的设置，避免重复逻辑
+
+        if (wasFirstTime)
+            Debug.Log($"关卡 {levelIndex} 首次完成！");
+        else
+            Debug.Log($"关卡 {levelIndex} 重复完成");
 
         return wasFirstTime;
     }
@@ -617,6 +629,29 @@ public class LevelProgress
     }
 
     /// <summary>
+    ///     标记已进入过游戏（首次进入LevelSelect场景时调用）
+    /// </summary>
+    public void MarkGameEntered()
+    {
+        if (isFirstTimeEnteringGame)
+        {
+            isFirstTimeEnteringGame = false;
+            Debug.Log("已标记为进入过游戏");
+        }
+    }
+
+    /// <summary>
+    ///     检查是否为首次进入游戏
+    /// </summary>
+    /// <returns>是否为首次进入游戏</returns>
+    public bool IsFirstTimeEntering()
+    {
+        return isFirstTimeEnteringGame;
+    }
+
+    // ... 其他方法保持不变
+
+    /// <summary>
     ///     重置所有进度（调试用） - 更新版本
     /// </summary>
     public void ResetAllProgress()
@@ -632,6 +667,11 @@ public class LevelProgress
         pendingUnlockAnimations.Clear();
         pendingCompletionAnimations.Clear();
         pendingEndingAnimation = false;
-        Debug.Log("所有关卡进度已重置");
+
+        // 重置时也要重置首次进入标记，并重新添加L1解锁动画
+        isFirstTimeEnteringGame = true;
+        pendingUnlockAnimations.Add(1);
+
+        Debug.Log("所有关卡进度已重置，L1重新标记为需要播放解锁动画");
     }
 }

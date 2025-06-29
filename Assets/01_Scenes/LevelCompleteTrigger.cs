@@ -6,10 +6,6 @@ public class LevelCompleteTrigger : MonoBehaviour
     [Header("关卡设置")]
     public int levelIndex = 1; // 当前关卡索引
 
-    [Header("完成条件")]
-    public bool requirePlayerTrigger = true; // 是否需要玩家触发
-    public string playerTag = "Player";
-
     [Header("UI显示")]
     public GameObject completionUI; // 完成UI面板
     public Text completionText; // 完成文本
@@ -21,15 +17,6 @@ public class LevelCompleteTrigger : MonoBehaviour
     private void Start()
     {
         startTime = Time.time;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (hasCompleted) return;
-
-        if (requirePlayerTrigger && !other.CompareTag(playerTag)) return;
-
-        CompleteLevel();
     }
 
     /// <summary>
@@ -45,7 +32,7 @@ public class LevelCompleteTrigger : MonoBehaviour
         Debug.Log($"关卡 {levelIndex} 完成！用时: {completionTime:F2}秒");
 
         // 显示完成UI
-        ShowCompletionUI(completionTime);
+        // ShowCompletionUI(completionTime);
 
         // 播放完成音效
         // AudioManager.Current?.PlaySound("关卡完成", AudioType.SFX);
