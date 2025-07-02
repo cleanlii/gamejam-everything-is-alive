@@ -19,7 +19,6 @@ public class LevelStateController : MonoBehaviour
 
     [Header("必要组件引用")]
     [Space(5)]
-    public PropManager propManager;
     public ItemManager itemManager;
     public InventoryManager inventoryManager;
     public LevelCompleteTrigger levelCompleteTrigger;
@@ -123,7 +122,6 @@ public class LevelStateController : MonoBehaviour
     {
         itemManager.Initialize();
         inventoryManager.Initialize();
-        propManager.Initialize();
     }
 
     private void InitializeUI()

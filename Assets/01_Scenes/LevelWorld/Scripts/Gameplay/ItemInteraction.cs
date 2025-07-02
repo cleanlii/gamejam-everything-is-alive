@@ -382,7 +382,7 @@ public class ItemInteraction : ObjectInteraction
             // 清除高亮显示
             ClearHighlight();
 
-            _itemManager.HighlightUntaggedItem(itemData);
+            // _itemManager.HighlightUntaggedItem(itemData);
             _itemManager.CheckItemRelationships();
         }
     }
@@ -595,11 +595,17 @@ public class ItemInteraction : ObjectInteraction
         {
             SetColliderAndRigidbody(true);
             ObjUtils.SetParentAndLayer(gameObject, leftPanelItemLayer, InventoryType.Pool);
-            if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
+            // if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
+            // {
+            // rectTransform.anchoredPosition = originalPosition;
+            if (!_itemManager.isBackpackMoved) rectTransform.anchoredPosition = itemData.spawnPoint.GetPosition();
+            else
             {
-                rectTransform.anchoredPosition = originalPosition;
-                // rectTransform.anchoredPosition = _middlePosition;
+                var sizeX = _inventoryInitializer.inventoryInfo.size.x;
+                var sizeY = _inventoryInitializer.inventoryInfo.size.y;
+                rectTransform.anchoredPosition = _inventoryInitializer.cells[sizeX - 1, sizeY - 1].worldPosition + new Vector3(450f, 300f, 0f);
             }
+            // }
         }
     }
 
@@ -638,17 +644,17 @@ public class ItemInteraction : ObjectInteraction
         else
         {
             ObjUtils.SetParentAndLayer(gameObject, leftPanelItemLayer, InventoryType.Pool);
-            if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
+            // if (!RectUtils.IsRectangleInside(leftPanelRect, rectTransform))
+            // {
+            // rectTransform.anchoredPosition = originalPosition;
+            if (!_itemManager.isBackpackMoved) rectTransform.anchoredPosition = itemData.spawnPoint.GetPosition();
+            else
             {
-                // rectTransform.anchoredPosition = originalPosition;
-                if (!_itemManager.isBackpackMoved) rectTransform.anchoredPosition = itemData.spawnPoint.GetPosition();
-                else
-                {
-                    var sizeX = _inventoryInitializer.inventoryInfo.size.x;
-                    var sizeY = _inventoryInitializer.inventoryInfo.size.y;
-                    rectTransform.anchoredPosition = _inventoryInitializer.cells[sizeX - 1, sizeY - 1].worldPosition + new Vector3(450f, 300f, 0f);
-                }
+                var sizeX = _inventoryInitializer.inventoryInfo.size.x;
+                var sizeY = _inventoryInitializer.inventoryInfo.size.y;
+                rectTransform.anchoredPosition = _inventoryInitializer.cells[sizeX - 1, sizeY - 1].worldPosition + new Vector3(450f, 300f, 0f);
             }
+            // }
 
             SetColliderAndRigidbody(true);
             UpdateCells(_lastGridPosition, currentShape, false);

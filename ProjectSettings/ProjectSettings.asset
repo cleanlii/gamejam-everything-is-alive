@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: WhiteBabelStudio
-  productName: Lives
+  productName: TheySaid
   defaultCursor: {fileID: 2800000, guid: df27bd99c0f5245e6b2d0f6264deab16, type: 3}
   cursorHotspot: {x: 7, y: 2}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
